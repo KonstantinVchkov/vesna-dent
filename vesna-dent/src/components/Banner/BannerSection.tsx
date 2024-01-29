@@ -1,8 +1,8 @@
 import React from "react";
-import styles from './styles.css'
+import variables from '../../styles/variables.module.scss'
 const BannerSection = () => {
   return (
-    <h1 className={styles.Banner}>
+    <h1 className={variables.title}>
       Hello world!
     </h1>
   );
