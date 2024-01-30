@@ -1,6 +1,13 @@
 @import "../../styles/variables.module";
 @import "../../styles/mixins"; // assuming mixins are stored here
 
+.Header{
+    @include flex-center
+}
 .Navbar{
-    
+    // @include flex-center;
+    ul{
+        @include flex-center
+        
+    }
 }
