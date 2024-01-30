@@ -1,10 +1,13 @@
 import React from "react";
-import variables from '../../styles/variables.module.scss'
+import styles from './styles.module.scss';
+
 const BannerSection = () => {
   return (
-    <h1 className={variables.title}>
-      Hello world!
-    </h1>
+    <div className={styles.Banner}>
+      <h1 className={styles.title}>
+        {/* Hello world! */}
+      </h1>
+    </div>
   );
 };
 
