@@ -1,10 +1,10 @@
-export const NavList:string[] = [
-  "Дома",
-  "За нас",
-  "Услуги",
-  "Наша Работа",
-  "Стоматолози",
-  "Локација",
+export const NavList = [
+  { title: "Дома", path: "/" },
+  { title: "За нас", path: "about" },
+  { title: "Услуги", path: "services" },
+  { title: "Наша Работа", path: "ourWork" },
+  { title: "Стоматолози", path: "dentists" },
+  { title: "Локација", path: "location" },
 ];
 export const MainText = {
   title:
