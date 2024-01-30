@@ -4,8 +4,7 @@
 
 // Define the .Banner styles
 .Banner {
-    color: $text-color-secondary; // Using a variable for color
-    
-    // Include the desktop mixin
-    @include flex-center;
+  color: $text-color-secondary;
+
+  @include flex-center;
 }
