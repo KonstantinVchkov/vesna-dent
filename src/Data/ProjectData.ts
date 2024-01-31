@@ -9,7 +9,7 @@ export const MainText = {
   title:
     "Дозволете ни да ви помогнеме Поврзете се повторно со вашата насмевка Весна Дент ви носи модерно, смирувачко искуство кое ги остава вашите заби здрави и вашата душа подмладена.",
   secondTitle:
-    "Come experience the modern, transformative way to receive dental care in San Francisco and Mountain View.",
+    "Дојдете да го искусите модерниот, трансформативен начин за добивање стоматолошка нега во Скопје.",
 };
 export const AboutUs = {};
 export const Services = {

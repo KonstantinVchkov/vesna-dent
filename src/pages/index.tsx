@@ -4,6 +4,7 @@ import Image from "next/image";
 // import styles from "@/styles/Home.module.scss";
 import BannerSection from "@/components/Banner/BannerSection";
 import BookApointment from "@/components/BookApointment/Apointment";
+import { MainText } from "@/Data/ProjectData";
 
 // const inter = Inter({ subsets: ["latin"] });
 
@@ -17,7 +18,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       {/* <BookApointment /> */}
-      <BannerSection />
+      <BannerSection {...MainText} />
     </>
   );
 }
