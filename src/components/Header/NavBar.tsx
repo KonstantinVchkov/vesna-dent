@@ -1,12 +1,17 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import styles from "./styles.module.scss";
 import { NavList } from "@/Data/ProjectData";
 import { handleRoute } from "@/utils/routing";
 import BookApointment from "../BookApointment/Apointment";
 import LocationMap from "../InfoSection/Location/LocationMap";
+import dynamic from "next/dynamic";
+const LottieAnimation = dynamic(() => import("../LottieAnimation/Animation"), {
+  ssr: false,
+});
 const NavBar = () => {
   const [popUp, setPopUp] = useState(false);
   const [locationPopUp, setLocationPopUp] = useState(false);
+  const [toothSpinner, setSpinnerTooth] = useState(true);
   console.log("this is the popUp:", popUp);
   const handleClick = (value: string) => {
     console.log("button clicked");
@@ -16,6 +21,11 @@ const NavBar = () => {
       setLocationPopUp(!locationPopUp);
     }
   };
+  useEffect(() => {
+    setTimeout(() => {
+      setSpinnerTooth(false);
+    }, 3000);
+  }, []);
   return (
     <div className={styles.Navbar}>
       <ul>
@@ -38,9 +48,13 @@ const NavBar = () => {
         >
           Закажи Термин
         </button>
-        <button onClick={() => {
-          handleClick('location')
-        }}>Локација</button>
+        <button
+          onClick={() => {
+            handleClick("location");
+          }}
+        >
+          Локација
+        </button>
       </div>
       {popUp && (
         <BookApointment
