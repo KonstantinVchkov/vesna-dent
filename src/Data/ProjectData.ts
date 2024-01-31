@@ -1,10 +1,9 @@
 export const NavList = [
-  { title: "Дома", path: "/" },
+  { title: "Дома", path: "" },
   { title: "За нас", path: "about" },
   { title: "Услуги", path: "services" },
-  { title: "Наша Работа", path: "ourWork" },
+  { title: "Наша Работа", path: "ourwork" },
   { title: "Стоматолози", path: "dentists" },
-  { title: "Локација", path: "location" },
 ];
 export const MainText = {
   title:

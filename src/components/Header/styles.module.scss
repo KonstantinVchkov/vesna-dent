@@ -5,9 +5,18 @@
     @include flex-center
 }
 .Navbar{
-    // @include flex-center;
+    @include flex-center;
     ul{
-        @include flex-center
+        @include flex-center;
+        li {
+            cursor: pointer;
+            margin-right: 10px;
+        }
         
+    }
+    .buttons {
+        button{
+            cursor: pointer;
+        }
     }
 }
