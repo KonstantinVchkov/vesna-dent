@@ -1,15 +1,40 @@
-// Import your variables and mixins
 @import "../../styles/variables.module";
-@import "../../styles/mixins"; // assuming mixins are stored here
+@import "../../styles/mixins";
 
-// Define the .Banner styles
 .Banner {
   color: $text-color-secondary;
 
   // @include flex-center;
-  // background-image: url('../../../public/assets/images/dental-toolkit.jpg');
+  background-image: url("https://images.unsplash.com/photo-1489278353717-f64c6ee8a4d2?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
   background-position: center;
   background-size: cover;
   height: 80vh;
   width: 100%;
+  position: relative;
+  .text {
+    color: aliceblue;
+    width: 40%;
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    left: 40%;
+    transform: translate(-50%, -40%);
+    // margin: 0px auto;
+    text-shadow: 2px 2px 7px rgba(0, 0, 0, 0.82);
+    .title {
+      font-size: 80px;
+    }
+    .secondTitle{
+      height: 100%;
+    }
+    .reserve {
+      border: 1px solid black;
+      border-radius: 15px;
+      padding: 10px;
+      font-size: 25px;
+      margin-top: 20px;
+      cursor: pointer;
+      box-shadow: 3px 2px 5px rgb(228 217 217 / 82%)
+    }
+  }
 }

@@ -5,6 +5,7 @@ import { handleRoute } from "@/utils/routing";
 import BookApointment from "../BookApointment/Apointment";
 import LocationMap from "../InfoSection/Location/LocationMap";
 import dynamic from "next/dynamic";
+import Image from "next/image";
 const LottieAnimation = dynamic(() => import("../LottieAnimation/Animation"), {
   ssr: false,
 });
@@ -28,6 +29,12 @@ const NavBar = () => {
   }, []);
   return (
     <div className={styles.Navbar}>
+      <div className={styles.logo}>
+        <img
+          src={"/assets/images/some-dental-logo.png"}
+          alt={"dental-logo-img"}
+        />
+      </div>
       <ul>
         {NavList.map((list, idx) => (
           <li

@@ -1,3 +1,4 @@
+"use-client"
 import React from "react";
 import styles from "../../BookApointment/styles.module.scss";
 import { TbookApointment } from "@/components/BookApointment/Apointment";

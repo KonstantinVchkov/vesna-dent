@@ -1,22 +1,48 @@
 @import "../../styles/variables.module";
 @import "../../styles/mixins"; // assuming mixins are stored here
 
-.Header{
-    @include flex-center
+.Header {
+  @include flex-center;
 }
-.Navbar{
+.Navbar {
+  //   @include flex-center;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  position: fixed;
+  z-index: 1000000000;
+  width: 100%;
+  background: $background-color-primary;
+  padding: 10px;
+  font-size: 25px;
+  color: black;
+  margin-top: 10px;
+  .logo {
+    width: 100px;
+    height: 50px;
+    img {
+      width: 100%;
+      height: 100%;
+      cursor: pointer;
+    }
+  }
+  ul {
     @include flex-center;
-    ul{
-        @include flex-center;
-        li {
-            cursor: pointer;
-            margin-right: 10px;
-        }
-        
+    li {
+      cursor: pointer;
+      margin-right: 10px;
     }
-    .buttons {
-        button{
-            cursor: pointer;
-        }
+  }
+  .buttons {
+    button {
+      cursor: pointer;
+      border: 1px solid black;
+      border-radius: 15px;
+      padding: 10px;
+      font-size: 15px;
+      margin-left: 10px;
+      box-shadow: 3px 2px 5px rgba(228, 217, 217, 0);
+      font-weight: 600;
     }
+  }
 }
