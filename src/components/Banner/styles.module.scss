@@ -6,8 +6,8 @@
 .Banner {
   color: $text-color-secondary;
 
-  @include flex-center;
-  background-image: url('../../../public/assets/images/dental-toolkit.jpg');
+  // @include flex-center;
+  // background-image: url('../../../public/assets/images/dental-toolkit.jpg');
   background-position: center;
   background-size: cover;
   height: 80vh;
