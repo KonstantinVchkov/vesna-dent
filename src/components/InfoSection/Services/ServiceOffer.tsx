@@ -1,27 +1,43 @@
 import Link from "next/link";
 import styles from "./styles.module.scss";
 import { motion } from "framer-motion";
+
 export type TOfferCard = {
   id?: number;
   title: string;
   img: string;
   paragraph: string;
+  index?: number; // Add this line
 };
-const ServiceOfferCard = ({ title, img, paragraph }: TOfferCard) => (
+
+export const framerMotionsInView = {
+  initial: { opacity: 0, y: 100 }, // Start from the left
+  animate: (id: number) => ({
+    opacity: 1,
+    y: 0,
+    transition: { delay: id * 0.2 },
+  }),
+};
+
+const ServiceOfferCard = ({ id, title, img, paragraph }: TOfferCard) => (
   <motion.div
-    initial={{ opacity: 0, y: -20 }}
-    animate={{ opacity: 1, y: 0 }}
-    transition={{ duration: 1 }}
+    variants={framerMotionsInView}
+    whileInView="animate"
+    custom={id} 
+    initial="initial"
+    viewport={{
+      once:true
+    }}
     className={styles.article}
   >
     <figure className={styles.figure}>
-      <img src={img} alt="dental-img.png" />
+      <img src={img} alt={title} />
     </figure>
     <div className={styles.articleBody}>
       <h2>{title}</h2>
       <p>{paragraph}</p>
-      <Link href={""} className={styles.readMore}>
-        Прочитајте повеќе
+      <Link href={`/services/${id}`} className={styles.readMore}>
+        Read More
       </Link>
     </div>
   </motion.div>
