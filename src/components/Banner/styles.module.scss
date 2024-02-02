@@ -15,7 +15,7 @@
 
   .text {
     color: aliceblue;
-    width: 60%; // Increased for better readability
+    width: 60%; 
     position: absolute;
     text-align: center;
     transform: translate(-50%, -50%);
@@ -25,20 +25,19 @@
 
     .MotionElements {
       display: flex;
-      // flex-direction: column; // Changed for a better layout
       align-items: center;
-      gap: 20px; // Added space between elements
+      gap: 20px;
 
       img {
-        width: auto; // Adjust for responsiveness
+        width: auto;
         max-width: 100%;
         height: auto;
-        max-height: 400px; // Adjusted for better layout
+        max-height: 400px;
       }
     }
 
     .title {
-      font-size: 2.5rem; // Adjusted for responsiveness
+      font-size: 2.5rem;
       margin-bottom: 0.5rem;
     }
 
