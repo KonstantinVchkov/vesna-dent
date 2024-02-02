@@ -1,7 +1,9 @@
 import Head from "next/head";
 
 import BannerSection from "@/components/Banner/BannerSection";
-import { MainText } from "@/Data/ProjectData";
+import { MainText, ServicesOffer } from "@/Data/ProjectData";
+import ServiceOfferCard from "@/components/InfoSection/Services/ServiceOffer";
+import MainServiceComp from "@/components/InfoSection/Services/MainServiceComp";
 // import { getStaticPaths } from "next/dist/build/templates/pages";
 
 export type THome = {
@@ -19,6 +21,7 @@ export default function Home({ textScroll }: THome) {
       </Head>
       {/* <BookApointment /> */}
       <BannerSection {...textScroll} />
+      <MainServiceComp />
     </>
   );
 }
