@@ -11,15 +11,20 @@
   transform-origin: center;
   transition: all 0.4s ease-in-out;
   overflow: hidden;
-  width: 30%;
-  height: 500px;
+  width: 28%;
+  // height: 500px;
   margin: 10px auto;
+  overflow: hidden;
 }
 .OfferService {
   display: flex;
-  width: 90%;
+  width: 80%;
   margin: 10px auto;
+  justify-content: center;
+  align-items: center;
   flex-wrap: wrap;
+  height: 100%;
+  overflow: hidden;
 }
 .article a::after {
   position: absolute;
