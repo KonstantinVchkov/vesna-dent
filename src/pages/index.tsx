@@ -1,12 +1,14 @@
 import Head from "next/head";
 
 import BannerSection from "@/components/Banner/BannerSection";
-
 import { MainText } from "@/Data/ProjectData";
+// import { getStaticPaths } from "next/dist/build/templates/pages";
 
-// const inter = Inter({ subsets: ["latin"] });
-
-export default function Home() {
+export type THome = {
+  textScroll: typeof MainText;
+};
+export default function Home({ textScroll }: THome) {
+  console.log("this is text-scroll", textScroll);
   return (
     <>
       <Head>
@@ -16,7 +18,15 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       {/* <BookApointment /> */}
-      <BannerSection {...MainText} />
+      <BannerSection {...textScroll} />
     </>
   );
+}
+
+export async function getStaticProps() {
+  return {
+    props: {
+      textScroll: MainText,
+    },
+  };
 }
