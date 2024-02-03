@@ -1,0 +1,14 @@
+@import "../../styles/mixins";
+@import "../../styles/variables.module";
+.FooterMain {
+  @include flex-center();
+  padding: 10px;
+  font-size: 20px;
+  color: $text-color-primary;
+  ul{
+    margin: 15px 10px;
+    li{
+        list-style-type: disc;
+    }
+  }
+}
