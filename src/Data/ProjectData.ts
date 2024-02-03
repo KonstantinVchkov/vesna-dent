@@ -25,6 +25,7 @@ export const ServicesOffer = [
     title: "Prosthodontics Dental Implants",
     paragraph:
       "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deleniti mollitia nulla, tempore odit natus maxime.",
+    
   },
   {
     id: 2,

@@ -2,10 +2,8 @@ import Head from "next/head";
 
 import BannerSection from "@/components/Banner/BannerSection";
 import { MainText, ourMilestones } from "@/Data/ProjectData";
-// import ServiceOfferCard from "@/components/InfoSection/Services/ServiceOffer";
 import MainServiceComp from "@/components/InfoSection/Services/MainServiceComp";
 import Milestones from "@/components/CountUpComp/Milestones";
-// import { getStaticPaths } from "next/dist/build/templates/pages";
 import styles from "../components/CountUpComp/styles.module.scss";
 import Dentists from "@/components/InfoSection/OurDentists/Dentists";
 export type THome = {
