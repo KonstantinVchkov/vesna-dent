@@ -1,0 +1,16 @@
+@import "../../styles/variables.module";
+.Milestones{
+    background:$background-color-base;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    // width: 80%;
+    padding: 10px;
+    color: $text-color-primary;
+    font-weight: $font-weight-bold;
+    text-align: center;
+    font-size: $font-size-big;
+    .MilestoneItem{
+        margin: 15px 10px;
+    }
+}
