@@ -1,16 +1,18 @@
 import Head from "next/head";
 
 import BannerSection from "@/components/Banner/BannerSection";
-import { MainText, ourMilestones } from "@/Data/ProjectData";
+import { MainText, ourDentists, ourMilestones } from "@/Data/ProjectData";
 import MainServiceComp from "@/components/InfoSection/Services/MainServiceComp";
 import Milestones from "@/components/CountUpComp/Milestones";
-import styles from "../components/CountUpComp/styles.module.scss";
+import styles from "../styles/styles.module.scss";
 import Dentists from "@/components/InfoSection/OurDentists/Dentists";
+// import Home from '../styles/Home.module.scss'
 export type THome = {
   textScroll: typeof MainText;
   miles: typeof ourMilestones;
+  dataDentists: typeof ourDentists;
 };
-export default function Home({ textScroll, miles }: THome) {
+export default function Home({ textScroll, miles, dataDentists }: THome) {
   return (
     <>
       <Head>
@@ -26,7 +28,11 @@ export default function Home({ textScroll, miles }: THome) {
           <Milestones key={mileItem.id} {...mileItem} />
         ))}
       </div>
-      <Dentists />
+      <div className={styles.container}>
+        {dataDentists.map((dentistData) => (
+          <Dentists key={dentistData.id} {...dentistData} />
+        ))}
+      </div>
     </>
   );
 }
@@ -36,6 +42,7 @@ export async function getStaticProps() {
     props: {
       textScroll: MainText,
       miles: ourMilestones,
+      dataDentists: ourDentists,
     },
   };
 }
