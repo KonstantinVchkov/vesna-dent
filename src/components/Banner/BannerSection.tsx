@@ -1,6 +1,7 @@
 import React from "react";
 import styles from "./styles.module.scss";
 import { motion } from "framer-motion";
+import { handleRoute } from "@/utils/routing";
 
 export type TBanner = {
   title: string;
@@ -8,12 +9,11 @@ export type TBanner = {
 };
 
 const BannerSection = ({ title, secondTitle }: TBanner) => {
-  const handleClick = () => {
-    console.log("Ova ke vidime kade ke odi");
-  };
+
 
   return (
     <div className={styles.Banner}>
+      {/* HERE WE WILL HAVE A REACT AWESOME SLIDER! */}
       <div className={styles.text}>
         <motion.div
           initial={{ opacity: 0, y: -20 }}
@@ -26,7 +26,9 @@ const BannerSection = ({ title, secondTitle }: TBanner) => {
           {/* {secondTitle && <motion.h2 className={styles.secondTitle}>{secondTitle}</motion.h2>} */}
           <motion.img src={"/assets/images/dental-img.png"} alt="Dental Care" />
         </motion.div>
-        <button onClick={handleClick} className={styles.reserve}>
+        <button onClick={() => {
+          handleRoute("/ourwork")
+        }} className={styles.reserve}>
           Сакате Поубава Насмевка?
         </button>
       </div>
