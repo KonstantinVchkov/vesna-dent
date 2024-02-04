@@ -3,29 +3,27 @@ import styles from "./styles.module.scss";
 const FooterSection = () => {
   return (
     <div className={styles.FooterMain}>
-      <div className={styles.Adress}>
-        <ul>
-          <li>lorem ipsum</li>
-          <li>lorem ipsum</li>
-          <li>lorem ipsum</li>
-          <li>lorem ipsum</li>
-        </ul>
+      {/* <h3></h3> */}
+      <div className={styles.imgParagraph}>
+        <img src="/assets/images/some-dental-logo.png" alt="logo-img" />
       </div>
-      <div className={styles.Links}>
-        <ul>
-          <li>lorem ipsum</li>
-          <li>lorem ipsum</li>
-          <li>lorem ipsum</li>
-          <li>lorem ipsum</li>
-        </ul>
-      </div>
-      <div className={styles.SocialMedia}>
-        <ul>
-          {/* here we have to put icons */}
-          <li>Facebook</li>
-          <li>Instagram</li>
-          <li>Contact us</li>
-        </ul>
+      <div className={styles.InfoSection}>
+        <div className={styles.Adress}>
+          <ul>
+            <li>lorem ipsum</li>
+            <li>lorem ipsum</li>
+            <li>lorem ipsum</li>
+            <li>lorem ipsum</li>
+          </ul>
+        </div>
+
+        <div className={styles.SocialMedia}>
+          <ul>
+            <li>Facebook</li>
+            <li>Instagram</li>
+            <li>Contact us</li>
+          </ul>
+        </div>
       </div>
     </div>
   );

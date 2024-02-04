@@ -3,7 +3,7 @@ import styles from "./styles.module.scss";
 const Dentists = () => {
   return (
     <div className={styles.DentistsComp}>
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis deleniti
+      {/* Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis deleniti
       sequi rem praesentium dolor. Iure velit, assumenda tenetur ullam nam,
       incidunt itaque optio, magnam veritatis odit vero deleniti illo commodi
       repellendus numquam qui voluptate nesciunt nemo. Nobis illo dignissimos
@@ -55,7 +55,7 @@ const Dentists = () => {
       veritatis, minima deleniti facere adipisci enim sit quidem odit quibusdam
       voluptates, porro ducimus voluptatum dolores, doloribus nam tenetur
       aliquam. Nemo ut tempore nam veritatis? Porro eveniet doloribus aliquam
-      fugiat libero, minima accusantium quia ab.
+      fugiat libero, minima accusantium quia ab. */}
     </div>
   );
 };
