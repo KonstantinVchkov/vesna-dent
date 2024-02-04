@@ -23,8 +23,6 @@ const Milestones = ({ id, title, stones, icon }: TMilestones) => {
         {({ countUpRef }) => (
           <>
             <div className={styles.icons}>
-              {/* <FontAwesomeIcon icon={icon} style={{color: "#f2f2f2",}} /> */}
-              {/* <img src={icon} alt="" /> */}
               <FontAwesomeIcon icon={icon} />
             </div>
             <div>
