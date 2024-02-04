@@ -1,5 +1,5 @@
 @import "../../styles/variables.module";
-@import "../../styles/mixins"; // assuming mixins are stored here
+@import "../../styles/mixins.module"; // assuming mixins are stored here
 
 .Header {
   @include flex-center;
@@ -37,7 +37,8 @@
     button {
       cursor: pointer;
       border: 1px solid black;
-      border-radius: 15px;
+      background-color: inherit;
+      border-radius: $button-radius;
       padding: 10px;
       font-size: 15px;
       margin-left: 10px;

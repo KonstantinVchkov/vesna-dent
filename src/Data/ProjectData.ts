@@ -44,27 +44,27 @@ export const ServicesOffer = [
     paragraph:
       "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deleniti mollitia nulla, tempore odit natus maxime.",
   },
-  {
-    id: 4,
-    img: "https://images.unsplash.com/photo-1600170311833-c2cf5280ce49?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    title: "Endodontics",
-    paragraph:
-      "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deleniti mollitia nulla, tempore odit natus maxime.",
-  },
-  {
-    id: 5,
-    img: "https://images.unsplash.com/photo-1600170311833-c2cf5280ce49?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    title: "Minimum Intervention Dentistry",
-    paragraph:
-      "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deleniti mollitia nulla, tempore odit natus maxime.",
-  },
-  {
-    id: 6,
-    img: "https://images.unsplash.com/photo-1600170311833-c2cf5280ce49?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    title: "Pediatric Dentistry",
-    paragraph:
-      "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deleniti mollitia nulla, tempore odit natus maxime.",
-  },
+  // {
+  //   id: 4,
+  //   img: "https://images.unsplash.com/photo-1600170311833-c2cf5280ce49?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+  //   title: "Endodontics",
+  //   paragraph:
+  //     "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deleniti mollitia nulla, tempore odit natus maxime.",
+  // },
+  // {
+  //   id: 5,
+  //   img: "https://images.unsplash.com/photo-1600170311833-c2cf5280ce49?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+  //   title: "Minimum Intervention Dentistry",
+  //   paragraph:
+  //     "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deleniti mollitia nulla, tempore odit natus maxime.",
+  // },
+  // {
+  //   id: 6,
+  //   img: "https://images.unsplash.com/photo-1600170311833-c2cf5280ce49?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+  //   title: "Pediatric Dentistry",
+  //   paragraph:
+  //     "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deleniti mollitia nulla, tempore odit natus maxime.",
+  // },
 ];
 
 export const ourMilestones = [
