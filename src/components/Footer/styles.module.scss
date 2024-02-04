@@ -1,10 +1,24 @@
 @import "../../styles/mixins";
 @import "../../styles/variables.module";
 .FooterMain {
-  @include flex-center();
+  // @include flex-direction();
   padding: 10px;
   font-size: 20px;
   color: $text-color-primary;
+
+  .imgParagraph{
+    width: 100px;
+    margin: 10px auto;
+    img{
+      width: 100%;
+    }
+  }
+  
+  .InfoSection{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
   ul{
     margin: 15px 10px;
     li{

@@ -4,10 +4,17 @@
   }
 }
 @mixin flex-center {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-  }
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@mixin flex-direction {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
 //   // @use "./variables" as var;
 // // @use "sass:math";
 
@@ -63,7 +70,6 @@
 //     padding-bottom: (var.$gutter-base);
 //   }
 // }
-
 
 // %wrap {
 //   width: 80%;

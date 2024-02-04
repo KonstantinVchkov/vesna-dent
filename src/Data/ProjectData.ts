@@ -1,3 +1,6 @@
+import { FaBeer, FaCoffee } from 'react-icons/fa'; // Import icons
+import { IconDefinition, faAward, faScrewdriverWrench, faUsers } from "@fortawesome/free-solid-svg-icons";
+
 export const NavList = [
   { title: "Дома", path: "" },
   { title: "За нас", path: "about" },
@@ -69,11 +72,13 @@ export const ourMilestones = [
     id: 1,
     title: "Задоволни клиенти",
     stones: 2500,
+    icon:faUsers
   },
-  { id: 2, title: "Награди", stones: 5 },
+  { id: 2, title: "Награди", stones: 5, icon:faAward },
   {
     id: 3,
     title: "Извршени интервенции",
     stones: 3000,
+    icon:faScrewdriverWrench
   },
 ];

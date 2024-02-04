@@ -7,11 +7,11 @@ export type TOfferCard = {
   title: string;
   img: string;
   paragraph: string;
-  index?: number; // Add this line
+  index?: number;
 };
 
 export const framerMotionsInView = {
-  initial: { opacity: 0, y: 100 }, // Start from the left
+  initial: { opacity: 0, y: 100 },
   animate: (id: number) => ({
     opacity: 1,
     y: 0,
@@ -23,10 +23,10 @@ const ServiceOfferCard = ({ id, title, img, paragraph }: TOfferCard) => (
   <motion.div
     variants={framerMotionsInView}
     whileInView="animate"
-    custom={id} 
+    custom={id}
     initial="initial"
     viewport={{
-      once:true
+      once: true,
     }}
     className={styles.article}
   >
