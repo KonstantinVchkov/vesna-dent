@@ -58,6 +58,9 @@
 .articleBody {
   padding: 24px;
   text-align: center;
+  a{
+    color: $text-color-base !important;
+  }
 }
 
 .article a {

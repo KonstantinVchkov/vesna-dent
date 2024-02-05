@@ -4,26 +4,26 @@
   @return (math.div($size, 16)) * 1rem;
 }
 
-// Font settings
+// Font and size settings
 $font-family-base: "Fjord One", serif;
-
 $line-height-base: 1.5;
-$font-size-big:2.9rem;
+$font-size-big: 2.9rem;
 $font-weight-normal: 400;
 $font-weight-bold: 700;
-// Size settings
 $gutter-base: rem-calc(30);
-$button-radius:10px;
+$button-radius: 10px;
+
 // Color settings
 $text-color-base: #000;
 $text-color-primary: #fff;
 $text-color-secondary: rgba(0, 188, 213, 0.9);
 $background-color-base: rgba(0, 188, 213, 0.9);
-// $background-color-base: #37abcb;
-// $background-color-primary: linear-gradient(120deg, #b5d7f25e 0%, #ebedee 100%);
-$background-color-primary: linear-gradient(120deg, #2bc6e292 0%, #ebedee 100%);
-// $border-radius-card: 10px;
+$background-color-secondary: linear-gradient(
+  120deg,
+  rgb(236, 242, 244, 0.75) 0%,
+  #ebedee 100%
+);
+$background-color-primary: linear-gradient(120deg, rgba(43, 198, 226, 0.57) 0%, #ebedee 100%);
 $transition-duration: 0.8s;
 $hover-border-color: white;
 $text-color: white;
-
