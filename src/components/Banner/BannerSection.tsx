@@ -1,38 +1,28 @@
 import React from "react";
+import Carousel from "react-bootstrap/Carousel";
+import "bootstrap/dist/css/bootstrap.min.css"; // Import Bootstrap CSS
 import styles from "./styles.module.scss";
-import { motion } from "framer-motion";
-import { handleRoute } from "@/utils/routing";
-
 export type TBanner = {
-  title: string;
-  secondTitle?: string; // Uncomment this if you want to use secondTitle
+  titles: string[];
+  images: string[];
 };
 
-const BannerSection = ({ title, secondTitle }: TBanner) => {
-
-
+const BannerSection = ({ titles, images }: TBanner) => {
   return (
-    <div className={styles.Banner}>
-      {/* HERE WE WILL HAVE A REACT AWESOME SLIDER! */}
-      <div className={styles.text}>
-        <motion.div
-          initial={{ opacity: 0, y: -20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 1 }}
-          style={{display:"flex"}}
-          className={styles.MotionElements}
-        >
-          <motion.h1 className={styles.title}>{title}</motion.h1>
-          {/* {secondTitle && <motion.h2 className={styles.secondTitle}>{secondTitle}</motion.h2>} */}
-          <motion.img src={"/assets/images/dental-img.png"} alt="Dental Care" />
-        </motion.div>
-        <button onClick={() => {
-          handleRoute("/ourwork")
-        }} className={styles.reserve}>
-          Сакате Поубава Насмевка?
-        </button>
-      </div>
-    </div>
+    <Carousel fade>
+      {images.map((image, index) => (
+        <Carousel.Item key={index} style={{ backgroundColor: "rgb(26 19 19)" }}>
+          <img
+            className={styles.carouselImg}
+            src={image}
+            alt={`Slide ${index}`}
+          />
+          <Carousel.Caption>
+            <h1>{titles[index]}</h1>
+          </Carousel.Caption>
+        </Carousel.Item>
+      ))}
+    </Carousel>
   );
 };
 

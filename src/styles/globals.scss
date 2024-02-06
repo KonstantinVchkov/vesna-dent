@@ -13,7 +13,7 @@ body {
   overflow-x: hidden;
 }
 body {
-  background-image: $background-color-primary;
+  background-image: $background-color-secondary;
 }
 h1,
 h2,
@@ -25,12 +25,16 @@ li {
   list-style-type: none;
 }
 a {
-  color: inherit;
+  color: $text-color-primary !important;
   text-decoration: none;
 }
-
-@media (prefers-color-scheme: dark) {
-  /* html {
-
-  } */
+.carousel-fade {
+  .carousel-caption {
+    top: 50% !important;
+  }
+  .carousel-item {
+    position: relative;
+    background: rgb(128, 126, 126);
+  }
+  // z-index: 10000;
 }

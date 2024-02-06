@@ -5,25 +5,25 @@
   padding: 10px;
   font-size: 20px;
   color: $text-color-primary;
-
-  .imgParagraph{
+  background: $background-color-secondary;
+  .imgParagraph {
     @include wrap;
     width: 100px;
     // margin: 10px auto;
-    img{
+    img {
       width: 100%;
     }
   }
-  
-  .InfoSection{
+
+  .InfoSection {
     display: flex;
     justify-content: space-around;
     align-items: center;
   }
-  ul{
+  ul {
     margin: 15px 10px;
-    li{
-        list-style-type: disc;
+    li {
+      list-style-type: disc;
     }
   }
 }

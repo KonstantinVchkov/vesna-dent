@@ -55,6 +55,9 @@
       font-size: 25px;
       .icon {
         cursor: pointer;
+        &:hover{
+          color: $text-color-secondary;
+        }
       }
     }
     h2,

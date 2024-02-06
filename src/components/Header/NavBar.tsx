@@ -49,6 +49,7 @@ const NavBar = () => {
       </ul>
       <div className={styles.buttons}>
         <button
+          className={styles.button}
           onClick={() => {
             handleClick("book");
           }}
@@ -56,6 +57,7 @@ const NavBar = () => {
           Закажи Термин
         </button>
         <button
+          className={styles.button}
           onClick={() => {
             handleClick("location");
           }}
