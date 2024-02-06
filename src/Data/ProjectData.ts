@@ -15,7 +15,7 @@ export const NavList = [
 ];
 export const MainText = {
   titles: [
-    "сигурно сакате да блескате од убавина кога ќе се насмевнете?",
+    "Сигурно сакате да блескате од убавина кога ќе се насмевнете?",
     "Зошто чистењето на забен камен е убаво?",
     "Сигурно сте свесни колку е битно да ги четкате забите?",
   ],
@@ -27,7 +27,42 @@ export const MainText = {
   // secondTitle:
   //   "Дојдете  го искусите модерниот, трансформативен начин за добивање стоматолошка нега во Скопје.",
 };
-export const AboutUs = {};
+export const AboutUs = {
+  title: "Прочитајте малку повеќе за нас",
+  secondTitle: "Кои сме ние?",
+  paragraph:
+    "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veritatis numquam beatae autem quaerat explicabo sapiente sed repudiandae officiis fugiat, nostrum amet exercitationem facilis reiciendis provident eaque minus magnam vitae unde qui voluptatum veniam blanditiis! Magni quibusdam quia est ullam alias sapiente libero, iusto facere ut earum neque atque! Nostrum itaque, accusamus saepe quae dolor ullam odit, similique nulla illo fuga ipsa placeat! Fuga reiciendis in, hic, quae architecto ad, ab voluptatibus quia nobis recusandae enim vel vero libero voluptatem voluptate quidem fugit perferendis porro delectus cum quas dolorum modi. Unde doloremque ratione sit, cum ad nesciunt ipsa impedit aspernatur aliquam nobis! Sunt porro numquam saepe illum architecto hic nostrum odit minus, beatae officia quam veniam consequatur possimus recusandae vero esse ipsum? Consequatur repudiandae natus maiores nam fugiat saepe eius ea aliquam, excepturi accusamus aspernatur dignissimos quisquam voluptatibus beatae id nostrum ullam et quos molestias eligendi nesciunt libero. Ipsum temporibus animi, vitae eius, expedita nulla exercitationem magnam ipsa dolorum numquam, officiis assumenda ex placeat officia delectus aperiam rerum! Quo eos cupiditate tenetur hic earum? Tempora officiis adipisci distinctio consequuntur doloribus aspernatur reprehenderit autem quae explicabo? Quod eos repellendus, deleniti enim harum soluta esse maxime itaque quam saepe id quasi doloribus ad debitis dolor dolores, quaerat ipsa? Itaque vel ratione laboriosam debitis fuga consectetur doloremque repellendus? Quam temporibus sint tempora, corrupti assumenda libero quisquam hic aspernatur aperiam doloremque dolorem, fugit ut facilis dolorum tenetur et sunt iste labore id minima neque! Nulla expedita veniam nesciunt reprehenderit consectetur iste quo! Eaque, optio inventore blanditiis ea maiores, mollitia, eveniet et necessitatibus dolore illum at nisi sed laboriosam tenetur corrupti dolorem in reprehenderit veniam recusandae placeat illo voluptas esse non est. Asperiores cupiditate quia mollitia, aperiam temporibus, suscipit necessitatibus cum sapiente voluptatum ad ab? Maiores quas, rerum quisquam blanditiis excepturi dicta natus iure mollitia deserunt.",
+  image:
+    "https://images.unsplash.com/photo-1616391182219-e080b4d1043a?q=80&w=1983&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+  faqTitle: "Најчесто поставувани прашања?",
+  QuestionsAndAnswers: [
+    {
+      id: 1,
+      question: "Дали боли чистење на забен камен?",
+      answer:
+        "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veritatis numquam beatae autem quaerat explicabo sapiente sed repudiandae officiis fugiat, nostrum amet exercitationem facilis reiciendis provident eaque minus magnam ",
+    },
+    {
+      id: 2,
+      question: "Дали боли чистење на забен камен?",
+      answer:
+        "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veritatis numquam beatae autem quaerat explicabo sapiente sed repudiandae officiis fugiat, nostrum amet exercitationem facilis reiciendis provident eaque minus magnam ",
+    },
+    {
+      id: 3,
+      question: "Дали боли чистење на забен камен?",
+      answer:
+        "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veritatis numquam beatae autem quaerat explicabo sapiente sed repudiandae officiis fugiat, nostrum amet exercitationem facilis reiciendis provident eaque minus magnam ",
+    },
+    {
+      id: 4,
+      question: "Дали боли чистење на забен камен?",
+      answer:
+        "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veritatis numquam beatae autem quaerat explicabo sapiente sed repudiandae officiis fugiat, nostrum amet exercitationem facilis reiciendis provident eaque minus magnam ",
+    },
+  ],
+};
+
 export const Services = {
   serviceOne: "",
   serviceTwo: "",
@@ -57,27 +92,6 @@ export const ServicesOffer = [
     paragraph:
       "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deleniti mollitia nulla, tempore odit natus maxime.",
   },
-  // {
-  //   id: 4,
-  //   img: "https://images.unsplash.com/photo-1600170311833-c2cf5280ce49?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-  //   title: "Endodontics",
-  //   paragraph:
-  //     "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deleniti mollitia nulla, tempore odit natus maxime.",
-  // },
-  // {
-  //   id: 5,
-  //   img: "https://images.unsplash.com/photo-1600170311833-c2cf5280ce49?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-  //   title: "Minimum Intervention Dentistry",
-  //   paragraph:
-  //     "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deleniti mollitia nulla, tempore odit natus maxime.",
-  // },
-  // {
-  //   id: 6,
-  //   img: "https://images.unsplash.com/photo-1600170311833-c2cf5280ce49?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-  //   title: "Pediatric Dentistry",
-  //   paragraph:
-  //     "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deleniti mollitia nulla, tempore odit natus maxime.",
-  // },
 ];
 
 export const ourDentists = [

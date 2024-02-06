@@ -26,6 +26,7 @@ const Milestones = ({ id, title, stones, icon }: TMilestones) => {
               <FontAwesomeIcon icon={icon} />
             </div>
             <div>
+
               <span ref={countUpRef} />
               {""} +<div>{title}</div>
             </div>

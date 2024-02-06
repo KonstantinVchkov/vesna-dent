@@ -1,0 +1,16 @@
+@import "../../../styles/variables.module";
+@import "../../../styles/mixins.module";
+.AboutComp {
+  @include flex-direction;
+  text-align: center;
+  padding-top: 80px;
+  .SecondSection {
+    @include flex-center;
+    // align-items: center;
+    .LeftImg {
+      img {
+        width: 500px;
+      }
+    }
+  }
+}
