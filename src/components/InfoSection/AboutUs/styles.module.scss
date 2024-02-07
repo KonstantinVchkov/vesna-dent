@@ -1,15 +1,74 @@
 @import "../../../styles/variables.module";
 @import "../../../styles/mixins.module";
+@keyframes slideUp {
+  0% {
+    transform: translateY(
+      100%
+    ); // Image is just entering the view from the bottom
+  }
+  20%,
+  25% {
+    transform: translateY(0); // Image is fully in view
+  }
+  45%,
+  100% {
+    transform: translateY(-100%); // Image slides out to the top
+  }
+}
 .AboutComp {
   @include flex-direction;
   text-align: center;
   padding-top: 80px;
+  width: 80%;
+  margin: 0px auto;
+  .FirstSection {
+    padding: $gutter-base 0;
+  }
   .SecondSection {
-    @include flex-center;
-    // align-items: center;
+    @include flex-direction;
+    gap: $gutter-base;
+    .RightText {
+      width: 100%;
+      border-radius: 20px;
+      box-shadow: 2px 3px 21px 4px rgba(0, 0, 0, 0.75);
+    }
     .LeftImg {
+      position: relative; // This establishes a positioning context for absolutely positioned children
+      width: 100%; // Container width
+      height: 500px; // Set a fixed height for the container
+      margin: 0 auto;
+      overflow: hidden; // Hide the overflowed parts
+      border-radius: 20px;
+      box-shadow: 2px 3px 21px 4px rgba(0, 0, 0, 0.75);
+      border-radius: 20px;
       img {
-        width: 500px;
+        position: absolute;
+        left: 0;
+        right: 0;
+        width: 100%;
+        height: 100%;
+        // margin-top: 10px;
+        object-fit: cover; // Cover the div without stretching the images
+        // margin: 10px 0px;
+
+        animation-name: slideUp;
+        animation-timing-function: ease-in-out;
+        animation-iteration-count: infinite;
+      }
+    }
+  }
+}
+.FAQBody {
+  padding: $gutter-base 0;
+}
+@include desktop {
+  .AboutComp {
+    .SecondSection {
+      flex-direction: column;
+
+      .LeftImg,
+      .RightText {
+        width: 100%;
       }
     }
   }
