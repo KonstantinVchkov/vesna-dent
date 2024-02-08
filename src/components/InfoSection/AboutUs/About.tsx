@@ -13,7 +13,7 @@ export type TAbout = {
   title: string;
   secondTitle: string;
   paragraph: string;
-  images: string[]; // Changed to support an array of images
+  images: string[]; 
   faqTitle: string;
   QuestionsAndAnswers: TQuestionAndAnswer[];
 };
@@ -23,7 +23,7 @@ const About = ({
   secondTitle,
   paragraph,
   faqTitle,
-  images, // Now an array
+  images, 
   QuestionsAndAnswers,
 }: TAbout) => {
   const animationDuration = 5;
@@ -45,8 +45,8 @@ const About = ({
                 src={img}
                 alt={`office-${index}`}
                 style={{
-                  animationDuration: `${animationDuration * images.length}s`, // Full cycle duration
-                  animationDelay: `-${animationDuration * index}s`, // Start time for each image
+                  animationDuration: `${animationDuration * images.length}s`, 
+                  animationDelay: `-${animationDuration * index}s`, 
                 }}
               />
             ))}

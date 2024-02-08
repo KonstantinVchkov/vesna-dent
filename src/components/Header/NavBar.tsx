@@ -13,10 +13,16 @@ const NavBar = () => {
   const [popUp, setPopUp] = useState(false);
   const [locationPopUp, setLocationPopUp] = useState(false);
   const [toothSpinner, setSpinnerTooth] = useState(true);
+  const [showMenu, setShowMenu] = useState(false);
   console.log("this is the popUp:", popUp);
+  const openMenu = () => {
+    console.log("this is from the open menu");
+    setShowMenu(!showMenu);
+  };
   const handleClick = (value: string) => {
     console.log("button clicked");
     if (value === "book") {
+      console.log("this is from value book: ");
       setPopUp(!popUp);
     } else if (value === "location") {
       setLocationPopUp(!locationPopUp);
@@ -35,18 +41,21 @@ const NavBar = () => {
           alt={"dental-logo-img"}
         />
       </div>
-      <ul>
-        {NavList.map((list, idx) => (
-          <li
-            onClick={() => {
-              handleRoute(list.path);
-            }}
-            key={idx}
-          >
-            {list.title}
-          </li>
-        ))}
-      </ul>
+      <div className={styles.listMenu}>
+        <ul>
+          {NavList.map((list, idx) => (
+            <li
+              onClick={() => {
+                handleRoute(list.path);
+              }}
+              key={idx}
+            >
+              {list.title}
+            </li>
+          ))}
+        </ul>
+      </div>
+
       <div className={styles.buttons}>
         <button
           className={styles.button}
@@ -79,6 +88,31 @@ const NavBar = () => {
           }}
         />
       )}
+      <div className={styles.hambMenu}>
+        <input
+          onClick={openMenu}
+          type="checkbox"
+          role="button"
+          aria-label="Display the menu"
+          className={styles.menu}
+        />
+        {showMenu && (
+          <div className={styles.hambList}>
+            <ul>
+              {NavList.map((list, idx) => (
+                <li
+                  onClick={() => {
+                    handleRoute(list.path);
+                  }}
+                  key={idx}
+                >
+                  {list.title}
+                </li>
+              ))}
+            </ul>
+          </div>
+        )}
+      </div>
     </div>
   );
 };

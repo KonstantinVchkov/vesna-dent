@@ -41,11 +41,11 @@
 //   }
 // }
 
-// @mixin laptop-m-styles {
-//   @media (max-width: 1024px) {
-//     @content;
-//   }
-// }
+@mixin laptop-m-styles {
+  @media (max-width: 1024px) {
+    @content;
+  }
+}
 
 // @mixin tablet-styles {
 //   @media (max-width: 768px) {
