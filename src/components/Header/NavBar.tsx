@@ -1,10 +1,11 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import styles from "./styles.module.scss";
 import { NavList } from "@/Data/ProjectData";
 import { handleRoute } from "@/utils/routing";
 import BookApointment from "../BookApointment/Apointment";
 import Image from "next/image";
 import Navitems from "./Navlist";
+import ButtonComp from "../Button/ButtonComp";
 
 const NavBar = () => {
   const [popUp, setPopUp] = useState<boolean>(false);
@@ -28,9 +29,9 @@ const NavBar = () => {
       </div>
 
       <div className={styles.buttons}>
-        <button className={styles.button} onClick={togglePopUp}>
-          Закажи Термин
-        </button>
+      <ButtonComp name={"Закажи термин"} handleClick={togglePopUp} />
+
+
       </div>
       {popUp && <BookApointment handleModal={togglePopUp} />}
 
@@ -42,12 +43,13 @@ const NavBar = () => {
           aria-label="Display the menu"
           className={styles.menu}
         />
-        {showMenu && (
-          <div className={styles.hambList}>
-            <Navitems list={NavList} routes={handleRoute} />
-          </div>
-        )}
       </div>
+      {showMenu && (
+        <div className={styles.hambList}>
+          <Navitems list={NavList} routes={handleRoute} />
+          <ButtonComp name={"Закажи термин"} handleClick={togglePopUp} />
+        </div>
+      )}
     </div>
   );
 };

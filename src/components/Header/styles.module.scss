@@ -10,7 +10,7 @@
   align-items: center;
   position: fixed;
   z-index: 1000000000;
-  width: 80%;
+  width: 100%;
   left: 0;
   right: 0;
   margin: 10px auto;
@@ -71,7 +71,7 @@
   @include laptop-m-styles {
     .hambMenu {
       display: block;
-      width: 100%;
+
       .menu {
         --s: 25px; /* control the size */
         --c: black; /* the color */
@@ -133,5 +133,23 @@
         outline-offset: 5px;
       }
     }
+  }
+  .hambList {
+    // width: 100%;
+    z-index: 1000000000000;
+    position: absolute;
+    top: 100%;
+    background: $background-color-secondary;
+    width: 100%;
+    height: 100vh;
+    @include flex-direction;
+    // flex-direction: column;
+    ul {
+      // @include flex-direction;
+      text-align: center;
+    }
+    // left: 50%;
+    // right: 50%;
+    // transform: translate(-50%,-50%);
   }
 }
