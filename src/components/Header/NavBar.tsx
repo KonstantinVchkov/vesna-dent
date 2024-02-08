@@ -3,91 +3,37 @@ import styles from "./styles.module.scss";
 import { NavList } from "@/Data/ProjectData";
 import { handleRoute } from "@/utils/routing";
 import BookApointment from "../BookApointment/Apointment";
-import LocationMap from "../InfoSection/Location/LocationMap";
-import dynamic from "next/dynamic";
 import Image from "next/image";
-const LottieAnimation = dynamic(() => import("../LottieAnimation/Animation"), {
-  ssr: false,
-});
+import Navitems from "./Navlist";
+
 const NavBar = () => {
-  const [popUp, setPopUp] = useState(false);
-  const [locationPopUp, setLocationPopUp] = useState(false);
-  const [toothSpinner, setSpinnerTooth] = useState(true);
-  const [showMenu, setShowMenu] = useState(false);
-  console.log("this is the popUp:", popUp);
-  const openMenu = () => {
-    console.log("this is from the open menu");
-    setShowMenu(!showMenu);
-  };
-  const handleClick = (value: string) => {
-    console.log("button clicked");
-    if (value === "book") {
-      console.log("this is from value book: ");
-      setPopUp(!popUp);
-    } else if (value === "location") {
-      setLocationPopUp(!locationPopUp);
-    }
-  };
-  useEffect(() => {
-    setTimeout(() => {
-      setSpinnerTooth(false);
-    }, 3000);
-  }, []);
+  const [popUp, setPopUp] = useState<boolean>(false);
+  const [showMenu, setShowMenu] = useState<boolean>(false);
+
+  const openMenu = () => setShowMenu(!showMenu);
+  const togglePopUp = () => setPopUp(!popUp);
+
   return (
     <div className={styles.Navbar}>
       <div className={styles.logo}>
-        <img
+        <Image
+          width={50}
+          height={50}
           src={"/assets/images/some-dental-logo.png"}
           alt={"dental-logo-img"}
         />
       </div>
       <div className={styles.listMenu}>
-        <ul>
-          {NavList.map((list, idx) => (
-            <li
-              onClick={() => {
-                handleRoute(list.path);
-              }}
-              key={idx}
-            >
-              {list.title}
-            </li>
-          ))}
-        </ul>
+        <Navitems list={NavList} routes={handleRoute} />
       </div>
 
       <div className={styles.buttons}>
-        <button
-          className={styles.button}
-          onClick={() => {
-            handleClick("book");
-          }}
-        >
+        <button className={styles.button} onClick={togglePopUp}>
           Закажи Термин
         </button>
-        <button
-          className={styles.button}
-          onClick={() => {
-            handleClick("location");
-          }}
-        >
-          Локација
-        </button>
       </div>
-      {popUp && (
-        <BookApointment
-          handleModal={() => {
-            handleClick("book");
-          }}
-        />
-      )}
-      {locationPopUp && (
-        <LocationMap
-          handleModal={() => {
-            handleClick("location");
-          }}
-        />
-      )}
+      {popUp && <BookApointment handleModal={togglePopUp} />}
+
       <div className={styles.hambMenu}>
         <input
           onClick={openMenu}
@@ -98,18 +44,7 @@ const NavBar = () => {
         />
         {showMenu && (
           <div className={styles.hambList}>
-            <ul>
-              {NavList.map((list, idx) => (
-                <li
-                  onClick={() => {
-                    handleRoute(list.path);
-                  }}
-                  key={idx}
-                >
-                  {list.title}
-                </li>
-              ))}
-            </ul>
+            <Navitems list={NavList} routes={handleRoute} />
           </div>
         )}
       </div>

@@ -1,5 +1,6 @@
 import React from "react";
 import styles from "./styles.module.scss";
+import LocationMap from "../InfoSection/Location/LocationMap";
 const FooterSection = () => {
   return (
     <div className={styles.FooterMain}>
@@ -7,6 +8,7 @@ const FooterSection = () => {
       <div className={styles.imgParagraph}>
         <img src="/assets/images/some-dental-logo.png" alt="logo-img" />
       </div>
+      <LocationMap />
       <div className={styles.InfoSection}>
         <div className={styles.Adress}>
           <ul>
