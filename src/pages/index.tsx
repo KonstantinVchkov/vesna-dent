@@ -13,7 +13,6 @@ export type THome = {
   dataDentists: typeof ourDentists;
 };
 export default function Home({ textScroll, miles, dataDentists }: THome) {
-  console.log('this is from main text:' , textScroll)
   return (
     <>
       <Head>

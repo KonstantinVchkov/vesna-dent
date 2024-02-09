@@ -9,7 +9,7 @@ export type TNavlist = {
 }
 const Navitems = ({list,routes}:TNavlist) => {
   return (
-    <ul>
+    <>
         {
             list.map((list,idx) => (
                 <li key={idx} onClick={() => {
@@ -17,7 +17,7 @@ const Navitems = ({list,routes}:TNavlist) => {
                 }}>{list.title}</li>
             ))
         }
-    </ul>
+    </>
   )
 }
 

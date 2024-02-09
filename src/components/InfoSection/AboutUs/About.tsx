@@ -13,7 +13,7 @@ export type TAbout = {
   title: string;
   secondTitle: string;
   paragraph: string;
-  images: string[]; 
+  images: string[];
   faqTitle: string;
   QuestionsAndAnswers: TQuestionAndAnswer[];
 };
@@ -23,7 +23,7 @@ const About = ({
   secondTitle,
   paragraph,
   faqTitle,
-  images, 
+  images,
   QuestionsAndAnswers,
 }: TAbout) => {
   const animationDuration = 5;
@@ -45,8 +45,8 @@ const About = ({
                 src={img}
                 alt={`office-${index}`}
                 style={{
-                  animationDuration: `${animationDuration * images.length}s`, 
-                  animationDelay: `-${animationDuration * index}s`, 
+                  animationDuration: `${animationDuration * images.length}s`,
+                  animationDelay: `-${animationDuration * index}s`,
                 }}
               />
             ))}
@@ -56,8 +56,8 @@ const About = ({
       <div className={styles.FAQBody}>
         <h2>{faqTitle}</h2>
         {QuestionsAndAnswers.map((qa) => (
-          <Accordion defaultActiveKey="0">
-            <Accordion.Item key={qa.id} eventKey={qa.id.toString()}>
+          <Accordion key={qa.id} defaultActiveKey="0">
+            <Accordion.Item eventKey={qa.id.toString()}>
               <Accordion.Header>{qa.question}</Accordion.Header>
               <Accordion.Body>{qa.answer}</Accordion.Body>
             </Accordion.Item>

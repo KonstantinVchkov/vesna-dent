@@ -5,7 +5,6 @@ export type TAboutPage = {
   AboutUs: typeof AboutUs;
 };
 const AboutUsPage = ({ AboutUs }: TAboutPage) => {
-  console.log("this is the data from: ", AboutUs);
   return (
     <div>
       {" "}

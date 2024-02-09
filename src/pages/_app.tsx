@@ -4,8 +4,9 @@ import NavBar from "@/components/Header/NavBar";
 import "@/styles/globals.scss";
 import type { AppProps } from "next/app";
 import { useEffect, useState } from "react";
-import ToothAnimation from "../../public/assets/animation/Tooth-Animation.json"
+import ToothAnimation from "../../public/assets/animation/Tooth-Animation.json";
 import dynamic from "next/dynamic";
+import { useRouter } from "next/router";
 
 const LottieAnimation = dynamic(
   () => import("../components/LottieAnimation/Animation"),
@@ -17,10 +18,9 @@ export default function App({ Component, pageProps }: AppProps) {
   const [spinner, setSpinner] = useState(true);
 
   useEffect(() => {
-    console.log("this is the spinner");
     setTimeout(() => {
       setSpinner(false);
-    }, 3000); 
+    }, 3000);
   }, []);
   return (
     <>
