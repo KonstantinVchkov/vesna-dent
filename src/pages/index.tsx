@@ -1,11 +1,11 @@
 import Head from "next/head";
 
-import BannerSection from "@/components/Banner/BannerSection";
 import { MainText, ourDentists, ourMilestones } from "@/Data/ProjectData";
 import MainServiceComp from "@/components/InfoSection/Services/MainServiceComp";
 import Milestones from "@/components/CountUpComp/Milestones";
 import styles from "../styles/styles.module.scss";
 import Dentists from "@/components/InfoSection/OurDentists/Dentists";
+import CarouselSection from "@/components/Banner/Carousel";
 // import Home from '../styles/Home.module.scss'
 export type THome = {
   textScroll: typeof MainText;
@@ -21,7 +21,7 @@ export default function Home({ textScroll, miles, dataDentists }: THome) {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/assets/images/some-dental-logo.png" />
       </Head>
-      <BannerSection {...textScroll} />
+      <CarouselSection {...textScroll} />
       <MainServiceComp />
       <div className={styles.Milestones}>
         {miles.map((mileItem) => (
