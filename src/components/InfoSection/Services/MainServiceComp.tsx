@@ -1,9 +1,11 @@
+"use-client"
 import { ServicesOffer } from "@/Data/ProjectData";
 import React from "react";
 import ServiceOfferCard, { framerMotionsInView } from "./ServiceOffer";
 import styles from "./styles.module.scss";
 import { motion } from "framer-motion";
 const MainServiceComp = () => {
+  const slicedCards = ServicesOffer.slice(0,3)
   return (
     <>
       <motion.h1
@@ -13,10 +15,10 @@ const MainServiceComp = () => {
         initial="initial"
         style={{ textAlign: "center" }}
       >
-        Our Services
+        Наши Услуги
       </motion.h1>
       <div className={styles.OfferService}>
-        {ServicesOffer.map((card) => (
+        {slicedCards.map((card) => (
           <ServiceOfferCard key={card.id} {...card} />
         ))}
       </div>

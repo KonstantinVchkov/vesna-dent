@@ -25,21 +25,21 @@ const NavBar = () => {
     let timeoutId: ReturnType<typeof setTimeout>;
 
     const handleRouteChangeStart = () => {
-      setToothSpinner(true); 
-      setShowMenu(false); 
+      setToothSpinner(true);
+      setShowMenu(false);
     };
 
     const handleRouteChangeComplete = () => {
       clearTimeout(timeoutId);
       timeoutId = setTimeout(() => {
-        setToothSpinner(false); 
-      }, 2000); 
+        setToothSpinner(false);
+      }, 1500);
     };
 
     // Listen to route changes
     router.events.on("routeChangeStart", handleRouteChangeStart);
     router.events.on("routeChangeComplete", handleRouteChangeComplete);
-    router.events.on("routeChangeError", handleRouteChangeComplete); 
+    router.events.on("routeChangeError", handleRouteChangeComplete);
 
     return () => {
       // Clean up listeners and timeout
@@ -60,6 +60,9 @@ const NavBar = () => {
             height={50}
             src={"/assets/images/some-dental-logo.png"}
             alt={"dental-logo-img"}
+            onClick={() => {
+              handleRoute("");
+            }}
           />
         </div>
         <div className={styles.listMenu}>
@@ -75,7 +78,6 @@ const NavBar = () => {
           <input
             onClick={openMenu}
             checked={showMenu}
-            // defaultChecked
             onChange={() => {}}
             type="checkbox"
             role="button"
