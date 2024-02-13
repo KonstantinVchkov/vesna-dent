@@ -11,7 +11,7 @@ const OurWorkPage = ({ workData }: TworkPage) => {
   return (
     <div>
       {" "}
-      <CarouselSection {...workData} />{" "}
+      <CarouselSection Slide={workData.slides} />{" "}
     </div>
   );
 };

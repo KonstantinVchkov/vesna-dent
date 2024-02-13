@@ -17,7 +17,6 @@ export type TBanner = {
   Slide?: Slide[];
   workTechnic?: string;
   workDescription?: string;
-  id: number;
   technics?: string[];
 };
 
@@ -28,8 +27,7 @@ const CarouselSection = ({
   descriptions,
   technics,
   workTechnic,
-  Slide,
-  id,
+  Slide
 }: TBanner) => {
   const [activeIndex, setActiveIndex] = useState(0);
 
