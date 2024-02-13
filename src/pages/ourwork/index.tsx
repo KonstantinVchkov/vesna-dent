@@ -5,8 +5,6 @@ export type TworkPage = {
   workData: typeof OurWork;
 };
 const OurWorkPage = ({ workData }: TworkPage) => {
-
-
   return (
     <div>
       {" "}
