@@ -1,6 +1,6 @@
 import Head from "next/head";
 
-import { MainText, ourDentists, ourMilestones } from "@/Data/ProjectData";
+import { MainText, ServicesOffer, ourDentists, ourMilestones } from "@/Data/ProjectData";
 import MainServiceComp from "@/components/InfoSection/Services/MainServiceComp";
 import Milestones from "@/components/CountUpComp/Milestones";
 import styles from "../styles/styles.module.scss";
@@ -11,8 +11,11 @@ export type THome = {
   textScroll: typeof MainText;
   miles: typeof ourMilestones;
   dataDentists: typeof ourDentists;
+  offers: typeof ServicesOffer
+
 };
-export default function Home({ textScroll, miles, dataDentists }: THome) {
+export default function Home({ textScroll, miles, dataDentists,offers }: THome) {
+  const serviceTitle = offers.map((offer) => offer.title)
   return (
     <>
       <Head>
@@ -27,7 +30,7 @@ export default function Home({ textScroll, miles, dataDentists }: THome) {
           <Dentists key={dentistData.id} {...dentistData} />
         ))}
       </div>
-      <MainServiceComp />
+      <MainServiceComp title={serviceTitle} id={0} />
       <div className={styles.Milestones}>
         {miles.map((mileItem) => (
           <Milestones key={mileItem.id} {...mileItem} />
@@ -43,6 +46,7 @@ export async function getStaticProps() {
       textScroll: MainText,
       miles: ourMilestones,
       dataDentists: ourDentists,
+      offers:ServicesOffer
     },
   };
 }

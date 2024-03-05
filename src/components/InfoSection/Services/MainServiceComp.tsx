@@ -3,14 +3,18 @@ import { ServicesOffer } from "@/Data/ProjectData";
 import React from "react";
 import ServiceOfferCard from "./ServiceOffer";
 import styles from "./styles.module.scss";
-const MainServiceComp = () => {
-  const slicedCards = ServicesOffer.slice(0, 3);
+type TMainService = {
+  title: string[];
+  id: number;
+};
+const MainServiceComp = ({ title, id }: TMainService) => {
   return (
     <>
-      <h1 style={{ textAlign: "center" }}>Наши Услуги</h1>
+      <h1 style={{ textAlign: "center" }}>Дознајте повеќе за нашите услуги</h1>
       <div className={styles.OfferService}>
-        {slicedCards.map((card) => (
-          <ServiceOfferCard key={card.id} {...card} />
+        {title.map((service) => (
+          <h2>{service}</h2>
+          // Here will be the button plus to open for that detail service title
         ))}
       </div>
     </>
