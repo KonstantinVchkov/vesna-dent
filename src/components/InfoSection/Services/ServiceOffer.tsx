@@ -1,6 +1,5 @@
 import Link from "next/link";
 import styles from "./styles.module.scss";
-import { motion } from "framer-motion";
 
 export type TOfferCard = {
   id?: number;
@@ -10,26 +9,10 @@ export type TOfferCard = {
   index?: number;
 };
 
-export const framerMotionsInView = {
-  initial: { opacity: 0, y: 100 },
-  animate: (id: number) => ({
-    opacity: 1,
-    y: 0,
-    transition: { delay: id * 0.2 },
-  }),
-};
+
 
 const ServiceOfferCard = ({ id, title, img, paragraph }: TOfferCard) => (
-  <motion.div
-    variants={framerMotionsInView}
-    whileInView="animate"
-    custom={id}
-    initial="initial"
-    viewport={{
-      once: true,
-    }}
-    className={styles.article}
-  >
+  <div className={styles.article}>
     <figure className={styles.figure}>
       <img src={img} alt={title} />
     </figure>
@@ -40,7 +23,7 @@ const ServiceOfferCard = ({ id, title, img, paragraph }: TOfferCard) => (
         Read More
       </Link>
     </div>
-  </motion.div>
+  </div>
 );
 
 export default ServiceOfferCard;

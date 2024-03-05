@@ -22,15 +22,15 @@ export default function Home({ textScroll, miles, dataDentists }: THome) {
         <link rel="icon" href="/assets/images/some-dental-logo.png" />
       </Head>
       <CarouselSection {...textScroll} />
+      <div className={styles.container}>
+        {dataDentists.map((dentistData) => (
+          <Dentists key={dentistData.id} {...dentistData} />
+        ))}
+      </div>
       <MainServiceComp />
       <div className={styles.Milestones}>
         {miles.map((mileItem) => (
           <Milestones key={mileItem.id} {...mileItem} />
-        ))}
-      </div>
-      <div className={styles.container}>
-        {dataDentists.map((dentistData) => (
-          <Dentists key={dentistData.id} {...dentistData} />
         ))}
       </div>
     </>
