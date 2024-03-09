@@ -1,21 +1,33 @@
 import Head from "next/head";
 
-import { MainText, ServicesOffer, ourDentists, ourMilestones } from "@/Data/ProjectData";
+import {
+  AboutUs,
+  MainText,
+  ServicesOffer,
+  ourDentists,
+  ourMilestones,
+} from "@/Data/ProjectData";
 import MainServiceComp from "@/components/InfoSection/Services/MainServiceComp";
 import Milestones from "@/components/CountUpComp/Milestones";
 import styles from "../styles/styles.module.scss";
 import Dentists from "@/components/InfoSection/OurDentists/Dentists";
 import CarouselSection from "@/components/Banner/Carousel";
+import About from "./about";
+import DentistsText from "@/components/InfoSection/OurDentists/DentistsText";
 // import Home from '../styles/Home.module.scss'
 export type THome = {
   textScroll: typeof MainText;
   miles: typeof ourMilestones;
   dataDentists: typeof ourDentists;
-  offers: typeof ServicesOffer
-
+  offers: typeof ServicesOffer;
 };
-export default function Home({ textScroll, miles, dataDentists,offers }: THome) {
-  const serviceTitle = offers.map((offer) => offer.title)
+export default function Home({
+  textScroll,
+  miles,
+  dataDentists,
+  offers,
+}: THome) {
+  const serviceTitle = offers.map((offer) => offer.title);
   return (
     <>
       <Head>
@@ -26,9 +38,14 @@ export default function Home({ textScroll, miles, dataDentists,offers }: THome) 
       </Head>
       <CarouselSection {...textScroll} />
       <div className={styles.container}>
-        {dataDentists.map((dentistData) => (
-          <Dentists key={dentistData.id} {...dentistData} />
-        ))}
+        <div className={styles.MainImagesContainer}>
+          {dataDentists.map((dentistData) => (
+            <Dentists key={dentistData.id} {...dentistData} />
+          ))}
+        </div>
+        <div className={styles.textSection}>
+          <DentistsText {...AboutUs}/>
+        </div>
       </div>
       <MainServiceComp title={serviceTitle} id={0} />
       <div className={styles.Milestones}>
@@ -46,7 +63,7 @@ export async function getStaticProps() {
       textScroll: MainText,
       miles: ourMilestones,
       dataDentists: ourDentists,
-      offers:ServicesOffer
+      offers: ServicesOffer,
     },
   };
 }

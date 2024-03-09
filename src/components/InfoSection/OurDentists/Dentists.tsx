@@ -29,43 +29,35 @@ const Dentists = ({
   linkedin,
 }: TDentists) => {
   return (
-    <div className={styles.container}>
-      <div className={styles.MainDentists}>
-        <div
-          onClick={() => {
-            handleRoute(`dentists/${id}`);
-          }}
-          className={`${styles.card} {styles.card0}`}
-        >
-          <div className={styles.border}>
-            {images.length > 0 && <img src={images[0]} alt="dentist-img" />}
-            <h2 className={styles.name}>
-              Д-р {name} {surname}
-            </h2>
-            <div className={styles.icons}>
-              {facebook && (
-                <Link target="_blank" href={facebook}>
-                  <FontAwesomeIcon className={styles.icon} icon={faFacebookF} />{" "}
-                </Link>
-              )}
-              {instagram && (
-                <Link target="_blank" href={instagram}>
-                  <FontAwesomeIcon className={styles.icon} icon={faInstagram} />
-                </Link>
-              )}
-              {linkedin && (
-                <Link target="_blank" href={linkedin}>
-                  <FontAwesomeIcon
-                    className={styles.icon}
-                    icon={faLinkedinIn}
-                  />
-                </Link>
-              )}
-            </div>
-          </div>
+    <div
+      onClick={() => {
+        handleRoute(`dentists/${id}`);
+      }}
+      className={`${styles.card} {styles.card0}`}
+    >
+      <div className={styles.border}>
+        {images.length > 0 && <img src={images[0]} alt="dentist-img" />}
+        <h2 className={styles.name}>
+          Д-р {name} {surname}
+        </h2>
+        <div className={styles.icons}>
+          {facebook && (
+            <Link target="_blank" href={facebook}>
+              <FontAwesomeIcon className={styles.icon} icon={faFacebookF} />{" "}
+            </Link>
+          )}
+          {instagram && (
+            <Link target="_blank" href={instagram}>
+              <FontAwesomeIcon className={styles.icon} icon={faInstagram} />
+            </Link>
+          )}
+          {linkedin && (
+            <Link target="_blank" href={linkedin}>
+              <FontAwesomeIcon className={styles.icon} icon={faLinkedinIn} />
+            </Link>
+          )}
         </div>
       </div>
-      <div className={styles.textSection}></div>
     </div>
   );
 };
