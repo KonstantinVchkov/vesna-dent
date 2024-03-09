@@ -36,9 +36,7 @@ const Dentists = ({
       className={`${styles.card} {styles.card0}`}
     >
       <div className={styles.border}>
-      {images.length > 0 && (
-          <img src={images[0]} alt="dentist-img" />
-        )}
+        {images.length > 0 && <img src={images[0]} alt="dentist-img" />}
         <h2 className={styles.name}>
           Д-р {name} {surname}
         </h2>

@@ -1,12 +1,12 @@
 import React from "react";
 import styles from "./styles.module.scss";
 import Accordion from "react-bootstrap/Accordion";
-import "bootstrap/dist/css/bootstrap.min.css"; // Ensure Bootstrap CSS is imported
+import "bootstrap/dist/css/bootstrap.min.css"; 
 
 type TQuestionAndAnswer = {
   question: string;
   answer: string;
-  id: number; // Ensure each QA pair has a unique ID
+  id: number; 
 };
 
 export type TAbout = {

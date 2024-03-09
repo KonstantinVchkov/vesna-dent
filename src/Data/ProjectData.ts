@@ -141,7 +141,7 @@ export const ourDentists = [
   {
     id: 1,
     images: [
-      "https://scontent.fskp4-1.fna.fbcdn.net/v/t39.30808-6/308621655_10227865027840276_5635266821960143379_n.jpg?stp=cp6_dst-jpg&_nc_cat=110&ccb=1-7&_nc_sid=dd5e9f&_nc_ohc=4IcB8szBVFwAX-DR5kt&_nc_ht=scontent.fskp4-1.fna&oh=00_AfDlWmyK0WoAd4bDv0bvHgI3jWtC3w0cNG1-D-2UsFYmVw&oe=65C5143D",
+      "/assets/images/dentists-images/Vesna.png",
       "https://scontent.fskp4-1.fna.fbcdn.net/v/t39.30808-6/308621655_10227865027840276_5635266821960143379_n.jpg?stp=cp6_dst-jpg&_nc_cat=110&ccb=1-7&_nc_sid=dd5e9f&_nc_ohc=4IcB8szBVFwAX-DR5kt&_nc_ht=scontent.fskp4-1.fna&oh=00_AfDlWmyK0WoAd4bDv0bvHgI3jWtC3w0cNG1-D-2UsFYmVw&oe=65C5143D",
       "https://scontent.fskp4-1.fna.fbcdn.net/v/t39.30808-6/308621655_10227865027840276_5635266821960143379_n.jpg?stp=cp6_dst-jpg&_nc_cat=110&ccb=1-7&_nc_sid=dd5e9f&_nc_ohc=4IcB8szBVFwAX-DR5kt&_nc_ht=scontent.fskp4-1.fna&oh=00_AfDlWmyK0WoAd4bDv0bvHgI3jWtC3w0cNG1-D-2UsFYmVw&oe=65C5143D",
     ],
@@ -154,7 +154,7 @@ export const ourDentists = [
     id: 2,
 
     images: [
-      "https://media.licdn.com/dms/image/D5603AQEfZ4ckXux_AQ/profile-displayphoto-shrink_800_800/0/1707487651589?e=1712793600&v=beta&t=FbLlHiOvKLh4vbAkHN_BfMjEezpydNvcgEyOvlbP5oI",
+      "/assets/images/dentists-images/Dragan.png",
       "https://media.licdn.com/dms/image/D5603AQEh5d8JL1T-5Q/profile-displayphoto-shrink_800_800/0/1706027522121?e=1712793600&v=beta&t=nl3xDhw0qjfv8Wp1kuYg9HL4R0bTLInP9xA-wMNw4ZM",
       "https://media.licdn.com/dms/image/D5603AQEh5d8JL1T-5Q/profile-displayphoto-shrink_800_800/0/1706027522121?e=1712793600&v=beta&t=nl3xDhw0qjfv8Wp1kuYg9HL4R0bTLInP9xA-wMNw4ZM",
     ],
@@ -168,7 +168,7 @@ export const ourDentists = [
   {
     id: 3,
     images: [
-      "https://scontent.fskp4-1.fna.fbcdn.net/v/t39.30808-6/417703491_7466883313342846_6132351921273586238_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=efb6e6&_nc_ohc=Tic4kn9-F0kAX9IoxWF&_nc_ht=scontent.fskp4-1.fna&oh=00_AfCSkwJzYR6KMmkYADngIoGEhkrBc80NLSO7d3w4uGdfbg&oe=65C4AD53",
+      "/assets/images/dentists-images/Bojana.png",
       "https://scontent.fskp4-1.fna.fbcdn.net/v/t39.30808-6/417703491_7466883313342846_6132351921273586238_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=efb6e6&_nc_ohc=Tic4kn9-F0kAX9IoxWF&_nc_ht=scontent.fskp4-1.fna&oh=00_AfCSkwJzYR6KMmkYADngIoGEhkrBc80NLSO7d3w4uGdfbg&oe=65C4AD53",
       "https://scontent.fskp4-1.fna.fbcdn.net/v/t39.30808-6/417703491_7466883313342846_6132351921273586238_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=efb6e6&_nc_ohc=Tic4kn9-F0kAX9IoxWF&_nc_ht=scontent.fskp4-1.fna&oh=00_AfCSkwJzYR6KMmkYADngIoGEhkrBc80NLSO7d3w4uGdfbg&oe=65C4AD53",
     ],
