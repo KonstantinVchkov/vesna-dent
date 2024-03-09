@@ -33,7 +33,7 @@ const Dentists = ({
       onClick={() => {
         handleRoute(`dentists/${id}`);
       }}
-      className={`${styles.card} {styles.card0}`}
+      className={`${styles.card} ${styles[`card${id}`]}`}
     >
       <div className={styles.border}>
         {images.length > 0 && <img src={images[0]} alt="dentist-img" />}

@@ -152,7 +152,6 @@ export const ourDentists = [
   },
   {
     id: 2,
-
     images: [
       "/assets/images/dentists-images/Dragan.png",
       "https://media.licdn.com/dms/image/D5603AQEh5d8JL1T-5Q/profile-displayphoto-shrink_800_800/0/1706027522121?e=1712793600&v=beta&t=nl3xDhw0qjfv8Wp1kuYg9HL4R0bTLInP9xA-wMNw4ZM",
