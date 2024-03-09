@@ -1,6 +1,7 @@
 @import "./variables.module";
 .container {
   // width: 100vw;
+  height: 100vh;
   display: flex;
   justify-content: space-between;
   align-items: center; // Align items to the start to match the image layout
@@ -9,13 +10,15 @@
 .MainImagesContainer {
   display: flex;
   justify-content: space-between;
-  flex-wrap: wrap; // Allows cards to wrap in container
-  gap: 20px; 
-  max-width: 801px; // Adjust based on the design
-  padding: 20px; 
+  flex-wrap: wrap;
+  gap: 20px;
+  width: 801px;
+  height: 648px;
+  padding: 20px;
   background-color: $background-color-rectangle;
   border-top-right-radius: 10px;
-  border-bottom-right-radius: 10px; 
+  border-bottom-right-radius: 10px;
+  position: relative;
 }
 .Milestones {
   background: $background-color-undercards;

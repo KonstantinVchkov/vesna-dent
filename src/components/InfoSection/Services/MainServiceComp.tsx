@@ -13,8 +13,7 @@ const MainServiceComp = ({ title, id }: TMainService) => {
       <h1 style={{ textAlign: "center" }}>Дознајте повеќе за нашите услуги</h1>
       <div className={styles.OfferService}>
         {title.map((service) => (
-          <h2>{service}</h2>
-          // Here will be the button plus to open for that detail service title
+          <h2 key={service}>{service}</h2>
         ))}
       </div>
     </>
