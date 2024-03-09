@@ -1,8 +1,8 @@
 @import "../../../styles/variables.module";
 
 .MainText {
-  max-width: 743px; // Use max-width for responsiveness
-  padding: 40px; // Adjust padding to match design
+  max-width: 743px; 
+  padding: 40px; 
   border-radius: 10px;
   font-family: $font-family-base;
   .btn {
@@ -13,6 +13,7 @@
     background-color: $background-color-rectangle;
     border-radius: $button-radius;
     cursor: pointer;
+    margin-top: 20px;
     &:hover {
       background-color: $background-color-hover;
     }
@@ -20,13 +21,13 @@
 }
 
 .card {
-  // height: 384px; // for responsiveness
-  width: 431.84px; // maintain max-width for larger screens
+
+  width: 431.84px; 
   border-radius: $button-radius;
   transition: background $transition-duration;
   position: relative;
   overflow: hidden;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); // Adjusted shadow for subtlety
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
   display: flex;
   justify-content: center;
   align-items: center;
@@ -66,9 +67,9 @@
     background: darken(
       $background-color-undercards,
       5%
-    ); // optional: darken on hover
+    ); 
     img {
-      transform: scale(1.1); // Adjust scale for subtlety
+      transform: scale(1.1); 
     }
 
     .icons {
@@ -86,7 +87,7 @@
       .icon {
         cursor: pointer;
         &:hover {
-          color: $text-color-secondary;
+          color: $text-color-hover;
         }
       }
     }

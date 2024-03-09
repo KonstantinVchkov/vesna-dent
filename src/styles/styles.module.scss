@@ -1,11 +1,9 @@
 @import "./variables.module";
 .container {
-  // width: 100vw;
-  height: 100vh;
   display: flex;
   justify-content: space-between;
-  align-items: center; // Align items to the start to match the image layout
-  background-color: $background-color-undercards; // Adjust color to match design
+  align-items: center; 
+ 
 }
 .MainImagesContainer {
   display: flex;
