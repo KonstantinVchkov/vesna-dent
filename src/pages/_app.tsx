@@ -6,7 +6,6 @@ import type { AppProps } from "next/app";
 import { useEffect, useState } from "react";
 import ToothAnimation from "../../public/assets/animation/Tooth-Animation.json";
 import dynamic from "next/dynamic";
-import { useRouter } from "next/router";
 
 const LottieAnimation = dynamic(
   () => import("../components/LottieAnimation/Animation"),
