@@ -1,9 +1,8 @@
 @import "./variables.module";
+@import "./mixins.module";
 .container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center; 
- 
+  @include flex-center;
+  height: 80vw;
 }
 .MainImagesContainer {
   display: flex;
@@ -19,10 +18,9 @@
   position: relative;
 }
 .Milestones {
-  background: $background-color-undercards;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  background-color: $background-color-irblue;
+
+ @include flex-center;
   padding: 10px;
   color: $text-color-primary;
   font-weight: $font-weight-bold;

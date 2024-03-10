@@ -7,9 +7,9 @@
 .Navbar {
   display: flex;
   justify-content: space-around;
-  align-items: center;
+  // align-items: center;
   position: fixed;
-  z-index: 1000000000;
+  z-index: 100000;
   width: 100%;
   left: 0;
   right: 0;
@@ -17,14 +17,8 @@
   background: none;
   padding: 10px 0;
   font-size: 25px;
-  color: black;
-  // top: 0;
+  color: $text-color-primary;
 
-  .logo {
-    position: relative;
-    width: 100px;
-    height: 50px;
-  }
   .listMenu ul {
     @include flex-center;
   }
@@ -32,7 +26,7 @@
   .buttons {
     display: flex;
     align-items: center;
-
+  
     @include laptop-m-styles {
       display: none;
     }
@@ -45,6 +39,16 @@
       &:last-child {
         margin-right: 0;
       }
+    }
+    &.buttons span{
+      margin-right: 10px;
+      cursor: pointer;
+      &:hover{
+        color: $text-color-hover;
+      }
+    }
+    li:hover{
+      color: $text-color-hover;
     }
   }
 
@@ -60,9 +64,7 @@
       color $transition-duration ease, border-color $transition-duration ease;
 
     &:hover {
-      // color: $text-color-secondary;
-      // background: $background-color-primary;
-      // border-color: $hover-border-color;
+      background-color: $background-color-hover;
     }
   }
   .hambMenu {
@@ -148,7 +150,7 @@
       // @include flex-direction;
       text-align: center;
       font-size: 30px;
-      li{
+      li {
         // line-height: 2;
         cursor: pointer;
       }
