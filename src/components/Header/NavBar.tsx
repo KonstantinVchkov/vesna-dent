@@ -15,61 +15,33 @@ const LottieAnimation = dynamic(() => import("../LottieAnimation/Animation"), {
 const NavBar = () => {
   const [popUp, setPopUp] = useState<boolean>(false);
   const [showMenu, setShowMenu] = useState<boolean>(false);
-  const [spinner, setToothSpinner] = useState<boolean>(false);
-  const router = useRouter();
+  
 
   const openMenu = () => setShowMenu(!showMenu);
   const togglePopUp = () => setPopUp(!popUp);
 
-  useEffect(() => {
-    let timeoutId: ReturnType<typeof setTimeout>;
 
-    const handleRouteChangeStart = () => {
-      setToothSpinner(true);
-      setShowMenu(false);
-    };
-
-    const handleRouteChangeComplete = () => {
-      clearTimeout(timeoutId);
-      timeoutId = setTimeout(() => {
-        setToothSpinner(false);
-      }, 1500);
-    };
-
-    // Listen to route changes
-    router.events.on("routeChangeStart", handleRouteChangeStart);
-    router.events.on("routeChangeComplete", handleRouteChangeComplete);
-    router.events.on("routeChangeError", handleRouteChangeComplete);
-
-    return () => {
-      // Clean up listeners and timeout
-      clearTimeout(timeoutId);
-      router.events.off("routeChangeStart", handleRouteChangeStart);
-      router.events.off("routeChangeComplete", handleRouteChangeComplete);
-      router.events.off("routeChangeError", handleRouteChangeComplete);
-    };
-  }, [router.events]);
 
   return (
     <>
-      {spinner && <LottieAnimation animationData={ToothAnimation} />}
       <div className={styles.Navbar}>
-        <div className={styles.logo}>
-          <Image
-            width={50}
-            height={50}
-            src={"/assets/images/some-dental-logo.png"}
-            alt={"dental-logo-img"}
-            onClick={() => {
-              handleRoute("");
-            }}
-          />
-        </div>
         <div className={styles.listMenu}>
           <Navitems list={NavList} routes={handleRoute} />
         </div>
-
+        <div className={styles.logo}>
+          <Image
+            width={100}
+            height={100}
+            src={"/assets/images/some-dental-logo.png"}
+            alt={"dental-logo-img"}
+            onClick={() => {
+              handleRoute("/");
+            }}
+          />
+        </div>
         <div className={styles.buttons}>
+          <Image width={50} height={50} src={"/assets/images/Phone.png"} alt={"phone-img"} />
+          <span>+389-78688551</span>
           <ButtonComp name={"Закажи термин"} handleClick={togglePopUp} />
         </div>
         {popUp && <BookApointment handleModal={togglePopUp} />}
