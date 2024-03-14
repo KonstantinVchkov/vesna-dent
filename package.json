@@ -22,7 +22,8 @@
     "react-countup": "^6.5.0",
     "react-dom": "^18",
     "react-icons": "^5.0.1",
-    "save": "^2.9.0"
+    "save": "^2.9.0",
+    "swiper": "^11.0.7"
   },
   "devDependencies": {
     "@types/node": "^20",
