@@ -37,6 +37,6 @@ a {
 }
 .swiper-wrapper {
   .swiper-slide {
-    @include flex-center;
+    @include flex-direction;
   }
 }
