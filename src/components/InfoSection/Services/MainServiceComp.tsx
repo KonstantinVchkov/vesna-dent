@@ -3,16 +3,19 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import styles from "./styles.module.scss";
 
-// Import Swiper styles
-import "swiper/css";
-
 // Import required modules
-import { Navigation, Pagination, Scrollbar, A11y, Mousewheel } from "swiper/modules";
+import {
+  Navigation,
+  Pagination,
+  Scrollbar,
+  A11y,
+  Mousewheel,
+} from "swiper/modules";
 
 type TMainService = {
   title: string[];
   id: number;
-  images?:string[];
+  images?: string[];
 };
 
 const MainServiceComp = ({ title, id }: TMainService) => {

@@ -11,9 +11,7 @@
   background-color: $background-color-irblue;
   text-align: center;
   overflow: hidden;
-  .swiper-slide{
-    @include flex-center;
-  }
+
   &.OfferService h2 {
     margin: 0 0 18px 0;
     font-family: "Bebas Neue", cursive;
@@ -22,7 +20,4 @@
     color: var(--title-color);
     transition: color 0.3s ease-out;
   }
-}
-.swiper-wrapper {
-  @include flex-center;
 }
