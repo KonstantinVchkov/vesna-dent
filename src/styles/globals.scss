@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Fjord+One&display=swap");
 @import "./variables.module";
-
+@import "./mixins.module";
 * {
   box-sizing: border-box;
   padding: 0;
@@ -33,5 +33,10 @@ a {
   .carousel-item {
     position: relative;
     background: rgb(128, 126, 126);
+  }
+}
+.swiper-wrapper {
+  .swiper-slide {
+    @include flex-direction;
   }
 }

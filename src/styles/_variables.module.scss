@@ -10,24 +10,30 @@ $line-height-base: 1.5;
 $font-size-big: 2.9rem;
 $font-weight-normal: 400;
 $font-weight-bold: 700;
+$font-weight-bolder:900;
 $gutter-base: rem-calc(30);
 $button-radius: 10px;
+$transition-duration: 0.8s;
 
 // Color settings
 $text-color-base: #002629;
+$text-color-dark-green: #006167;
 $text-color-light: #151715;
 $text-color-primary: #f0f0f0;
 $text-color-secondary: rgba(0, 188, 213, 0.9);
-$text-color-hover: #fabf00;
+$line-color: #003634;
+
+// background color settings
 $background-color-fill: #e5f7f7;
 $background-color-rectangle: #00807a;
 $background-color-irblue: #7fdbd7;
 $background-color-undercards: #00807a08;
-
-$line-color: #003634;
-$card-fill: #e5fbfb; 
+$card-fill: #e5fbfb;
 $card-icon-green1: #004946;
 $card-icon-green2: #014240;
 $card-icon-green3: #0f4d4b;
+// hover settings
+$text-color-hover: #fabf00;
 $background-color-hover: #00a49d;
-$transition-duration: 0.8s;
+
+
