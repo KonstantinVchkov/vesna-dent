@@ -1,0 +1,36 @@
+@import "../../../styles/variables.module";
+@import "../../../styles/mixins.module";
+.ReviewContainer {
+  height: 900px;
+  @include flex-direction;
+  color: $text-color-base;
+
+  .ReviewCards {
+    background-color: $background-color-undercards;
+    @include flex-wrap;
+    height: 600px;
+    margin: 20px 0px;
+    padding: 20px;
+    .ClientCardContainer {
+      flex-basis: 40%;
+      @include flex-center;
+      .line{
+        width: 10px;
+        background-color: $line-color;
+        height: 200px;
+        margin-right: 10px;
+      }
+      .ClientImg {
+        margin-right: 10px;
+        img {
+          border-radius: 50%;
+        }
+      }
+      .ClientReview{
+        p{
+            color: $text-color-light;
+        }
+      }
+    }
+  }
+}
