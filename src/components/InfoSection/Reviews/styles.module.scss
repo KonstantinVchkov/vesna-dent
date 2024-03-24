@@ -14,7 +14,7 @@
     .ClientCardContainer {
       flex-basis: 40%;
       @include flex-center;
-      .line{
+      .line {
         width: 10px;
         background-color: $line-color;
         height: 200px;
@@ -24,11 +24,12 @@
         margin-right: 10px;
         img {
           border-radius: 50%;
+          object-fit: cover;
         }
       }
-      .ClientReview{
-        p{
-            color: $text-color-light;
+      .ClientReview {
+        p {
+          color: $text-color-light;
         }
       }
     }
