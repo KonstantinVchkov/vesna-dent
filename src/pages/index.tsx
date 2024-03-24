@@ -4,6 +4,7 @@ import {
   AboutUs,
   MainText,
   ServicesOffer,
+  ourClients,
   ourDentists,
   ourMilestones,
 } from "@/Data/ProjectData";
@@ -14,19 +15,23 @@ import Dentists from "@/components/InfoSection/OurDentists/Dentists";
 import CarouselSection from "@/components/Banner/Carousel";
 import About from "./about";
 import DentistsText from "@/components/InfoSection/OurDentists/DentistsText";
+import ReviewSection from "@/components/InfoSection/Reviews/ReviewSection";
 // import Home from '../styles/Home.module.scss'
 export type THome = {
   textScroll: typeof MainText;
   miles: typeof ourMilestones;
   dataDentists: typeof ourDentists;
   offers: typeof ServicesOffer;
+  ourClients:typeof ourClients
 };
 export default function Home({
   textScroll,
   miles,
   dataDentists,
   offers,
+  ourClients
 }: THome) {
+  console.log("clients: ", ourClients)
   const serviceTitle = offers.map((offer) => offer.title);
   return (
     <>
@@ -48,6 +53,7 @@ export default function Home({
         </div>
       </div>
       <MainServiceComp title={serviceTitle} id={0} />
+      <ReviewSection reviewcards={ourClients} />
       <div className={styles.Milestones}>
         {miles.map((mileItem) => (
           <Milestones key={mileItem.id} {...mileItem} />
@@ -58,12 +64,14 @@ export default function Home({
 }
 
 export async function getStaticProps() {
+  console.log("this are the clients: ", ourClients)
   return {
     props: {
       textScroll: MainText,
       miles: ourMilestones,
       dataDentists: ourDentists,
       offers: ServicesOffer,
+      ourClients: ourClients
     },
   };
 }
