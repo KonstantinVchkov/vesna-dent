@@ -3,14 +3,14 @@ import styles from "./styles.module.scss"
 import { handleRoute } from "@/utils/routing";
 type Tdentists = {
   title: string;
-  paragraph: string;
+  smallParagraph: string;
 };
-const DentistsText = ({ title, paragraph }: Tdentists) => {
+const DentistsText = ({ title, smallParagraph }: Tdentists) => {
   return (
     <div>
       <div className={styles.MainText}>
         <h1>{title}</h1>
-        <p>{paragraph}</p>
+        <p>{smallParagraph}</p>
         <span className={styles.btn} onClick={() => handleRoute("/about")}>Види Повеќе</span>
       </div>
     </div>

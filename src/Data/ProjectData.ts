@@ -39,6 +39,8 @@ export const AboutUs = {
     "https://images.unsplash.com/photo-1609840114035-3c981b782dfe?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     "https://images.unsplash.com/photo-1578689001884-55c21e109439?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
   ],
+  smallParagraph:
+    "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veritatis numquam beatae autem quaerat explicabo sapiente sed repudiandae officiisLorem ipsum, dolor sit amet consectetur adipisicing elit. Veritatis numquam beatae autem quaerat explicabo sapiente sed repudiandae officiis",
   faqTitle: "Најчесто поставувани прашања?",
   QuestionsAndAnswers: [
     {
@@ -176,6 +178,33 @@ export const ourDentists = [
     facebook: "https://www.facebook.com/bojana.milenkovska",
     instagram: "https://www.instagram.com/_bojanam13/",
     bio: "  Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae cumque doloribus iusto et quia, commodi harum modi, optio voluptates libero, sint reiciendis exercitationem illo autem quo iste dolorum ab porro impedit incidunt natus explicabo architecto. Blanditiis quae distinctio magni, quos laudantium aperiam nisi esse provident dolor vitae debitis ipsa quidem necessitatibus nihil eos laborum eligendi, veritatis dolorum numquam voluptatum, voluptatem quas molestias earum natus! Inventore quibusdam voluptatibus, architecto omnis consectetur laborum nobis modi consequatur saepe voluptas ad soluta eveniet odio doloremque vel maiores rerum. Dignissimos suscipit doloribus, alias itaque provident aliquid adipisci minima, eius id laborum voluptatem esse facilis nobis voluptate? Laborum rem sunt assumenda ipsum quas modi commodi, aspernatur voluptates dolores vero maiores? Molestiae eveniet laborum, voluptate ducimus necessitatibus reprehenderit molestias cum doloremque debitis optio quisquam adipisci aut maxime! Optio, at possimus facilis iste nisi veniam sint quia molestiae eum accusantium sequi aliquam laudantium dolorem aperiam fugiat quam vero rem, hic minima, ipsam autem iure quibusdam non. Quasi laborum pariatur id soluta nostrum ipsum delectus rem repellendus natus blanditiis alias ullam ut eveniet quae, accusamus nesciunt praesentium nobis voluptatem! Aut, sunt quasi quas corrupti quo consequatur est praesentium cumque numquam doloremque porro sapiente deleniti? Vitae aliquid libero labore itaque quis, nemo animi, in quidem, voluptas facilis quae ullam minus. Minima, provident. Et error asperiores, facere est vitae tempore rem exercitationem eveniet aperiam at accusantium voluptatum in optio autem? Natus illo, velit exercitationem adipisci harum quo distinctio, asperiores accusamus ex fugiat neque nesciunt nostrum. Beatae ut perferendis voluptas! Ea, aperiam alias, voluptates laboriosam a corporis inventore molestias iusto optio repellat, explicabo commodi dolorum. Quam, similique labore. Natus dolorem nulla maxime labore? Laudantium doloremque facilis voluptatum aperiam a molestiae error? Necessitatibus, non ullam dignissimos vitae, odio tenetur dolorem repellat porro maxime in incidunt adipisci itaque, atque sit! Modi libero reprehenderit maxime.",
+  },
+];
+
+export const ourClients = [
+  {
+    id: 1,
+    img: "https://images.unsplash.com/photo-1544005313-94ddf0286df2?q=80&w=1976&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    name: "Софија Брзикова",
+    text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae cumque doloribus iusto et quia, commodi harum modi, optio voluptates libero, sint reiciendis exercitationem illo autem quo iste dolorum ab porro impedit incidunt natus explicabo architecto.",
+  },
+  {
+    id: 2,
+    img: "https://images.unsplash.com/photo-1552058544-f2b08422138a?q=80&w=1998&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    name: "Васил Шуткарев",
+    text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae cumque doloribus iusto et quia, commodi harum modi, optio voluptates libero, sint reiciendis exercitationem illo autem quo iste dolorum ab porro impedit incidunt natus explicabo architecto.",
+  },
+  {
+    id: 3,
+    img: "https://images.unsplash.com/photo-1599566150163-29194dcaad36?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    name: "Адријан Лубеков",
+    text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae cumque doloribus iusto et quia, commodi harum modi, optio voluptates libero, sint reiciendis exercitationem illo autem quo iste dolorum ab porro impedit incidunt natus explicabo architecto.",
+  },
+  {
+    id: 4,
+    img: "https://images.unsplash.com/photo-1499952127939-9bbf5af6c51c?q=80&w=2076&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    name: "Елена Зузелова",
+    text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae cumque doloribus iusto et quia, commodi harum modi, optio voluptates libero, sint reiciendis exercitationem illo autem quo iste dolorum ab porro impedit incidunt natus explicabo architecto.",
   },
 ];
 
