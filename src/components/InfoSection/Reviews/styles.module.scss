@@ -4,7 +4,7 @@
   height: 900px;
   @include flex-direction;
   color: $text-color-base;
-
+  font-family: $font-family-base;
   .ReviewCards {
     background-color: $background-color-undercards;
     @include flex-wrap;

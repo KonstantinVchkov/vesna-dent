@@ -4,7 +4,7 @@ import LocationMap from "../InfoSection/Location/LocationMap";
 const FooterSection = () => {
   return (
     <div className={styles.FooterMain}>
-      {/* <h3></h3> */}
+
       <div className={styles.imgParagraph}>
         <img src="/assets/images/some-dental-logo.png" alt="logo-img" />
       </div>
