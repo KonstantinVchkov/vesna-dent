@@ -22,16 +22,15 @@ export type THome = {
   miles: typeof ourMilestones;
   dataDentists: typeof ourDentists;
   offers: typeof ServicesOffer;
-  ourClients:typeof ourClients
+  ourClients: typeof ourClients;
 };
 export default function Home({
   textScroll,
   miles,
   dataDentists,
   offers,
-  ourClients
+  ourClients,
 }: THome) {
-  console.log("clients: ", ourClients)
   const serviceTitle = offers.map((offer) => offer.title);
   return (
     <>
@@ -49,7 +48,7 @@ export default function Home({
           ))}
         </div>
         <div className={styles.textSection}>
-          <DentistsText {...AboutUs}/>
+          <DentistsText {...AboutUs} />
         </div>
       </div>
       <MainServiceComp title={serviceTitle} id={0} />
@@ -64,14 +63,13 @@ export default function Home({
 }
 
 export async function getStaticProps() {
-  console.log("this are the clients: ", ourClients)
   return {
     props: {
       textScroll: MainText,
       miles: ourMilestones,
       dataDentists: ourDentists,
       offers: ServicesOffer,
-      ourClients: ourClients
+      ourClients: ourClients,
     },
   };
 }
