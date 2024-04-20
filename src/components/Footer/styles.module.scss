@@ -22,8 +22,10 @@
   }
   ul {
     margin: 15px 10px;
-    li {
-      list-style-type: disc;
+  }
+  .SocialMedia{
+    ul{
+      display: flex;
     }
   }
 }
