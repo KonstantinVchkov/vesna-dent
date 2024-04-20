@@ -18,9 +18,11 @@ h2,
 h3,
 h4,
 ul,
-li {
+li,
+a {
+  text-decoration: none !important;
   margin-top: 0px;
-  list-style-type: none;
+  list-style-type: none !important;
 }
 a {
   color: $text-color-primary !important;
