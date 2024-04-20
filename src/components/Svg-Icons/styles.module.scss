@@ -1,0 +1,8 @@
+@import "../../styles/variables.module";
+
+.svgStyles {
+    cursor: pointer;
+    &:hover path {
+        fill: $text-color-hover; 
+    }
+}
