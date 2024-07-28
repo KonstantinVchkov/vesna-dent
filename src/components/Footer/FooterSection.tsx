@@ -15,7 +15,7 @@ const FooterSection = () => {
       <div className={` ${styles.Center} ${styles.YetAnotherClass}`}>
         {" "}
         <div className={`${styles.InfoSection} ${styles.Center} `}>
-          <div className={styles.Adress}>
+          <div className={`${styles.Address}${styles.CenterVertical}`}>
             <h2>Инфо</h2>
             <ul>
               <li>lorem ipsum</li>
@@ -28,7 +28,7 @@ const FooterSection = () => {
             </ul>
           </div>
 
-          <div className={styles.Navigation}>
+          <div className={`${styles.Navigation} ${styles.CenterVertical}`}>
             <h2>Навигација</h2>
             <ul>
               <Link href={"/about"}>
@@ -42,7 +42,7 @@ const FooterSection = () => {
               </Link>
             </ul>
           </div>
-          <div className={styles.SocialMedia}>
+          <div className={`${styles.SocialMedia} ${styles.CenterVertical}`}>
             <h2 className={styles.Underline}>Социјални медиуми</h2>
             <ul>
               <li>
