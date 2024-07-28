@@ -20,6 +20,11 @@
     justify-content: space-around;
     align-items: center;
   }
+  .InfoSection div {
+    width: 33.333333%;
+    text-align: left;
+  }
+
   ul {
     margin: 15px 10px;
   }
@@ -29,8 +34,13 @@
     }
   }
 }
+.Adress h2 {
+  margin-left: 15px;
+}
 .Center {
   display: flex;
   justify-content: space-between;
-  text-align: center;
+}
+.Underline {
+  text-decoration-line: underline;
 }

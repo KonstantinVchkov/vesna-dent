@@ -16,7 +16,7 @@ const FooterSection = () => {
         {" "}
         <div className={`${styles.InfoSection} ${styles.Center} `}>
           <div className={styles.Adress}>
-            <span>Инфо</span>
+            <h2>Инфо</h2>
             <ul>
               <li>lorem ipsum</li>
               <li>000/000/000</li>
@@ -29,7 +29,7 @@ const FooterSection = () => {
           </div>
 
           <div className={styles.Navigation}>
-            <span>Навигација</span>
+            <h2>Навигација</h2>
             <ul>
               <Link href={"/about"}>
                 <li>За Нас</li>
@@ -43,7 +43,7 @@ const FooterSection = () => {
             </ul>
           </div>
           <div className={styles.SocialMedia}>
-            <span>Социјални медиуми</span>
+            <h2 className={styles.Underline}>Социјални медиуми</h2>
             <ul>
               <li>
                 {" "}
