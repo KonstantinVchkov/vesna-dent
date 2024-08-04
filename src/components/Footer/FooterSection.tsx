@@ -15,8 +15,10 @@ const FooterSection = () => {
       <div className={` ${styles.Center} ${styles.YetAnotherClass}`}>
         {" "}
         <div className={`${styles.InfoSection} ${styles.Center} `}>
-          <div className={`${styles.Address}${styles.CenterVertical}`}>
+          <div className={`${styles.Address} ${styles.CenterVertical}`}>
             <h2>Инфо</h2>
+            <hr className={`${styles.Underline} `} />
+
             <ul>
               <li>lorem ipsum</li>
               <li>000/000/000</li>
@@ -29,7 +31,9 @@ const FooterSection = () => {
           </div>
 
           <div className={`${styles.Navigation} ${styles.CenterVertical}`}>
-            <h2 className={`${styles.Underline}`}>Навигација</h2>
+            <h2>Навигација</h2>
+            <hr className={`${styles.Underline} `} />
+
             <ul>
               <Link href={"/about"}>
                 <li>За Нас</li>
@@ -43,7 +47,8 @@ const FooterSection = () => {
             </ul>
           </div>
           <div className={`${styles.SocialMedia} ${styles.CenterVertical}`}>
-            <h2 className={styles.Underline}>Социјални медиуми</h2>
+            <h2>Социјални медиуми</h2>
+            <hr className={`${styles.Underline} `} />
             <ul>
               <li>
                 {" "}

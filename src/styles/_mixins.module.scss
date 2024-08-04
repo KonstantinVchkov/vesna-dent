@@ -3,6 +3,40 @@
     @content;
   }
 }
+$breakpoints: (
+  "phone-small": 320px,
+  "phone": 480px,
+  "tablet": 768px,
+  "laptop": 1024px,
+  "desktop": 1280px,
+  "desktop-large": 1440px,
+);
+
+@mixin respond-to($breakpoint) {
+  @media (max-width: map-get($breakpoints, $breakpoint)) {
+    @content;
+  }
+}
+@mixin for-all-devices($properties) {
+  @include respond-to("phone-small") {
+    @content;
+  }
+  @include respond-to("phone") {
+    @content;
+  }
+  @include respond-to("tablet") {
+    @content;
+  }
+  @include respond-to("laptop") {
+    @content;
+  }
+  @include respond-to("desktop") {
+    @content;
+  }
+  @include respond-to("desktop-large") {
+    @content;
+  }
+}
 @mixin flex-center {
   display: flex;
   justify-content: space-between;
@@ -24,7 +58,6 @@
 @mixin wrap {
   width: 80%;
   margin: 10px auto;
-
 }
 
 @mixin laptop-m-styles {
@@ -44,9 +77,7 @@
 
 // border: 1px solid #000000;
 
-
 /* Vector */
-
 
 // position: absolute;
 // left: 0%;
@@ -57,6 +88,3 @@
 // background: #006167;
 // border: 1px solid #000000;
 // box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-
-
-
