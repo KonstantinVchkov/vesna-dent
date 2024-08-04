@@ -25,10 +25,17 @@
     max-height: 100%;
     text-align: left;
   }
-
+  .Address,
+  .Navigation,
+  .SocialMedia {
+    display: flex;
+    height: 100%;
+    justify-content: flex-start;
+  }
   .SocialMedia {
     ul {
       display: flex;
+      padding: 5px;
     }
   }
 }
@@ -45,9 +52,4 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-}
-.CenterVertical {
-  display: flex;
-  justify-content: space-evenly;
-  padding: 0;
 }

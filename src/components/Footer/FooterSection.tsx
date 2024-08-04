@@ -29,7 +29,7 @@ const FooterSection = () => {
           </div>
 
           <div className={`${styles.Navigation} ${styles.CenterVertical}`}>
-            <h2>Навигација</h2>
+            <h2 className={`${styles.Underline}`}>Навигација</h2>
             <ul>
               <Link href={"/about"}>
                 <li>За Нас</li>
