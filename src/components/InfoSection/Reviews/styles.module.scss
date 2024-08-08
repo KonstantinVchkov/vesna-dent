@@ -1,18 +1,27 @@
 @import "../../../styles/variables.module";
 @import "../../../styles/mixins.module";
 .ReviewContainer {
-  height: 900px;
-  @include flex-direction;
+  height: auto;
+  text-align: center;
   color: $text-color-base;
   font-family: $font-family-base;
+  @include respond-to("tablet") {
+    font-size: 15px;
+  }
+
   .ReviewCards {
     background-color: $background-color-undercards;
     @include flex-wrap;
-    height: 600px;
     margin: 20px 0px;
     padding: 20px;
+    @include respond-to("phone") {
+      flex-basis: 100%;
+    }
     .ClientCardContainer {
-      flex-basis: 40%;
+      flex-basis: 50%;
+      @include respond-to("phone") {
+        flex-basis: 100%;
+      }
       @include flex-center;
       .line {
         width: 10px;
