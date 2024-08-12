@@ -3,8 +3,15 @@
 .container {
   @include flex-center;
   height: 80vw;
+  @include respond-to("tablet") {
+    display: flex;
+    justify-content: center;
+  }
 }
 .MainImagesContainer {
+  @include respond-to("tablet") {
+    display: none;
+  }
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
@@ -20,7 +27,7 @@
 .Milestones {
   background-color: $background-color-irblue;
 
- @include flex-center;
+  @include flex-center;
   padding: 10px;
   color: $text-color-primary;
   font-weight: $font-weight-bold;
