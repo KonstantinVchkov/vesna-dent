@@ -2,7 +2,7 @@
 @import "../../../styles/mixins.module";
 .ReviewContainer {
   height: auto;
-  text-align: center;
+
   color: $text-color-base;
   font-family: $font-family-base;
   @include respond-to("tablet") {

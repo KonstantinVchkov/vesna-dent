@@ -1,11 +1,11 @@
 @import "../../../styles/variables.module";
 @import "../../../styles/mixins.module";
 .MainText {
-  // max-width: 400px; 
+  // max-width: 400px;
   // margin: 0px auto;
   @include flex-direction;
   width: 500px;
-  padding: 40px; 
+  padding: 40px;
   border-radius: 10px;
   font-family: $font-family-base;
   .btn {
@@ -25,13 +25,15 @@
 }
 
 .card {
-
-  width: 431.84px; 
+  @include respond-to("tablet") {
+    display: none;
+  }
+  width: 431.84px;
   border-radius: $button-radius;
   transition: background $transition-duration;
   position: relative;
   overflow: hidden;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -68,12 +70,9 @@
   }
 
   &:hover {
-    background: darken(
-      $background-color-undercards,
-      5%
-    ); 
+    background: darken($background-color-undercards, 5%);
     img {
-      transform: scale(1.1); 
+      transform: scale(1.1);
     }
 
     .icons {
