@@ -32,6 +32,9 @@
   @include respond-to("tablet") {
     display: none;
   }
+  @include respond-to("laptop") {
+    width: 301px;
+  }
   width: 431.84px;
   border-radius: $button-radius;
   transition: background $transition-duration;
@@ -48,11 +51,17 @@
     top: 100px;
     z-index: 1;
     left: 430px;
+    @include respond-to("laptop") {
+      left: 230px;
+    }
   }
   &.card2 {
     position: absolute;
     z-index: 10000;
     bottom: 400px;
+    @include respond-to("laptop") {
+      bottom: 330px;
+    }
   }
   &.card3 {
     position: absolute;
@@ -66,6 +75,7 @@
   }
   .border {
     height: 369px;
+
     width: 100%;
     background: transparent;
     border-radius: $text-color-secondary;

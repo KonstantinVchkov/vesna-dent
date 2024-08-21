@@ -12,6 +12,9 @@
   @include respond-to("tablet") {
     display: none;
   }
+  @include respond-to("laptop") {
+    width: 601px;
+  }
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
