@@ -8,28 +8,30 @@ const ContactUs = () => {
   const togglePopUp = () => setPopUp(!popUp);
 
   return (
-    <div className={styles.center}>
-      <div className={styles.leftDiv}>
-        <h2>Vesna Dent</h2>
-        <p>Lorem ipsum dolor sit amet consectetur. </p>
-        <p>000/000-000</p>
-        <p>
-          Mon - Thur - 8 AM to 4 PM Friday: 8am - 2pm by appointment only
-          Saturday & Sundays: Closed
-        </p>
-      </div>
-      <div className={styles.rightDiv}>
-        <h2>Zakazi Termin</h2>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex nesciunt,
-          itaque ipsam in ratione necessitatibus? Quas sapiente delectus modi
-          error.
-        </p>
+    <>
+      <div className={styles.center}>
+        <div className={styles.leftDiv}>
+          <h2>Vesna Dent</h2>
+          <p>Lorem ipsum dolor sit amet consectetur. </p>
+          <p>000/000-000</p>
+          <p>
+            Mon - Thur - 8 AM to 4 PM Friday: 8am - 2pm by appointment only
+            Saturday & Sundays: Closed
+          </p>
+        </div>
+        <div className={styles.rightDiv}>
+          <h2>Zakazi Termin</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex
+            nesciunt, itaque ipsam in ratione necessitatibus? Quas sapiente
+            delectus modi error.
+          </p>
 
-        <ButtonComp name={"Закажи термин"} handleClick={togglePopUp} />
+          <ButtonComp name={"Закажи термин"} handleClick={togglePopUp} />
+        </div>{" "}
       </div>{" "}
       {popUp && <BookApointment handleModal={togglePopUp} />}
-    </div>
+    </>
   );
 };
 
