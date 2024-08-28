@@ -6,6 +6,7 @@ import type { AppProps } from "next/app";
 import { useEffect, useState } from "react";
 import ToothAnimation from "../../public/assets/animation/Tooth-Animation.json";
 import dynamic from "next/dynamic";
+import ContactUs from "../components/InfoSection/Contact/ContactUs";
 
 const LottieAnimation = dynamic(
   () => import("../components/LottieAnimation/Animation"),
@@ -29,6 +30,7 @@ export default function App({ Component, pageProps }: AppProps) {
         <>
           <NavBar />
           <Component {...pageProps} />
+          <ContactUs />
           <FooterSection />
         </>
       )}
