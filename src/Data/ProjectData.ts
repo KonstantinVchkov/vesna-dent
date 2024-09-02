@@ -71,9 +71,9 @@ export const AboutUs = {
 };
 
 export const Services = {
-  serviceOne: "",
-  serviceTwo: "",
-  serviceThree: "",
+  serviceOne: "Lorem ipsum dolor sit amet consectetur.1",
+  serviceTwo: "Lorem ipsum dolor sit amet consectetur.2",
+  serviceThree: "Lorem ipsum dolor sit amet consectetur.3",
 };
 export const OurWork = {
   id: 1,
@@ -231,5 +231,42 @@ export const infoVesnaDent = [
     Phone: "000/000-000",
     WorkHours:
       "Mon - Thur - 8 AM to 4 PM Friday: 8am - 2pm (by appointment only) Saturday & Sundays: Closed",
+  },
+];
+export const Offers = [
+  {
+    id: 1,
+    icon: "🦷",
+    title: "Introduction to Dentistry",
+    paragraph:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+  },
+  {
+    id: 2,
+    icon: "❤️",
+    title: "Basics of Cardiology",
+    paragraph:
+      "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+  },
+  {
+    id: 3,
+    icon: "🧠",
+    title: "Understanding Neurology",
+    paragraph:
+      "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+  },
+  {
+    id: 4,
+    icon: "🤲",
+    title: "Exploring Dermatology",
+    paragraph:
+      "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+  },
+  {
+    id: 5,
+    icon: "👶",
+    title: "Introduction to Pediatrics",
+    paragraph:
+      "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.",
   },
 ];

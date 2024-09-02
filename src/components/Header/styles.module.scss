@@ -1,5 +1,5 @@
 @import "../../styles/variables.module";
-@import "../../styles/mixins.module"; // assuming mixins are stored here
+@import "../../styles/mixins.module";
 
 .Header {
   @include flex-center;
@@ -26,7 +26,7 @@
   .buttons {
     display: flex;
     align-items: center;
-  
+
     @include laptop-m-styles {
       display: none;
     }
@@ -40,14 +40,14 @@
         margin-right: 0;
       }
     }
-    &.buttons span{
+    &.buttons span {
       margin-right: 10px;
       cursor: pointer;
-      &:hover{
+      &:hover {
         color: $text-color-hover;
       }
     }
-    li:hover{
+    li:hover {
       color: $text-color-hover;
     }
   }

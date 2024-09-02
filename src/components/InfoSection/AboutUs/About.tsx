@@ -33,8 +33,6 @@ export type TAbout = {
 };
 
 const About = ({ smallParagraph, secondTitle, dentists }: TAbout) => {
-  console.log("Dentists:", dentists);
-
   const animationDuration = 5;
   return (
     <>
