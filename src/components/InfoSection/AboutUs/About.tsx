@@ -45,13 +45,15 @@ const About = ({ smallParagraph, secondTitle }: TAbout) => {
           <p>{smallParagraph}</p>
         </div>
         <div>
-          <h1>Nasiot tim</h1>
+          <h1>Nasiot tim</h1>{" "}
           {ourDentists.map((dentist) => (
             <div key={dentist.id} className={styles.dentists}>
-              <img
-                src={dentist.images[0]}
-                alt={`${dentist.name} ${dentist.surname}`}
-              />{" "}
+              <div className={styles.background}>
+                <img
+                  src={dentist.images[0]}
+                  alt={`${dentist.name} ${dentist.surname}`}
+                />{" "}
+              </div>
               <div className={styles.dent}>
                 {" "}
                 <h2>
