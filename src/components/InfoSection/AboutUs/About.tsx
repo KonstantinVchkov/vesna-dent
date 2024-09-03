@@ -32,55 +32,59 @@ export type TAbout = {
   dentists: TDentists[];
 };
 
-const About = ({ smallParagraph, secondTitle, dentists }: TAbout) => {
+const About = ({ smallParagraph, secondTitle }: TAbout) => {
   const animationDuration = 5;
   return (
     <>
       <div className={styles.AboutComp}>
         <div className={styles.FirstSection}></div>
-        <div>
+        <div className={styles.FirstPart}>
           {" "}
           <h1>{secondTitle}</h1>
-          <p>Vesna Dent</p>
+          <h3>Vesna Dent</h3>
           <p>{smallParagraph}</p>
         </div>
         <div>
+          <h1>Nasiot tim</h1>
           {ourDentists.map((dentist) => (
-            <div key={dentist.id}>
-              <h2>
-                {dentist.name} {dentist.surname}
-              </h2>
+            <div key={dentist.id} className={styles.dentists}>
               <img
                 src={dentist.images[0]}
                 alt={`${dentist.name} ${dentist.surname}`}
-              />
-              <div>
-                <p>{dentist.bio}</p>
-                <a
-                  href={dentist.facebook}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <Facebook />
-                </a>
-                {dentist.instagram && (
+              />{" "}
+              <div className={styles.dent}>
+                {" "}
+                <h2>
+                  {dentist.name} {dentist.surname}
+                </h2>
+                <div>
+                  <p>{dentist.bio}</p>
                   <a
-                    href={dentist.instagram}
+                    href={dentist.facebook}
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    <Instagram />
+                    <Facebook />
                   </a>
-                )}
-                {dentist.linkedin && (
-                  <a
-                    href={dentist.linkedin}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <Linkedin />
-                  </a>
-                )}
+                  {dentist.instagram && (
+                    <a
+                      href={dentist.instagram}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <Instagram />
+                    </a>
+                  )}
+                  {dentist.linkedin && (
+                    <a
+                      href={dentist.linkedin}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <Linkedin />
+                    </a>
+                  )}
+                </div>
               </div>
             </div>
           ))}
