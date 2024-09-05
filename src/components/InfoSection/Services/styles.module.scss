@@ -6,6 +6,15 @@
   font-size: $font-size-small;
   font-weight: $font-weight-bold;
 }
+.FirstPart {
+  margin: auto;
+  width: 600px;
+  text-align: left;
+  padding: 40px 0;
+  h1 {
+    text-align: center;
+  }
+}
 .OfferService {
   display: flex;
   align-items: center;
@@ -65,7 +74,8 @@
 .offers {
   flex-basis: 30%;
   background-color: $card-fill;
-  height: 200px;
+  width: 546px;
+  height: 315px;
   border: 1px solid $background-color-rectangle;
 }
 .color {

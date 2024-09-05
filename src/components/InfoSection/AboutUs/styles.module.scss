@@ -20,6 +20,12 @@
     h1 {
       text-align: center;
     }
+    @include respond-to("tablet") {
+      width: 400px;
+    }
+    @include respond-to("phone") {
+      width: 300px;
+    }
   }
   .SecondSection {
     @include flex-direction;
@@ -59,12 +65,22 @@
   position: relative;
   width: 850px;
   height: 350px;
+  @include respond-to("tablet") {
+    background-color: transparent;
+    padding: 0;
+    margin: auto;
+    width: 350px;
+    height: 350px;
+    flex-direction: column;
+  }
 }
 .dentists {
   display: flex;
   text-align: left;
   padding: 20px 0;
-
+  @include respond-to("tablet") {
+    flex-direction: column;
+  }
   img {
     position: absolute;
     width: 350px;
@@ -72,11 +88,13 @@
     z-index: 1111;
   }
 
-  p,
-  h2,
-  a {
+  .bio,
+  h2 {
     padding: 20px 0;
-    margin: 0 20px;
+    margin: 0 150px;
+    @include respond-to("tablet") {
+      margin: 0;
+    }
   }
 }
 .dentists:nth-child(3) {
@@ -84,9 +102,15 @@
   img {
     right: 0;
   }
+  @include respond-to("tablet") {
+    flex-direction: column;
+  }
 }
 .dent {
   flex-direction: column;
+  @include respond-to("tablet") {
+    text-align: center;
+  }
 }
 @include desktop {
   .AboutComp {

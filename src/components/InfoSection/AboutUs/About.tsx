@@ -59,7 +59,7 @@ const About = ({ smallParagraph, secondTitle }: TAbout) => {
                 <h2>
                   {dentist.name} {dentist.surname}
                 </h2>
-                <div>
+                <div className={styles.bio}>
                   <p>{dentist.bio}</p>
                   <a
                     href={dentist.facebook}

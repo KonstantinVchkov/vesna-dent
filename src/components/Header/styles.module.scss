@@ -14,10 +14,10 @@
   left: 0;
   right: 0;
   margin: 10px auto;
-  background: none;
+  background: $background-color-fill;
   padding: 10px 0;
   font-size: 25px;
-  color: $text-color-primary;
+  color: $text-color-light;
 
   .listMenu ul {
     @include flex-center;
