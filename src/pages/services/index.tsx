@@ -32,7 +32,7 @@ const ServicesPage = ({ services, offers, about }: TServicesPage) => {
       <div className={styles.center}>
         {offers.map((offer) => (
           <div key={offer.id} className={styles.offers}>
-            <Link href={`/details/${offer.id}`}>
+            <Link href={`/services/${offer.id}`}>
               <div className={styles.color}>
                 <p>{offer.icon}</p>
                 <h2>{offer.title}</h2>
