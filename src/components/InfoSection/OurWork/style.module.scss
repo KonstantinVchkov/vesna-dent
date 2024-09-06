@@ -1,0 +1,27 @@
+@import "../../../styles/variables.module";
+@import "../../../styles/mixins.module";
+.MainText {
+  color: $text-color-base;
+  text-align: center;
+  font-size: $font-size-small;
+  font-weight: $font-weight-bold;
+}
+.FirstPart {
+  margin: auto;
+  width: 600px;
+  text-align: left;
+  padding: 40px 0;
+  h1 {
+    text-align: center;
+  }
+  .section {
+    padding: 40px 0;
+  }
+}
+.section:nth-child(odd):not(:first-child) {
+  transform: translateX(-150px);
+}
+
+.section:nth-child(even):not(:first-child) {
+  transform: translateX(150px);
+}

@@ -1,7 +1,7 @@
 import { OurWork, Work } from "@/Data/ProjectData";
 import CarouselSection from "@/components/Banner/Carousel";
 import React from "react";
-
+import styles from "../../components/InfoSection/OurWork/style.module.scss";
 export type WorkItem = {
   id: number;
   title: string;
@@ -17,9 +17,9 @@ const OurWorkPage = ({ workData, Work }: TworkPage) => {
     <div>
       {" "}
       <CarouselSection Slide={workData.slides} />{" "}
-      <div>
+      <div className={styles.FirstPart}>
         {Work.map((workItem) => (
-          <div key={workItem.id}>
+          <div key={workItem.id} className={styles.section}>
             {" "}
             <h1>{workItem.title}</h1>
             <p>{workItem.paragraph}</p>
