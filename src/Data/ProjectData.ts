@@ -271,6 +271,43 @@ export const Offers = [
     title: "Introduction to Dentistry",
     paragraph:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    paragraphs: [
+      {
+        id: 1,
+        title: "Foundations of Dentistry",
+        text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+      },
+      {
+        id: 2,
+        title: "Importance of Oral Care",
+        text: "Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      },
+      {
+        id: 3,
+        title: "Patient Care Protocols",
+        text: "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.",
+      },
+      {
+        id: 4,
+        title: "Dealing with Dental Pain",
+        text: "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+      },
+      {
+        id: 5,
+        title: "Ethics in Dentistry",
+        text: "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+      },
+      {
+        id: 6,
+        title: "Innovations in Dental Care",
+        text: "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.",
+      },
+      {
+        id: 7,
+        title: "Future of Oral Health",
+        text: "Totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.",
+      },
+    ],
   },
   {
     id: 2,
@@ -278,6 +315,43 @@ export const Offers = [
     title: "Basics of Cardiology",
     paragraph:
       "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+    paragraphs: [
+      {
+        id: 8,
+        title: "Heart Health Essentials",
+        text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+      },
+      {
+        id: 9,
+        title: "Cardiovascular System Overview",
+        text: "Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      },
+      {
+        id: 10,
+        title: "EKG Fundamentals",
+        text: "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.",
+      },
+      {
+        id: 11,
+        title: "Managing Blood Pressure",
+        text: "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+      },
+      {
+        id: 12,
+        title: "Cardiac Emergency Protocols",
+        text: "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+      },
+      {
+        id: 13,
+        title: "Preventive Cardiology",
+        text: "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.",
+      },
+      {
+        id: 14,
+        title: "Innovative Treatments in Cardiology",
+        text: "Totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.",
+      },
+    ],
   },
   {
     id: 3,
@@ -285,6 +359,43 @@ export const Offers = [
     title: "Understanding Neurology",
     paragraph:
       "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+    paragraphs: [
+      {
+        id: 15,
+        title: "Neurological Basics",
+        text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+      },
+      {
+        id: 16,
+        title: "Brain Function and Structure",
+        text: "Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      },
+      {
+        id: 17,
+        title: "Common Neurological Disorders",
+        text: "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.",
+      },
+      {
+        id: 18,
+        title: "Advanced Neurodiagnostics",
+        text: "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+      },
+      {
+        id: 19,
+        title: "Treatment Modalities in Neurology",
+        text: "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+      },
+      {
+        id: 20,
+        title: "Innovations in Neurological Treatments",
+        text: "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.",
+      },
+      {
+        id: 21,
+        title: "Future of Neurology",
+        text: "Totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.",
+      },
+    ],
   },
   {
     id: 4,
@@ -292,6 +403,43 @@ export const Offers = [
     title: "Exploring Dermatology",
     paragraph:
       "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+    paragraphs: [
+      {
+        id: 22,
+        title: "Skin Health Basics",
+        text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+      },
+      {
+        id: 23,
+        title: "Common Skin Conditions",
+        text: "Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      },
+      {
+        id: 24,
+        title: "Dermatological Treatments",
+        text: "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.",
+      },
+      {
+        id: 25,
+        title: "Cosmetic Dermatology",
+        text: "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+      },
+      {
+        id: 26,
+        title: "Skin Care Innovations",
+        text: "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+      },
+      {
+        id: 27,
+        title: "Preventive Skin Care",
+        text: "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.",
+      },
+      {
+        id: 28,
+        title: "Future of Dermatology",
+        text: "Totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.",
+      },
+    ],
   },
   {
     id: 5,
@@ -299,5 +447,42 @@ export const Offers = [
     title: "Introduction to Pediatrics",
     paragraph:
       "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.",
+    paragraphs: [
+      {
+        id: 29,
+        title: "Pediatric Care Basics",
+        text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+      },
+      {
+        id: 30,
+        title: "Child Growth and Development",
+        text: "Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      },
+      {
+        id: 31,
+        title: "Common Pediatric Illnesses",
+        text: "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.",
+      },
+      {
+        id: 32,
+        title: "Vaccinations and Preventive Care",
+        text: "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+      },
+      {
+        id: 33,
+        title: "Nutrition for Children",
+        text: "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+      },
+      {
+        id: 34,
+        title: "Pediatric Emergency Care",
+        text: "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.",
+      },
+      {
+        id: 35,
+        title: "Future Trends in Pediatrics",
+        text: "Totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.",
+      },
+    ],
   },
 ];

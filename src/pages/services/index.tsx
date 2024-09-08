@@ -1,8 +1,9 @@
-import { ServicesOffer, Offers, AboutUs } from "@/Data/ProjectData";
+import { ServicesOffer, Offers, AboutUs, OurWork } from "@/Data/ProjectData";
 import ServiceOfferCard from "@/components/InfoSection/Services/ServiceOffer";
 import React from "react";
 import styles from "../../components/InfoSection/Services/styles.module.scss";
 import Link from "next/link";
+import CarouselSection from "@/components/Banner/Carousel";
 
 interface Offer {
   id: number;
@@ -14,16 +15,17 @@ export type TServicesPage = {
   services: typeof ServicesOffer;
   offers: Offer[];
   about: typeof AboutUs;
+  workData: typeof OurWork;
 };
 
-const ServicesPage = ({ services, offers, about }: TServicesPage) => {
+const ServicesPage = ({ services, offers, about, workData }: TServicesPage) => {
   return (
     <div>
       <div className={styles.OfferService}>
         {services.map((service) => (
           <ServiceOfferCard key={service.id} {...service} />
         ))}
-      </div>
+      </div>{" "}
       <div className={styles.FirstPart}>
         <h1>{about.secondTitle}</h1>
         <p>Vesna Dent</p>
