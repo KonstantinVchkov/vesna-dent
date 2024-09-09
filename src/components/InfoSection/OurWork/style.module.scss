@@ -6,22 +6,48 @@
   font-size: $font-size-small;
   font-weight: $font-weight-bold;
 }
+.rectangles {
+  width: 100px;
+  height: 100px;
+  background-color: $background-color-rectangle;
+}
+.side {
+  display: grid;
+  grid-template-rows: repeat(6, 250px);
+  position: absolute;
+  top: 1000px;
+  bottom: 0;
+  align-content: space-around;
+}
+
+.left {
+  left: 0;
+}
+
+.right {
+  right: 0;
+}
 .FirstPart {
-  margin: auto;
-  width: 600px;
-  text-align: left;
   padding: 40px 0;
+  background-color: $background-color-fill;
+  width: 100%;
   h1 {
     text-align: center;
   }
   .section {
     padding: 40px 0;
   }
+
+  p {
+    margin: auto;
+    width: 600px;
+    text-align: left;
+  }
 }
 .section:nth-child(odd):not(:first-child) {
-  transform: translateX(-150px);
+  transform: translateX(-250px);
 }
 
 .section:nth-child(even):not(:first-child) {
-  transform: translateX(150px);
+  transform: translateX(250px);
 }

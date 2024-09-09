@@ -19,21 +19,39 @@ interface Props {
 }
 
 const DetailPage = ({ offer, workData }: Props) => {
+  const generateRandomWidth = () => {
+    return Math.floor(Math.random() * (170 - 100 + 1) + 100);
+  };
+
+  const leftRectangles = Array.from({ length: 4 }, (_, i) => (
+    <div
+      key={i}
+      className={styles.rectangles}
+      style={{ width: `${generateRandomWidth()}px` }}
+    ></div>
+  ));
+  const rightRectangles = Array.from({ length: 4 }, (_, i) => (
+    <div
+      key={i}
+      className={styles.rectangles}
+      style={{ width: `${generateRandomWidth()}px` }}
+    ></div>
+  ));
   return (
     <div>
+      <div className={styles.side + " " + styles.left}>{leftRectangles}</div>
       <CarouselSection Slide={workData.slides} />{" "}
       <div className={styles.FirstPart}>
-        <h1>Details for Offer ID: {offer.id}</h1>
-        <h2>{offer.title}</h2>
-        <p>{offer.paragraph}</p>
+        {" "}
         {offer.paragraphs &&
           offer.paragraphs.map((p) => (
             <div key={p.id} className={styles.section}>
-              <h3>{p.title}</h3>
+              <h1>{p.title}</h1>
               <p>{p.text}</p>
             </div>
           ))}{" "}
       </div>
+      <div className={styles.side + " " + styles.right}>{rightRectangles}</div>
     </div>
   );
 };
@@ -42,7 +60,7 @@ export const getStaticPaths: GetStaticPaths = async () => {
     params: { id: offer.id.toString() },
   }));
 
-  return { paths, fallback: false }; // can also be 'blocking' if you want SSR for new paths
+  return { paths, fallback: false };
 };
 export const getStaticProps: GetStaticProps<Props, { id: string }> = async (
   context

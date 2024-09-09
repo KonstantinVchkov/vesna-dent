@@ -12,20 +12,37 @@ export type TworkPage = {
   Work: WorkItem[];
 };
 const OurWorkPage = ({ workData, Work }: TworkPage) => {
-  console.log(workData, Work);
+  const generateRandomWidth = () => {
+    return Math.floor(Math.random() * (170 - 100 + 1) + 100);
+  };
+
+  const leftRectangles = Array.from({ length: 4 }, (_, i) => (
+    <div
+      key={i}
+      className={styles.rectangles}
+      style={{ width: `${generateRandomWidth()}px` }}
+    ></div>
+  ));
+  const rightRectangles = Array.from({ length: 4 }, (_, i) => (
+    <div
+      key={i}
+      className={styles.rectangles}
+      style={{ width: `${generateRandomWidth()}px` }}
+    ></div>
+  ));
   return (
     <div>
-      {" "}
-      <CarouselSection Slide={workData.slides} />{" "}
+      <div className={styles.side + " " + styles.left}>{leftRectangles}</div>
+      <CarouselSection Slide={workData.slides} />
       <div className={styles.FirstPart}>
         {Work.map((workItem) => (
           <div key={workItem.id} className={styles.section}>
-            {" "}
             <h1>{workItem.title}</h1>
             <p>{workItem.paragraph}</p>
           </div>
         ))}
       </div>
+      <div className={styles.side + " " + styles.right}>{rightRectangles}</div>
     </div>
   );
 };

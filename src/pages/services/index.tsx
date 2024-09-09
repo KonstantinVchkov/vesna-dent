@@ -19,8 +19,27 @@ export type TServicesPage = {
 };
 
 const ServicesPage = ({ services, offers, about, workData }: TServicesPage) => {
+  const generateRandomWidth = () => {
+    return Math.floor(Math.random() * (170 - 100 + 1) + 100);
+  };
+
+  const leftRectangles = Array.from({ length: 2 }, (_, i) => (
+    <div
+      key={i}
+      className={styles.rectangles}
+      style={{ width: `${generateRandomWidth()}px` }}
+    ></div>
+  ));
+  const rightRectangles = Array.from({ length: 2 }, (_, i) => (
+    <div
+      key={i}
+      className={styles.rectangles}
+      style={{ width: `${generateRandomWidth()}px` }}
+    ></div>
+  ));
   return (
     <div>
+      <div className={styles.side + " " + styles.left}>{leftRectangles}</div>
       <div className={styles.OfferService}>
         {services.map((service) => (
           <ServiceOfferCard key={service.id} {...service} />
@@ -44,6 +63,7 @@ const ServicesPage = ({ services, offers, about, workData }: TServicesPage) => {
           </div>
         ))}
       </div>
+      <div className={styles.side + " " + styles.right}>{rightRectangles}</div>
     </div>
   );
 };
