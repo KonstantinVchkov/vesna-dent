@@ -4,10 +4,11 @@ import React from "react";
 import styles from "../../components/InfoSection/Services/styles.module.scss";
 import Link from "next/link";
 import CarouselSection from "@/components/Banner/Carousel";
+import Image from "next/image";
 
 interface Offer {
   id: number;
-  icon: string;
+  icon?: any;
   title: string;
   paragraph: string;
 }
@@ -47,15 +48,26 @@ const ServicesPage = ({ services, offers, about, workData }: TServicesPage) => {
       </div>{" "}
       <div className={styles.FirstPart}>
         <h1>{about.secondTitle}</h1>
-        <p>Vesna Dent</p>
+        <h2>Весна Дент</h2>
         <p>{about.smallParagraph}</p>
       </div>
       <div className={styles.center}>
         {offers.map((offer) => (
           <div key={offer.id} className={styles.offers}>
-            <Link href={`/services/${offer.id}`}>
+            <Link href={`/services/${offer.id}`} passHref>
               <div className={styles.color}>
-                <p>{offer.icon}</p>
+                {offer.icon.includes(".png") ? (
+                  <div>
+                    <Image
+                      src={offer.icon}
+                      alt={offer.title}
+                      width={50}
+                      height={50}
+                    />
+                  </div>
+                ) : (
+                  <p>{offer.icon}</p>
+                )}
                 <h2>{offer.title}</h2>
                 <p>{offer.paragraph}</p>
               </div>

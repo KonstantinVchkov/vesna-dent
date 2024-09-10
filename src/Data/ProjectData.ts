@@ -267,34 +267,34 @@ export const infoVesnaDent = [
 export const Offers = [
   {
     id: 1,
-    icon: "🦷",
-    title: "Introduction to Dentistry",
+    icon: "/assets/icons/img-1.png",
+    title: "БЕЛЕЕЊЕ НА ЗАБИТЕ",
     paragraph:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
     paragraphs: [
       {
         id: 1,
-        title: "Foundations of Dentistry",
+        title: "БЕЛЕЕЊЕ НА ЗАБИТЕ",
         text: "Lorem ipsum dolor sit amet, consectetur adipiscing elitLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
       },
       {
         id: 2,
-        title: "Importance of Oral Care",
+        title: "Што  претставува белеењето на забите?",
         text: "Sed do eiusmod tempor incididunt ut labore et dolore magna aliquaLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
       },
       {
         id: 3,
-        title: "Patient Care Protocols",
+        title: "Дали сите заби се подложни на избелување?",
         text: "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquipLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
       },
       {
         id: 4,
-        title: "Dealing with Dental Pain",
+        title: "Дали белењето на забите е штетно?",
         text: "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariaturLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
       },
       {
         id: 5,
-        title: "Ethics in Dentistry",
+        title: "Колку долго траат резултатите од избелувањето на забите?",
         text: "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborumLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
       },
       {
@@ -311,122 +311,122 @@ export const Offers = [
   },
   {
     id: 2,
-    icon: "❤️",
-    title: "Basics of Cardiology",
+    icon: "/assets/icons/image-2.png",
+    title: "МОСТОВИ И КОРОНКИ",
     paragraph:
       "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequatLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
     paragraphs: [
       {
         id: 8,
-        title: "Heart Health Essentials",
+        title: "МОСТОВИ И КОРОНКИ",
         text: "Lorem ipsum dolor sit amet, consectetur adipiscing elitLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
       },
       {
         id: 9,
-        title: "Cardiovascular System Overview",
+        title: "Што е мост?",
         text: "Sed do eiusmod tempor incididunt ut labore et dolore magna aliquaLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
       },
       {
         id: 10,
-        title: "EKG Fundamentals",
+        title: "Што се коронки?",
         text: "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquipLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
       },
       {
         id: 11,
-        title: "Managing Blood Pressure",
+        title: "Кога се изработуваат мостови и коронки?",
         text: "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariaturLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
       },
       {
         id: 12,
-        title: "Cardiac Emergency Protocols",
+        title: "Какви видови има?",
         text: "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborumLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
       },
       {
         id: 13,
-        title: "Preventive Cardiology",
+        title: "Колку време е потребно да се изработат?",
         text: "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantiumLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
       },
       {
         id: 14,
-        title: "Innovative Treatments in Cardiology",
+        title: "Колку долго ќе траат?",
         text: "Totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicaboLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
       },
     ],
   },
   {
     id: 3,
-    icon: "🧠",
-    title: "Understanding Neurology",
+    icon: "/assets/icons/image-4.png",
+    title: "ВИНИРИ",
     paragraph:
       "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariaturLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
     paragraphs: [
       {
         id: 15,
-        title: "Neurological Basics",
+        title: "ВИНИРИ",
         text: "Lorem ipsum dolor sit amet, consectetur adipiscing elitLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
       },
       {
         id: 16,
-        title: "Brain Function and Structure",
+        title: "Што се винири?",
         text: "Sed do eiusmod tempor incididunt ut labore et dolore magna aliquaLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
       },
       {
         id: 17,
-        title: "Common Neurological Disorders",
+        title: "Колку долго траат винирите?",
         text: "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquipLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
       },
       {
         id: 18,
-        title: "Advanced Neurodiagnostics",
+        title: "Какви видови винири постојат?",
         text: "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariaturLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
       },
       {
         id: 19,
-        title: "Treatment Modalities in Neurology",
+        title: "Дали винирите ги оштетуваат забите?",
         text: "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborumLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
       },
       {
         id: 20,
-        title: "Innovations in Neurological Treatments",
+        title: "Која е разликата помеѓу винири, коронки и импланти?",
         text: "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantiumLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
       },
       {
         id: 21,
-        title: "Future of Neurology",
+        title: "Кои се бенефитите од винири?",
         text: "Totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicaboLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
       },
     ],
   },
   {
     id: 4,
-    icon: "🤲",
-    title: "Exploring Dermatology",
+    icon: "/assets/icons/image-5.png",
+    title: "ТОТАЛНИ И ПАРЦИЈАЛНИ ПРОТЕЗИ",
     paragraph:
       "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborumLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
     paragraphs: [
       {
         id: 22,
-        title: "Skin Health Basics",
+        title: "ТОТАЛНИ И ПАРЦИЈАЛНИ ПРОТЕЗИ",
         text: "Lorem ipsum dolor sit amet, consectetur adipiscing elitLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
       },
       {
         id: 23,
-        title: "Common Skin Conditions",
+        title: "Што се тотални протези?",
         text: "Sed do eiusmod tempor incididunt ut labore et dolore magna aliquaLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
       },
       {
         id: 24,
-        title: "Dermatological Treatments",
+        title: "Што се парцијални протези?",
         text: "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquipLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
       },
       {
         id: 25,
-        title: "Cosmetic Dermatology",
+        title: "Како се изработуваат протезите?",
         text: "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariaturLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
       },
       {
         id: 26,
-        title: "Skin Care Innovations",
+        title: "Кои се бенефитите од протези?",
         text: "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborumLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
       },
       {
@@ -443,34 +443,35 @@ export const Offers = [
   },
   {
     id: 5,
-    icon: "👶",
-    title: "Introduction to Pediatrics",
+    icon: "/assets/icons/image-7.png",
+    title: "МАШИНСКА ЕНДОДОНЦИЈА",
     paragraph:
       "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiamLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
     paragraphs: [
       {
         id: 29,
-        title: "Pediatric Care Basics",
+        title: "МАШИНСКА ЕНДОДОНЦИЈА ",
         text: "Lorem ipsum dolor sit amet, consectetur adipiscing elitLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
       },
       {
         id: 30,
-        title: "Child Growth and Development",
+        title: "Што е машинска ендодонција?",
         text: "Sed do eiusmod tempor incididunt ut labore et dolore magna aliquaLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
       },
       {
         id: 31,
-        title: "Common Pediatric Illnesses",
+        title: "Како ќе знам дали забот е соодветно излечен?",
         text: "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquipLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
       },
       {
         id: 32,
-        title: "Vaccinations and Preventive Care",
+        title:
+          "Лекување на забот со машинска еднодонција или вадењето на тој заб?",
         text: "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariaturLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
       },
       {
         id: 33,
-        title: "Nutrition for Children",
+        title: "Како најдобро да се заштити ендодонтски третиран заб понатаму?",
         text: "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborumLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
       },
       {

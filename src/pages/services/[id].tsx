@@ -4,6 +4,7 @@ import { useRouter } from "next/router";
 import { Offers, OurWork } from "@/Data/ProjectData";
 import styles from "../../components/InfoSection/OurWork/style.module.scss";
 import CarouselSection from "@/components/Banner/Carousel";
+import Image from "next/image";
 
 interface Offer {
   id: number;
@@ -41,6 +42,13 @@ const DetailPage = ({ offer, workData }: Props) => {
     <div>
       <div className={styles.side + " " + styles.left}>{leftRectangles}</div>
       <CarouselSection Slide={workData.slides} />{" "}
+      <div className={styles.icon}>
+        {offer.icon.includes(".png") ? (
+          <Image src={offer.icon} alt={offer.title} width={100} height={100} />
+        ) : (
+          <p>{offer.icon}</p>
+        )}{" "}
+      </div>
       <div className={styles.FirstPart}>
         {" "}
         {offer.paragraphs &&

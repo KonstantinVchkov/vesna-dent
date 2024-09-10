@@ -45,9 +45,14 @@
   }
 }
 .section:nth-child(odd):not(:first-child) {
-  transform: translateX(-250px);
+  transform: translateX(-200px);
 }
 
 .section:nth-child(even):not(:first-child) {
-  transform: translateX(250px);
+  transform: translateX(200px);
+}
+.icon {
+  padding: 40px 0 0 0;
+  display: flex;
+  justify-content: center;
 }
