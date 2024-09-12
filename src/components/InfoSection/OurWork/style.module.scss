@@ -19,6 +19,13 @@
   bottom: 0;
   align-content: space-around;
 }
+.imageContainer {
+  position: relative;
+  img {
+    position: absolute;
+    bottom: 500px;
+  }
+}
 
 .left {
   left: 0;

@@ -94,6 +94,11 @@
     margin: 0 150px;
     @include respond-to("tablet") {
       margin: 0;
+      width: 400px;
+    }
+
+    @include respond-to("phone") {
+      width: 300px;
     }
   }
 }

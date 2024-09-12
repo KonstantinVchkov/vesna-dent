@@ -10,6 +10,7 @@ interface Offer {
   id: number;
   icon: string;
   title: string;
+  images: string[];
   paragraph: string;
   paragraphs: { id: number; title: string; text: string }[];
 }
@@ -38,9 +39,10 @@ const DetailPage = ({ offer, workData }: Props) => {
       style={{ width: `${generateRandomWidth()}px` }}
     ></div>
   ));
+
   return (
     <div>
-      <div className={styles.side + " " + styles.left}>{leftRectangles}</div>
+      <div className={styles.side + " " + styles.left}>{leftRectangles} </div>
       <CarouselSection Slide={workData.slides} />{" "}
       <div className={styles.icon}>
         {offer.icon.includes(".png") ? (

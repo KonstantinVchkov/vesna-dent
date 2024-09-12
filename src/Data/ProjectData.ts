@@ -269,6 +269,12 @@ export const Offers = [
     id: 1,
     icon: "/assets/icons/img-1.png",
     title: "БЕЛЕЕЊЕ НА ЗАБИТЕ",
+    images: [
+      "/assets/teeth/dentist-examining-female-patient-with-teeth-shades 1.png",
+      "/assets/teeth/dentist-with-smile 1.png",
+      "/assets/teeth/perfect-smile-with-white-teeth-closeup 1.png",
+      "/assets/teeth/woman-whitening-teeth-dentistry-with-special-equipment 1.png",
+    ],
     paragraph:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
     paragraphs: [
@@ -296,16 +302,6 @@ export const Offers = [
         id: 5,
         title: "Колку долго траат резултатите од избелувањето на забите?",
         text: "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborumLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-      },
-      {
-        id: 6,
-        title: "Innovations in Dental Care",
-        text: "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantiumLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-      },
-      {
-        id: 7,
-        title: "Future of Oral Health",
-        text: "Totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicaboLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
       },
     ],
   },

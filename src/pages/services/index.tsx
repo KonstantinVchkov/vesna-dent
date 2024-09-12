@@ -5,6 +5,10 @@ import styles from "../../components/InfoSection/Services/styles.module.scss";
 import Link from "next/link";
 import CarouselSection from "@/components/Banner/Carousel";
 import Image from "next/image";
+import { Swiper, SwiperSlide } from "swiper/react";
+import "swiper/css";
+import "swiper/css/navigation";
+import "swiper/css/pagination";
 
 interface Offer {
   id: number;
@@ -21,7 +25,7 @@ export type TServicesPage = {
 
 const ServicesPage = ({ services, offers, about, workData }: TServicesPage) => {
   const generateRandomWidth = () => {
-    return Math.floor(Math.random() * (170 - 100 + 1) + 100);
+    return Math.floor(Math.random() * (100 - 100 + 1) + 100);
   };
 
   const leftRectangles = Array.from({ length: 2 }, (_, i) => (
@@ -74,6 +78,46 @@ const ServicesPage = ({ services, offers, about, workData }: TServicesPage) => {
             </Link>
           </div>
         ))}
+      </div>
+      <div className={styles.carousel}>
+        <Swiper
+          slidesPerView={1}
+          spaceBetween={10}
+          pagination={{ clickable: true }}
+          onSwiper={(swiper) => console.log(swiper)}
+          onSlideChange={() => console.log("slide change")}
+          breakpoints={{
+            640: {
+              slidesPerView: 2,
+              spaceBetween: 20,
+            },
+            768: {
+              slidesPerView: 3,
+              spaceBetween: 30,
+            },
+          }}
+        >
+          {offers.map((offer) => (
+            <SwiperSlide key={offer.id} className={styles.offers}>
+              <Link href={`/services/${offer.id}`} passHref>
+                <div className={styles.color}>
+                  {offer.icon.includes(".png") ? (
+                    <Image
+                      src={offer.icon}
+                      alt={offer.title}
+                      width={50}
+                      height={50}
+                    />
+                  ) : (
+                    <p>{offer.icon}</p>
+                  )}
+                  <h2>{offer.title}</h2>
+                  <p>{offer.paragraph}</p>
+                </div>
+              </Link>
+            </SwiperSlide>
+          ))}
+        </Swiper>
       </div>
       <div className={styles.side + " " + styles.right}>{rightRectangles}</div>
     </div>

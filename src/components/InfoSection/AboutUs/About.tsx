@@ -41,11 +41,11 @@ const About = ({ smallParagraph, secondTitle }: TAbout) => {
         <div className={styles.FirstPart}>
           {" "}
           <h1>{secondTitle}</h1>
-          <h3>Vesna Dent</h3>
+          <h3>Весна Дент</h3>
           <p>{smallParagraph}</p>
         </div>
         <div>
-          <h1>Nasiot tim</h1>{" "}
+          <h1>Нашиот тим</h1>{" "}
           {ourDentists.map((dentist) => (
             <div key={dentist.id} className={styles.dentists}>
               <div className={styles.background}>
