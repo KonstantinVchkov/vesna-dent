@@ -1,10 +1,12 @@
-import React from "react";
+import React, { useState } from "react";
 import { GetStaticPaths, GetStaticProps } from "next";
 import { useRouter } from "next/router";
 import { Offers, OurWork } from "@/Data/ProjectData";
 import styles from "../../components/InfoSection/OurWork/style.module.scss";
 import CarouselSection from "@/components/Banner/Carousel";
 import Image from "next/image";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faChevronDown, faChevronUp } from "@fortawesome/free-solid-svg-icons";
 
 interface Offer {
   id: number;
@@ -19,10 +21,19 @@ interface Props {
   offer: Offer;
   workData: typeof OurWork;
 }
-
+interface ExpandedState {
+  [key: number]: boolean;
+}
 const DetailPage = ({ offer, workData }: Props) => {
+  const [expanded, setExpanded] = useState<ExpandedState>({});
+  const toggleExpand = (id: number) => {
+    setExpanded((prev) => ({
+      ...prev,
+      [id]: !prev[id],
+    }));
+  };
   const generateRandomWidth = () => {
-    return Math.floor(Math.random() * (170 - 100 + 1) + 100);
+    return Math.floor(Math.random() * (100 - 100 + 1) + 50);
   };
 
   const leftRectangles = Array.from({ length: 4 }, (_, i) => (
@@ -46,7 +57,13 @@ const DetailPage = ({ offer, workData }: Props) => {
       <CarouselSection Slide={workData.slides} />{" "}
       <div className={styles.icon}>
         {offer.icon.includes(".png") ? (
-          <Image src={offer.icon} alt={offer.title} width={100} height={100} />
+          <Image
+            src={offer.icon}
+            alt={offer.title}
+            width={100}
+            height={100}
+            className={styles.icon}
+          />
         ) : (
           <p>{offer.icon}</p>
         )}{" "}
@@ -54,12 +71,26 @@ const DetailPage = ({ offer, workData }: Props) => {
       <div className={styles.FirstPart}>
         {" "}
         {offer.paragraphs &&
-          offer.paragraphs.map((p) => (
-            <div key={p.id} className={styles.section}>
-              <h1>{p.title}</h1>
-              <p>{p.text}</p>
-            </div>
-          ))}{" "}
+          offer.paragraphs.map((p) => {
+            const paragraphClass = expanded[p.id]
+              ? styles.expanded
+              : styles.collapsed;
+            return (
+              <div key={p.id} className={styles.section}>
+                <h1>{p.title}</h1>
+                <p className={paragraphClass}>{p.text}</p>
+                <button
+                  className={`${styles.button} ${styles.hidden}`}
+                  onClick={() => toggleExpand(p.id)}
+                >
+                  {expanded[p.id] ? "Прочитај помалку " : "Прочитај повеќе "}
+                  <FontAwesomeIcon
+                    icon={expanded[p.id] ? faChevronUp : faChevronDown}
+                  />
+                </button>
+              </div>
+            );
+          })}{" "}
       </div>
       <div className={styles.side + " " + styles.right}>{rightRectangles}</div>
     </div>
