@@ -10,6 +10,14 @@
   width: 100px;
   height: 100px;
   background-color: $background-color-rectangle;
+  @include respond-to("tablet") {
+    width: 50px;
+    height: 100px;
+  }
+  @include respond-to("phone") {
+    width: 50px;
+    height: 75px;
+  }
 }
 .side {
   display: grid;
@@ -38,28 +46,91 @@
   padding: 40px 0;
   background-color: $background-color-fill;
   width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  flex-wrap: wrap;
   h1 {
-    text-align: center;
+    text-align: left;
+    width: 600px;
+    font-size: $font-size-small;
+    @include respond-to("tablet") {
+      width: 400px;
+    }
+    @include respond-to("phone") {
+      width: 200px;
+    }
   }
   .section {
     padding: 40px 0;
+    width: 500px;
+
+    @include respond-to("tablet") {
+      width: 400px;
+    }
+    @include respond-to("phone") {
+      width: 220px;
+      font-size: 10px;
+    }
   }
 
   p {
-    margin: auto;
-    width: 600px;
     text-align: left;
   }
 }
 .section:nth-child(odd):not(:first-child) {
   transform: translateX(-200px);
+  @include respond-to("laptop") {
+    transform: translateX(-100px);
+  }
+  @include respond-to("tablet") {
+    transform: translateX(-50px);
+  }
+  @include respond-to("phone") {
+    transform: translateX(-25px);
+  }
 }
 
 .section:nth-child(even):not(:first-child) {
   transform: translateX(200px);
+  @include respond-to("laptop") {
+    transform: translateX(100px);
+  }
+  @include respond-to("tablet") {
+    transform: translateX(50px);
+  }
+  @include respond-to("phone") {
+    transform: translateX(25px);
+  }
 }
 .icon {
   padding: 40px 0 0 0;
   display: flex;
   justify-content: center;
+}
+.section p.collapsed {
+  overflow: hidden;
+  @include respond-to("phone") {
+    max-height: 45px;
+  }
+}
+
+.section p.expanded {
+  max-height: none;
+  overflow: visible;
+}
+.button {
+  background-color: $background-color-fill;
+  border: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: auto;
+}
+.hidden {
+  display: none;
+  @include respond-to("phone") {
+    display: block;
+  }
 }
