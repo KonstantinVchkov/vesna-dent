@@ -9,7 +9,7 @@ export type TNavlist = {
 };
 const Navitems = ({ list, routes }: TNavlist) => {
   return (
-    <div>
+    <>
       {list.map((list, idx) => (
         <li
           key={idx}
@@ -20,7 +20,7 @@ const Navitems = ({ list, routes }: TNavlist) => {
           {list.title}
         </li>
       ))}
-    </div>
+    </>
   );
 };
 

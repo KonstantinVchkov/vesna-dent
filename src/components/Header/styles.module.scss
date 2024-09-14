@@ -5,6 +5,8 @@
   @include flex-center;
 }
 .Navbar {
+  color: $text-color-primary;
+
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -18,7 +20,6 @@
   background: transparent;
   padding: 10px 0;
   font-size: 25px;
-  color: $text-color-light;
 
   .listMenu ul {
     @include flex-center;
@@ -77,7 +78,7 @@
 
       .menu {
         --s: 25px; /* control the size */
-        --c: rgb(251, 251, 251); /* the color */
+        --c: rgb(255, 255, 255); /* the color */
 
         height: var(--s);
         aspect-ratio: 1;
