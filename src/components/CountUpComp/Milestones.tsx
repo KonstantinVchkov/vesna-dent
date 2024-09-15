@@ -9,30 +9,33 @@ export type TMilestones = {
   title: string;
   stones: number;
   icon: IconDefinition;
+  titles: string;
 };
-const Milestones = ({ id, title, stones, icon }: TMilestones) => {
-  return (
-    <div id={`${id}`} className={styles.MilestoneItem}>
-      <CountUp
-        enableScrollSpy={true}
-        start={0}
-        end={stones}
-        delay={0}
-        duration={2.75}
-      >
-        {({ countUpRef }) => (
-          <>
-            <div className={styles.icons}>
-              <FontAwesomeIcon icon={icon} />
-            </div>
-            <div>
 
-              <span ref={countUpRef} />
-              {""} +<div>{title}</div>
-            </div>
-          </>
-        )}
-      </CountUp>
+const Milestones = ({ id, title, stones, icon, titles }: TMilestones) => {
+  return (
+    <div>
+      <div id={`${id}`} className={styles.MilestoneItem}>
+        <CountUp
+          enableScrollSpy={true}
+          start={0}
+          end={stones}
+          delay={0}
+          duration={2.75}
+        >
+          {({ countUpRef }) => (
+            <>
+              <div className={styles.icons}>
+                <FontAwesomeIcon icon={icon} />
+              </div>
+              <div>
+                <span ref={countUpRef} />
+                {""} +<div>{title}</div>
+              </div>
+            </>
+          )}
+        </CountUp>
+      </div>
     </div>
   );
 };

@@ -8,17 +8,10 @@ const BookApointment = ({ handleModal }: TbookApointment) => {
     <div className={styles.MainSection}>
       <div className={styles.Modal}>
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit,
-          quibusdam.
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod ratione
+          cumque similique id natus velit, accusamus temporibus, labore maxime
         </p>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit,
-          quibusdam.
-        </p>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit,
-          quibusdam.
-        </p>
+
         <button onClick={handleModal}>Затвори</button>
       </div>
     </div>

@@ -8,9 +8,6 @@ export type TOfferCard = {
   paragraph: string;
   index?: number;
 };
-
-
-
 const ServiceOfferCard = ({ id, title, img, paragraph }: TOfferCard) => (
   <div className={styles.article}>
     <figure className={styles.figure}>
