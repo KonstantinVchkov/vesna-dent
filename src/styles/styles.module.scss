@@ -13,7 +13,7 @@
     display: none;
   }
   @include respond-to("laptop") {
-    width: 601px;
+    width: 451px;
   }
   display: flex;
   justify-content: space-between;

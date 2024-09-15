@@ -16,11 +16,41 @@
     padding: 20px;
     @include respond-to("phone") {
       flex-basis: 100%;
+      display: none;
     }
     .ClientCardContainer {
       flex-basis: 50%;
       @include respond-to("phone") {
-        flex-basis: 100%;
+      }
+      @include flex-center;
+      .line {
+        width: 10px;
+        background-color: $line-color;
+        height: 200px;
+        margin-right: 10px;
+      }
+      .ClientImg {
+        margin-right: 10px;
+        img {
+          border-radius: 50%;
+          object-fit: cover;
+        }
+      }
+      .ClientReview {
+        p {
+          color: $text-color-light;
+        }
+      }
+    }
+  }
+}
+.ReviewCardsPhone {
+  display: none;
+  @include respond-to("phone") {
+    display: block;
+    .ClientCardContainer {
+      flex-basis: 50%;
+      @include respond-to("phone") {
       }
       @include flex-center;
       .line {

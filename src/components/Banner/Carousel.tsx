@@ -27,10 +27,9 @@ const CarouselSection = ({
   descriptions,
   technics,
   workTechnic,
-  Slide
+  Slide,
 }: TBanner) => {
   const [activeIndex, setActiveIndex] = useState(0);
-
   const handleSelect = (selectedIndex: number) => {
     setActiveIndex(selectedIndex);
   };
@@ -38,33 +37,53 @@ const CarouselSection = ({
   return (
     <div className={styles.mainContainer}>
       <Carousel fade onSelect={handleSelect}>
-        {Slide ? (
-          Slide.map((slide, index) => (
-            <Carousel.Item key={index} style={{ backgroundColor: "rgb(26 19 19)" }}>
-              <img className={styles.carouselImg} src={slide.image} alt={`Slide ${index}`} />
-              <Carousel.Caption>
-                <h3>{slide.title}</h3>
-              </Carousel.Caption>
-            </Carousel.Item>
-          ))
-        ) : (
-          images?.map((image, index) => (
-            <Carousel.Item key={index} style={{ backgroundColor: "rgb(26 19 19)" }}>
-              <img className={styles.carouselImg} src={image} alt={`Slide ${index}`} />
-              <Carousel.Caption>
-                <h3>{titles?.[index]}</h3>
-              </Carousel.Caption>
-            </Carousel.Item>
-          ))
-        )}
+        {Slide
+          ? Slide.map((slide, index) => (
+              <Carousel.Item
+                key={index}
+                style={{ backgroundColor: "rgb(26 19 19)" }}
+              >
+                <img
+                  className={styles.carouselImg}
+                  src={slide.image}
+                  alt={`Slide ${index}`}
+                />
+                <Carousel.Caption>
+                  <h3>{slide.title}</h3>
+                </Carousel.Caption>
+              </Carousel.Item>
+            ))
+          : images?.map((image, index) => (
+              <Carousel.Item
+                key={index}
+                style={{ backgroundColor: "rgb(26 19 19)" }}
+              >
+                <img
+                  className={styles.carouselImg}
+                  src={image}
+                  alt={`Slide ${index}`}
+                />
+                <Carousel.Caption>
+                  <h3>{titles?.[index]}</h3>
+                </Carousel.Caption>
+              </Carousel.Item>
+            ))}
       </Carousel>
-      <div className={styles.DescriptionField}>
+    </div>
+  );
+};
+
+export default CarouselSection;
+{
+  /* <div className={styles.DescriptionField}>
         {Slide ? (
           <>
             <h2>{Slide[activeIndex].title}</h2>
             <p>{Slide[activeIndex].description}</p>
             {Slide[activeIndex].technics?.map((technic, idx) => (
-              <span key={idx} className={styles.Technic}>{technic}</span>
+              <span key={idx} className={styles.Technic}>
+                {technic}
+              </span>
             ))}
           </>
         ) : (
@@ -75,13 +94,11 @@ const CarouselSection = ({
             )}
             <h2>{workDescription}</h2>
             {descriptions?.[activeIndex] && (
-              <p className={styles.descParagraph}>{descriptions[activeIndex]}</p>
+              <p className={styles.descParagraph}>
+                {descriptions[activeIndex]}
+              </p>
             )}
           </>
         )}
-      </div>
-    </div>
-  );
-};
-
-export default CarouselSection;
+      </div> */
+}

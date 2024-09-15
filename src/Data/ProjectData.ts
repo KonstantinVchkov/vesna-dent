@@ -71,9 +71,9 @@ export const AboutUs = {
 };
 
 export const Services = {
-  serviceOne: "",
-  serviceTwo: "",
-  serviceThree: "",
+  serviceOne: "Lorem ipsum dolor sit amet consectetur.1",
+  serviceTwo: "Lorem ipsum dolor sit amet consectetur.2",
+  serviceThree: "Lorem ipsum dolor sit amet consectetur.3",
 };
 export const OurWork = {
   id: 1,
@@ -150,7 +150,7 @@ export const ourDentists = [
     name: "Весна",
     surname: "Миленковска",
     facebook: "https://www.facebook.com/vesna.k.milenkovska",
-    bio: "  Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae cumque doloribus iusto et quia, commodi harum modi, optio voluptates libero, sint reiciendis exercitationem illo autem quo iste dolorum ab porro impedit incidunt natus explicabo architecto. Blanditiis quae distinctio magni, quos laudantium aperiam nisi esse provident dolor vitae debitis ipsa quidem necessitatibus nihil eos laborum eligendi, veritatis dolorum numquam voluptatum, voluptatem quas molestias earum natus! Inventore quibusdam voluptatibus, architecto omnis consectetur laborum nobis modi consequatur saepe voluptas ad soluta eveniet odio doloremque vel maiores rerum. Dignissimos suscipit doloribus, alias itaque provident aliquid adipisci minima, eius id laborum voluptatem esse facilis nobis voluptate? Laborum rem sunt assumenda ipsum quas modi commodi, aspernatur voluptates dolores vero maiores? Molestiae eveniet laborum, voluptate ducimus necessitatibus reprehenderit molestias cum doloremque debitis optio quisquam adipisci aut maxime! Optio, at possimus facilis iste nisi veniam sint quia molestiae eum accusantium sequi aliquam laudantium dolorem aperiam fugiat quam vero rem, hic minima, ipsam autem iure quibusdam non. Quasi laborum pariatur id soluta nostrum ipsum delectus rem repellendus natus blanditiis alias ullam ut eveniet quae, accusamus nesciunt praesentium nobis voluptatem! Aut, sunt quasi quas corrupti quo consequatur est praesentium cumque numquam doloremque porro sapiente deleniti? Vitae aliquid libero labore itaque quis, nemo animi, in quidem, voluptas facilis quae ullam minus. Minima, provident. Et error asperiores, facere est vitae tempore rem exercitationem eveniet aperiam at accusantium voluptatum in optio autem? Natus illo, velit exercitationem adipisci harum quo distinctio, asperiores accusamus ex fugiat neque nesciunt nostrum. Beatae ut perferendis voluptas! Ea, aperiam alias, voluptates laboriosam a corporis inventore molestias iusto optio repellat, explicabo commodi dolorum. Quam, similique labore. Natus dolorem nulla maxime labore? Laudantium doloremque facilis voluptatum aperiam a molestiae error? Necessitatibus, non ullam dignissimos vitae, odio tenetur dolorem repellat porro maxime in incidunt adipisci itaque, atque sit! Modi libero reprehenderit maxime.",
+    bio: "   Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae cumque doloribus iusto et quia, commodi harum modi, optio voluptates libero, sint reiciendis exercitationem illo autem quo iste dolorum ab porro impedit incidunt natus explicabo architecto. ipsum dolor sit amet consectetur adipisicing elit. Repudiandae cumque doloribus iusto et quia, commodi harum modi, optio voluptates libero, sint reiciendis exercitationem illo autem quo iste dolorum ab porro impedit incidunt natus explicabo architecto.",
   },
   {
     id: 2,
@@ -164,7 +164,7 @@ export const ourDentists = [
     facebook: "https://www.facebook.com/dragan.milenkovski.5",
     instagram: "https://www.instagram.com/milenkovskidragan/",
     linkedin: "https://www.linkedin.com/in/dragan-milenkovski-273a142ab/",
-    bio: "  Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae cumque doloribus iusto et quia, commodi harum modi, optio voluptates libero, sint reiciendis exercitationem illo autem quo iste dolorum ab porro impedit incidunt natus explicabo architecto. Blanditiis quae distinctio magni, quos laudantium aperiam nisi esse provident dolor vitae debitis ipsa quidem necessitatibus nihil eos laborum eligendi, veritatis dolorum numquam voluptatum, voluptatem quas molestias earum natus! Inventore quibusdam voluptatibus, architecto omnis consectetur laborum nobis modi consequatur saepe voluptas ad soluta eveniet odio doloremque vel maiores rerum. Dignissimos suscipit doloribus, alias itaque provident aliquid adipisci minima, eius id laborum voluptatem esse facilis nobis voluptate? Laborum rem sunt assumenda ipsum quas modi commodi, aspernatur voluptates dolores vero maiores? Molestiae eveniet laborum, voluptate ducimus necessitatibus reprehenderit molestias cum doloremque debitis optio quisquam adipisci aut maxime! Optio, at possimus facilis iste nisi veniam sint quia molestiae eum accusantium sequi aliquam laudantium dolorem aperiam fugiat quam vero rem, hic minima, ipsam autem iure quibusdam non. Quasi laborum pariatur id soluta nostrum ipsum delectus rem repellendus natus blanditiis alias ullam ut eveniet quae, accusamus nesciunt praesentium nobis voluptatem! Aut, sunt quasi quas corrupti quo consequatur est praesentium cumque numquam doloremque porro sapiente deleniti? Vitae aliquid libero labore itaque quis, nemo animi, in quidem, voluptas facilis quae ullam minus. Minima, provident. Et error asperiores, facere est vitae tempore rem exercitationem eveniet aperiam at accusantium voluptatum in optio autem? Natus illo, velit exercitationem adipisci harum quo distinctio, asperiores accusamus ex fugiat neque nesciunt nostrum. Beatae ut perferendis voluptas! Ea, aperiam alias, voluptates laboriosam a corporis inventore molestias iusto optio repellat, explicabo commodi dolorum. Quam, similique labore. Natus dolorem nulla maxime labore? Laudantium doloremque facilis voluptatum aperiam a molestiae error? Necessitatibus, non ullam dignissimos vitae, odio tenetur dolorem repellat porro maxime in incidunt adipisci itaque, atque sit! Modi libero reprehenderit maxime.",
+    bio: "   Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae cumque doloribus iusto et quia, commodi harum modi, optio voluptates libero, sint reiciendis exercitationem illo autem quo iste dolorum ab porro impedit incidunt natus explicabo architecto. ipsum dolor sit amet consectetur adipisicing elit. Repudiandae cumque doloribus iusto et quia, commodi harum modi, optio voluptates libero, sint reiciendis exercitationem illo autem quo iste dolorum ab porro impedit incidunt natus explicabo architecto.",
   },
   {
     id: 3,
@@ -177,7 +177,7 @@ export const ourDentists = [
     surname: "Миленковска",
     facebook: "https://www.facebook.com/bojana.milenkovska",
     instagram: "https://www.instagram.com/_bojanam13/",
-    bio: "  Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae cumque doloribus iusto et quia, commodi harum modi, optio voluptates libero, sint reiciendis exercitationem illo autem quo iste dolorum ab porro impedit incidunt natus explicabo architecto. Blanditiis quae distinctio magni, quos laudantium aperiam nisi esse provident dolor vitae debitis ipsa quidem necessitatibus nihil eos laborum eligendi, veritatis dolorum numquam voluptatum, voluptatem quas molestias earum natus! Inventore quibusdam voluptatibus, architecto omnis consectetur laborum nobis modi consequatur saepe voluptas ad soluta eveniet odio doloremque vel maiores rerum. Dignissimos suscipit doloribus, alias itaque provident aliquid adipisci minima, eius id laborum voluptatem esse facilis nobis voluptate? Laborum rem sunt assumenda ipsum quas modi commodi, aspernatur voluptates dolores vero maiores? Molestiae eveniet laborum, voluptate ducimus necessitatibus reprehenderit molestias cum doloremque debitis optio quisquam adipisci aut maxime! Optio, at possimus facilis iste nisi veniam sint quia molestiae eum accusantium sequi aliquam laudantium dolorem aperiam fugiat quam vero rem, hic minima, ipsam autem iure quibusdam non. Quasi laborum pariatur id soluta nostrum ipsum delectus rem repellendus natus blanditiis alias ullam ut eveniet quae, accusamus nesciunt praesentium nobis voluptatem! Aut, sunt quasi quas corrupti quo consequatur est praesentium cumque numquam doloremque porro sapiente deleniti? Vitae aliquid libero labore itaque quis, nemo animi, in quidem, voluptas facilis quae ullam minus. Minima, provident. Et error asperiores, facere est vitae tempore rem exercitationem eveniet aperiam at accusantium voluptatum in optio autem? Natus illo, velit exercitationem adipisci harum quo distinctio, asperiores accusamus ex fugiat neque nesciunt nostrum. Beatae ut perferendis voluptas! Ea, aperiam alias, voluptates laboriosam a corporis inventore molestias iusto optio repellat, explicabo commodi dolorum. Quam, similique labore. Natus dolorem nulla maxime labore? Laudantium doloremque facilis voluptatum aperiam a molestiae error? Necessitatibus, non ullam dignissimos vitae, odio tenetur dolorem repellat porro maxime in incidunt adipisci itaque, atque sit! Modi libero reprehenderit maxime.",
+    bio: "   Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae cumque doloribus iusto et quia, commodi harum modi, optio voluptates libero, sint reiciendis exercitationem illo autem quo iste dolorum ab porro impedit incidunt natus explicabo architecto. ",
   },
 ];
 
@@ -207,6 +207,37 @@ export const ourClients = [
     text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae cumque doloribus iusto et quia, commodi harum modi, optio voluptates libero, sint reiciendis exercitationem illo autem quo iste dolorum ab porro impedit incidunt natus explicabo architecto.",
   },
 ];
+export const Work = [
+  {
+    id: 1,
+    title: "Learn More About Our Work",
+    paragraph:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+  },
+  {
+    id: 2,
+    title: "Teeth Whitening",
+    paragraph:
+      "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+  },
+  {
+    id: 3,
+    title: "Crowns",
+    paragraph:
+      "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+  },
+  {
+    id: 4,
+    title: "Fillings",
+    paragraph:
+      "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+  },
+  {
+    title: "Partial Dentures",
+    paragraph:
+      "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+  },
+];
 
 export const ourMilestones = [
   {
@@ -231,5 +262,224 @@ export const infoVesnaDent = [
     Phone: "000/000-000",
     WorkHours:
       "Mon - Thur - 8 AM to 4 PM Friday: 8am - 2pm (by appointment only) Saturday & Sundays: Closed",
+  },
+];
+export const Offers = [
+  {
+    id: 1,
+    icon: "/assets/icons/img-1.png",
+    title: "БЕЛЕЕЊЕ НА ЗАБИТЕ",
+    images: [
+      "/assets/teeth/dentist-examining-female-patient-with-teeth-shades 1.png",
+      "/assets/teeth/dentist-with-smile 1.png",
+      "/assets/teeth/perfect-smile-with-white-teeth-closeup 1.png",
+      "/assets/teeth/woman-whitening-teeth-dentistry-with-special-equipment 1.png",
+    ],
+    paragraph:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    paragraphs: [
+      {
+        id: 1,
+        title: "БЕЛЕЕЊЕ НА ЗАБИТЕ",
+        text: "Lorem ipsum dolor sit amet, consectetur adipiscing elitLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      },
+      {
+        id: 2,
+        title: "Што  претставува белеењето на забите?",
+        text: "Sed do eiusmod tempor incididunt ut labore et dolore magna aliquaLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      },
+      {
+        id: 3,
+        title: "Дали сите заби се подложни на избелување?",
+        text: "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquipLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      },
+      {
+        id: 4,
+        title: "Дали белењето на забите е штетно?",
+        text: "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariaturLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      },
+      {
+        id: 5,
+        title: "Колку долго траат резултатите од избелувањето на забите?",
+        text: "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborumLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      },
+    ],
+  },
+  {
+    id: 2,
+    icon: "/assets/icons/image-2.png",
+    title: "МОСТОВИ И КОРОНКИ",
+    paragraph:
+      "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequatLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    paragraphs: [
+      {
+        id: 8,
+        title: "МОСТОВИ И КОРОНКИ",
+        text: "Lorem ipsum dolor sit amet, consectetur adipiscing elitLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      },
+      {
+        id: 9,
+        title: "Што е мост?",
+        text: "Sed do eiusmod tempor incididunt ut labore et dolore magna aliquaLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      },
+      {
+        id: 10,
+        title: "Што се коронки?",
+        text: "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquipLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      },
+      {
+        id: 11,
+        title: "Кога се изработуваат мостови и коронки?",
+        text: "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariaturLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      },
+      {
+        id: 12,
+        title: "Какви видови има?",
+        text: "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborumLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      },
+      {
+        id: 13,
+        title: "Колку време е потребно да се изработат?",
+        text: "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantiumLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      },
+      {
+        id: 14,
+        title: "Колку долго ќе траат?",
+        text: "Totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicaboLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      },
+    ],
+  },
+  {
+    id: 3,
+    icon: "/assets/icons/image-4.png",
+    title: "ВИНИРИ",
+    paragraph:
+      "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariaturLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    paragraphs: [
+      {
+        id: 15,
+        title: "ВИНИРИ",
+        text: "Lorem ipsum dolor sit amet, consectetur adipiscing elitLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      },
+      {
+        id: 16,
+        title: "Што се винири?",
+        text: "Sed do eiusmod tempor incididunt ut labore et dolore magna aliquaLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      },
+      {
+        id: 17,
+        title: "Колку долго траат винирите?",
+        text: "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquipLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      },
+      {
+        id: 18,
+        title: "Какви видови винири постојат?",
+        text: "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariaturLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      },
+      {
+        id: 19,
+        title: "Дали винирите ги оштетуваат забите?",
+        text: "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborumLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      },
+      {
+        id: 20,
+        title: "Која е разликата помеѓу винири, коронки и импланти?",
+        text: "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantiumLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      },
+      {
+        id: 21,
+        title: "Кои се бенефитите од винири?",
+        text: "Totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicaboLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      },
+    ],
+  },
+  {
+    id: 4,
+    icon: "/assets/icons/image-5.png",
+    title: "ТОТАЛНИ И ПАРЦИЈАЛНИ ПРОТЕЗИ",
+    paragraph:
+      "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborumLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    paragraphs: [
+      {
+        id: 22,
+        title: "ТОТАЛНИ И ПАРЦИЈАЛНИ ПРОТЕЗИ",
+        text: "Lorem ipsum dolor sit amet, consectetur adipiscing elitLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      },
+      {
+        id: 23,
+        title: "Што се тотални протези?",
+        text: "Sed do eiusmod tempor incididunt ut labore et dolore magna aliquaLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      },
+      {
+        id: 24,
+        title: "Што се парцијални протези?",
+        text: "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquipLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      },
+      {
+        id: 25,
+        title: "Како се изработуваат протезите?",
+        text: "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariaturLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      },
+      {
+        id: 26,
+        title: "Кои се бенефитите од протези?",
+        text: "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborumLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      },
+      {
+        id: 27,
+        title: "Preventive Skin Care",
+        text: "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantiumLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      },
+      {
+        id: 28,
+        title: "Future of Dermatology",
+        text: "Totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicaboLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      },
+    ],
+  },
+  {
+    id: 5,
+    icon: "/assets/icons/image-7.png",
+    title: "МАШИНСКА ЕНДОДОНЦИЈА",
+    paragraph:
+      "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiamLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    paragraphs: [
+      {
+        id: 29,
+        title: "МАШИНСКА ЕНДОДОНЦИЈА ",
+        text: "Lorem ipsum dolor sit amet, consectetur adipiscing elitLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      },
+      {
+        id: 30,
+        title: "Што е машинска ендодонција?",
+        text: "Sed do eiusmod tempor incididunt ut labore et dolore magna aliquaLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      },
+      {
+        id: 31,
+        title: "Како ќе знам дали забот е соодветно излечен?",
+        text: "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquipLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      },
+      {
+        id: 32,
+        title:
+          "Лекување на забот со машинска еднодонција или вадењето на тој заб?",
+        text: "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariaturLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      },
+      {
+        id: 33,
+        title: "Како најдобро да се заштити ендодонтски третиран заб понатаму?",
+        text: "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborumLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      },
+      {
+        id: 34,
+        title: "Pediatric Emergency Care",
+        text: "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantiumLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      },
+      {
+        id: 35,
+        title: "Future Trends in Pediatrics",
+        text: "Totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicaboLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      },
+    ],
   },
 ];

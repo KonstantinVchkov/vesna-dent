@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import styles from "./styles.module.scss";
 import Accordion from "react-bootstrap/Accordion";
 import "bootstrap/dist/css/bootstrap.min.css";
@@ -6,6 +6,9 @@ import { ourDentists } from "../../../Data/ProjectData";
 import Facebook from "../../Svg-Icons/Facebook";
 import Instagram from "../../Svg-Icons/Instagram";
 import Linkedin from "../../Svg-Icons/Linkedin";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faChevronDown, faChevronUp } from "@fortawesome/free-solid-svg-icons";
+
 type TQuestionAndAnswer = {
   question: string;
   answer: string;
@@ -31,61 +34,93 @@ export type TAbout = {
   smallParagraph: string;
   dentists: TDentists[];
 };
-
-const About = ({ smallParagraph, secondTitle, dentists }: TAbout) => {
-  console.log("Dentists:", dentists);
-
+interface ExpandedState {
+  [key: number]: boolean;
+}
+const About = ({ smallParagraph, secondTitle }: TAbout) => {
+  const [expanded, setExpanded] = useState<ExpandedState>({});
+  const toggleExpand = (id: number) => {
+    setExpanded((prev) => ({
+      ...prev,
+      [id]: !prev[id],
+    }));
+  };
   const animationDuration = 5;
   return (
     <>
       <div className={styles.AboutComp}>
         <div className={styles.FirstSection}></div>
-        <div>
+        <div className={styles.FirstPart}>
           {" "}
           <h1>{secondTitle}</h1>
-          <p>Vesna Dent</p>
+          <h3>Весна Дент</h3>
           <p>{smallParagraph}</p>
         </div>
         <div>
-          {ourDentists.map((dentist) => (
-            <div key={dentist.id}>
-              <h2>
-                {dentist.name} {dentist.surname}
-              </h2>
-              <img
-                src={dentist.images[0]}
-                alt={`${dentist.name} ${dentist.surname}`}
-              />
-              <div>
-                <p>{dentist.bio}</p>
-                <a
-                  href={dentist.facebook}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <Facebook />
-                </a>
-                {dentist.instagram && (
-                  <a
-                    href={dentist.instagram}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <Instagram />
-                  </a>
-                )}
-                {dentist.linkedin && (
-                  <a
-                    href={dentist.linkedin}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <Linkedin />
-                  </a>
-                )}
+          <h1>Нашиот тим</h1>{" "}
+          {ourDentists.map((dentist) => {
+            const paragraphClass = expanded[dentist.id]
+              ? styles.expanded
+              : styles.collapsed;
+
+            return (
+              <div key={dentist.id} className={styles.dentists}>
+                <div className={styles.background}>
+                  <img
+                    src={dentist.images[0]}
+                    alt={`${dentist.name} ${dentist.surname}`}
+                  />{" "}
+                </div>
+                <div className={styles.dent}>
+                  {" "}
+                  <h2>
+                    {dentist.name} {dentist.surname}
+                  </h2>
+                  <div className={styles.bio}>
+                    <p className={paragraphClass}>{dentist.bio}</p>
+                    <a
+                      href={dentist.facebook}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <Facebook />
+                    </a>
+                    {dentist.instagram && (
+                      <a
+                        href={dentist.instagram}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        <Instagram />
+                      </a>
+                    )}
+                    {dentist.linkedin && (
+                      <a
+                        href={dentist.linkedin}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        <Linkedin />
+                      </a>
+                    )}{" "}
+                    <button
+                      className={`${styles.button} ${styles.hidden}`}
+                      onClick={() => toggleExpand(dentist.id)}
+                    >
+                      {expanded[dentist.id]
+                        ? "Прочитај помалку"
+                        : "Прочитај повеќе"}
+                      <FontAwesomeIcon
+                        icon={
+                          expanded[dentist.id] ? faChevronUp : faChevronDown
+                        }
+                      />
+                    </button>
+                  </div>
+                </div>
               </div>
-            </div>
-          ))}
+            );
+          })}
         </div>
       </div>
     </>

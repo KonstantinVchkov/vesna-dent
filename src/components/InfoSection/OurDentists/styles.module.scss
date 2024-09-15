@@ -3,14 +3,21 @@
 .MainText {
   // max-width: 400px;
   // margin: 0px auto;
-  @include flex-direction;
+  display: flex;
+  flex-direction: column;
   max-width: 100%;
   width: 500px;
-  padding: 40px 0;
+  padding: 40px 20px;
   border-radius: 10px;
   font-family: $font-family-base;
+  align-content: left;
   @include respond-to("tablet") {
     font-size: $font-size-small;
+  }
+  @include respond-to("phone") {
+    width: 400px;
+    font-size: 15px;
+    text-align: center;
   }
   .btn {
     color: $text-color-primary;
@@ -22,6 +29,9 @@
     cursor: pointer;
     margin-top: 20px;
     text-align: center;
+    @include respond-to("phone") {
+      margin: auto;
+    }
     &:hover {
       background-color: $background-color-hover;
     }

@@ -8,7 +8,7 @@ const AboutUsPage = ({ AboutUs }: TAboutPage) => {
   return (
     <div>
       {" "}
-      <About {...AboutUs} />
+      <About dentists={[]} {...AboutUs} />
     </div>
   );
 };
