@@ -113,6 +113,7 @@
 }
 .dent {
   flex-direction: column;
+  margin: auto;
   @include respond-to("tablet") {
     text-align: center;
   }
@@ -127,5 +128,30 @@
         width: 100%;
       }
     }
+  }
+}
+.bio p.collapsed {
+  overflow: hidden;
+  @include respond-to("tablet") {
+    max-height: 45px;
+  }
+}
+
+.bio p.expanded {
+  max-height: none;
+  overflow: visible;
+}
+.button {
+  background-color: $background-color-fill;
+  border: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: auto;
+}
+.hidden {
+  display: none;
+  @include respond-to("phone") {
+    display: block;
   }
 }
