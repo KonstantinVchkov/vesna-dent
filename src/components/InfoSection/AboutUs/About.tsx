@@ -9,6 +9,8 @@ import Linkedin from "../../Svg-Icons/Linkedin";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faChevronDown, faChevronUp } from "@fortawesome/free-solid-svg-icons";
 
+import Image from "next/image";
+
 type TQuestionAndAnswer = {
   question: string;
   answer: string;
@@ -46,6 +48,15 @@ const About = ({ smallParagraph, secondTitle }: TAbout) => {
     }));
   };
   const animationDuration = 5;
+
+const About = ({
+  title,
+  secondTitle,
+  paragraph,
+  faqTitle,
+  images,
+  QuestionsAndAnswers,
+}: TAbout) => {
   return (
     <>
       <div className={styles.AboutComp}>
@@ -121,6 +132,31 @@ const About = ({ smallParagraph, secondTitle }: TAbout) => {
               </div>
             );
           })}
+        <div className={styles.SecondSection}>
+          <h1>Кои сме ние</h1>
+          <div className={styles.AboutUsText}>
+            <div className={styles.AboutText}>
+              <Image
+                src={"/assets/images/some-dental-logo.png"}
+                width={150}
+                height={150}
+                className={styles.LogoText}
+                alt={"logo-vesna-dent"}
+              />
+              <div className={styles.RightSec}>
+                <h2>Весна Дент</h2>
+                <p>
+                  {paragraph}
+                </p>
+              </div>
+            </div>
+            <div className={styles.LeftSquare}></div>
+            <div className={styles.RightSquare}></div>
+          </div>
+        </div>
+        <div className={styles.ThirdSection}>
+          <h2>Нашиот Тим</h2>
+
         </div>
       </div>
     </>
