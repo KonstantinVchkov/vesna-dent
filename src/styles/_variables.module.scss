@@ -8,9 +8,11 @@
 $font-family-base: "EB Garamond", serif;
 $line-height-base: 1.5;
 $font-size-big: 2.9rem;
+$font-size-small: 1.3rem;
+
 $font-weight-normal: 400;
 $font-weight-bold: 700;
-$font-weight-bolder:900;
+$font-weight-bolder: 900;
 $gutter-base: rem-calc(30);
 $button-radius: 10px;
 $transition-duration: 0.8s;
@@ -25,6 +27,7 @@ $line-color: #003634;
 
 // background color settings
 $background-color-fill: #e5f7f7;
+$background-color-rectangle: #00807a;
 $background-color-rectangle: #00807A;
 $background-color-rectangle-rgba: rgba(0, 128, 122, 0.03);
 
@@ -37,5 +40,3 @@ $card-icon-green3: #0f4d4b;
 // hover settings
 $text-color-hover: #fabf00;
 $background-color-hover: #00a49d;
-
-

@@ -13,6 +13,20 @@
     width: 100%;
     height: 80vh;
   }
+  .FirstPart {
+    width: 600px;
+    text-align: left;
+    padding: 40px 0;
+    h1 {
+      text-align: center;
+    }
+    @include respond-to("tablet") {
+      width: 400px;
+    }
+    @include respond-to("phone") {
+      width: 300px;
+    }
+  }
   .SecondSection {
     @include flex-wrap;
     gap: $gutter-base;
@@ -48,38 +62,103 @@
         height: 250px;
         background-color: $background-color-rectangle;
         position: absolute;
-      }
-      .LeftSquare {
-        top: 0;
-        border-top-right-radius: $button-radius;
-        border-bottom-right-radius: $button-radius;
-      }
-      .RightSquare {
-        right: 0;
-        top: 35%;
-        border-top-left-radius: $button-radius;
-        border-bottom-left-radius: $button-radius;
-      }
-      .LeftSquare {
-        position: absolute;
-        top: 0;
-        width: 300px;
-        height: 250px;
-        background-color: $background-color-rectangle;
+
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        animation-name: slideUp;
+        animation-timing-function: ease-in-out;
+        animation-iteration-count: infinite;
+
       }
     }
   }
 }
+.background {
+  padding: 40px;
+  background-color: $background-color-rectangle;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  position: relative;
+  width: 400px;
+  height: 350px;
+  @include respond-to("tablet") {
+    background-color: transparent;
+    padding: 0;
+    margin: auto;
+    width: 350px;
+    height: 350px;
+    flex-direction: column;
+  }
+}
+.dentists {
+  display: flex;
+  text-align: left;
+  padding: 20px 0;
+  @include respond-to("tablet") {
+    flex-direction: column;
+  }
+  img {
+    position: absolute;
+    width: 350px;
+    height: 300px;
+    z-index: 1111;
+  }
 
-@include desktop {
-  .AboutComp {
-    .SecondSection {
-      flex-direction: column;
-
-      .LeftImg,
-      .RightText {
-        width: 100%;
-      }
+  .bio,
+  h2 {
+    padding: 20px 0;
+    margin: 0 150px;
+    @include respond-to("tablet") {
+      margin: 0;
+      width: 400px;
     }
+
+    @include respond-to("phone") {
+      width: 300px;
+    }
+  }
+}
+.dentists:nth-child(3) {
+  flex-direction: row-reverse;
+  img {
+    right: 0;
+  }
+  @include respond-to("tablet") {
+    flex-direction: column;
+  }
+}
+.dent {
+  margin: auto;
+  width: 100%;
+  @include respond-to("tablet") {
+    text-align: center;
+    flex-direction: column;
+  }
+}
+
+.bio p.collapsed {
+  overflow: hidden;
+  @include respond-to("phone") {
+    max-height: 45px;
+  }
+}
+
+.bio p.expanded {
+  max-height: none;
+  overflow: visible;
+}
+.button {
+  background-color: $background-color-fill;
+  border: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: auto;
+}
+.hidden {
+  display: none;
+  @include respond-to("phone") {
+    display: block;
   }
 }

@@ -1,23 +1,25 @@
 @import "../../styles/variables.module";
-@import "../../styles/mixins.module"; // assuming mixins are stored here
+@import "../../styles/mixins.module";
 
 .Header {
   @include flex-center;
 }
 .Navbar {
+  color: $text-color-primary;
+
   display: flex;
   justify-content: space-around;
-  // align-items: center;
+  align-items: center;
   position: fixed;
   z-index: 100000;
   width: 100%;
   left: 0;
   right: 0;
-  margin: 10px auto;
-  background: none;
+  top: 0;
+  //margin: 10px auto;
+  background: transparent;
   padding: 10px 0;
   font-size: 25px;
-  color: $text-color-primary;
 
   .listMenu ul {
     @include flex-center;
@@ -26,7 +28,7 @@
   .buttons {
     display: flex;
     align-items: center;
-  
+
     @include laptop-m-styles {
       display: none;
     }
@@ -40,14 +42,14 @@
         margin-right: 0;
       }
     }
-    &.buttons span{
+    &.buttons span {
       margin-right: 10px;
       cursor: pointer;
-      &:hover{
+      &:hover {
         color: $text-color-hover;
       }
     }
-    li:hover{
+    li:hover {
       color: $text-color-hover;
     }
   }
@@ -76,7 +78,7 @@
 
       .menu {
         --s: 25px; /* control the size */
-        --c: black; /* the color */
+        --c: rgb(255, 255, 255); /* the color */
 
         height: var(--s);
         aspect-ratio: 1;
@@ -141,9 +143,10 @@
     z-index: 1000000000000;
     position: absolute;
     top: 100%;
+    color: $text-color-primary;
     // background: $background-color-secondary;
     width: 100%;
-    height: 100vh;
+    //height: 100vh;
     @include flex-direction;
     // flex-direction: column;
     ul {

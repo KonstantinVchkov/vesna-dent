@@ -15,12 +15,9 @@ const LottieAnimation = dynamic(() => import("../LottieAnimation/Animation"), {
 const NavBar = () => {
   const [popUp, setPopUp] = useState<boolean>(false);
   const [showMenu, setShowMenu] = useState<boolean>(false);
-  
 
   const openMenu = () => setShowMenu(!showMenu);
   const togglePopUp = () => setPopUp(!popUp);
-
-
 
   return (
     <>
@@ -40,7 +37,12 @@ const NavBar = () => {
           />
         </div>
         <div className={styles.buttons}>
-          <Image width={50} height={50} src={"/assets/images/Phone.png"} alt={"phone-img"} />
+          <Image
+            width={50}
+            height={50}
+            src={"/assets/images/Phone.png"}
+            alt={"phone-img"}
+          />
           <span>+389-78688551</span>
           <ButtonComp name={"Закажи термин"} handleClick={togglePopUp} />
         </div>
