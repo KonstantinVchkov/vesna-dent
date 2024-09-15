@@ -63,7 +63,7 @@
   border-top-right-radius: 10px;
   border-bottom-right-radius: 10px;
   position: relative;
-  width: 850px;
+  width: 400px;
   height: 350px;
   @include respond-to("tablet") {
     background-color: transparent;
@@ -112,27 +112,17 @@
   }
 }
 .dent {
-  flex-direction: column;
   margin: auto;
+  width: 100%;
   @include respond-to("tablet") {
     text-align: center;
+    flex-direction: column;
   }
 }
-@include desktop {
-  .AboutComp {
-    .SecondSection {
-      flex-direction: column;
 
-      .LeftImg,
-      .RightText {
-        width: 100%;
-      }
-    }
-  }
-}
 .bio p.collapsed {
   overflow: hidden;
-  @include respond-to("tablet") {
+  @include respond-to("phone") {
     max-height: 45px;
   }
 }
