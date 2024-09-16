@@ -9,10 +9,9 @@ export type TMilestones = {
   title: string;
   stones: number;
   icon: IconDefinition;
-  titles: string;
 };
 
-const Milestones = ({ id, title, stones, icon, titles }: TMilestones) => {
+const Milestones = ({ id, title, stones, icon }: TMilestones) => {
   return (
     <div>
       <div id={`${id}`} className={styles.MilestoneItem}>
