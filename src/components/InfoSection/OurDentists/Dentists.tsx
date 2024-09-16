@@ -31,7 +31,7 @@ const Dentists = ({
   return (
     <div
       onClick={() => {
-        handleRoute(`dentists/${id}`);
+        handleRoute(`about`);
       }}
       className={`${styles.card} ${styles[`card${id}`]}`}
     >

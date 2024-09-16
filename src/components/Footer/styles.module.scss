@@ -2,7 +2,7 @@
 @import "../../styles/variables.module";
 .FooterMain {
   // @include flex-direction();
-  padding: 10px;
+  padding: 10px 0;
   font-size: 20px;
   color: $text-color-primary;
   background: $background-color-rectangle;
@@ -14,18 +14,55 @@
       width: 100%;
     }
   }
-
+  .Address {
+    @include respond-to("tablet") {
+      display: none !important;
+    }
+  }
   .InfoSection {
     display: flex;
     justify-content: space-around;
     align-items: center;
   }
-  ul {
-    margin: 15px 10px;
-  }
-  .SocialMedia{
-    ul{
-      display: flex;
+  .InfoSection div {
+    max-width: 33.333333%;
+    max-height: 100%;
+    text-align: left;
+    @include respond-to("tablet") {
+      max-width: 50%;
     }
   }
+  .Address,
+  .Navigation,
+  .SocialMedia {
+    display: flex;
+    height: 100%;
+    justify-content: flex-start;
+  }
+
+  .SocialMedia {
+    ul {
+      display: flex;
+      padding: 5px;
+    }
+  }
+}
+
+.Center {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.Underline {
+  border: 1px solid $background-color-fill;
+  background-color: $background-color-fill;
+  color: $background-color-fill;
+  width: 100%;
+  opacity: 10;
+}
+.CenterVertical {
+  flex-direction: column;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
