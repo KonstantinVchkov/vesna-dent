@@ -1,4 +1,3 @@
-import { FaBeer, FaCoffee } from "react-icons/fa"; // Import icons
 import {
   IconDefinition,
   faAward,

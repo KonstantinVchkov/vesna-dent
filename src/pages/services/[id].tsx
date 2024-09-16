@@ -12,7 +12,7 @@ interface Offer {
   id: number;
   icon: string;
   title: string;
-  images: string[];
+  images?: string[];
   paragraph: string;
   paragraphs: { id: number; title: string; text: string }[];
 }
