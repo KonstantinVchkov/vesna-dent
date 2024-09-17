@@ -2,7 +2,7 @@ import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import styles from "./styles.module.scss";
-
+import { Offers } from "@/Data/ProjectData";
 import {
   Navigation,
   Pagination,
@@ -11,14 +11,20 @@ import {
   Mousewheel,
 } from "swiper/modules";
 import { handleRoute } from "@/utils/routing";
-
-type TMainService = {
-  title: string[];
+import Link from "next/link";
+interface Offer {
   id: number;
-  images?: string[];
-};
+  title: string;
+}
 
-const MainServiceComp = ({ title, id }: TMainService) => {
+export type TMainService = {
+  Offers: Offer[];
+};
+console.log(Offers);
+
+const MainServiceComp = ({ id, title }: Offer) => {
+  console.log(Offers);
+
   return (
     <>
       <h1 className={styles.MainText}>Дознајте повеќе за нашите услуги</h1>
@@ -31,19 +37,43 @@ const MainServiceComp = ({ title, id }: TMainService) => {
         scrollbar={{ draggable: true }}
         mousewheel={true}
         className={styles.OfferService}
+        breakpoints={{
+          425: {
+            slidesPerView: 1,
+            spaceBetween: 20,
+          },
+          768: {
+            slidesPerView: 2,
+            spaceBetween: 40,
+          },
+          1024: {
+            slidesPerView: 3,
+            spaceBetween: 50,
+          },
+        }}
       >
-        {title.map((service, index, id) => (
-          <SwiperSlide key={index}>
-            <h2>{service}</h2>
-            <span
-              className={styles.BtnService}
-              onClick={() => handleRoute(`/services/${id}`)}
-            ></span>
-          </SwiperSlide>
-        ))}
+        {Offers.map((offer) => {
+          return (
+            <SwiperSlide key={offer.id}>
+              <h2>{offer.title}</h2>
+              <span
+                className={styles.BtnService}
+                onClick={() => handleRoute(`/services/${id}`)}
+              ></span>
+            </SwiperSlide>
+          );
+        })}
       </Swiper>
     </>
   );
 };
 
 export default MainServiceComp;
+
+export async function getStaticProps() {
+  return {
+    props: {
+      Offers: Offers,
+    },
+  };
+}
