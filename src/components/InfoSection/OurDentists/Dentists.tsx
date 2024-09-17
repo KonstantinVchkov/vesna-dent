@@ -13,9 +13,9 @@ import { handleRoute } from "@/utils/routing";
 export type TDentists = {
   id: number;
   images: string[];
-  name: string;
-  surname: string;
-  facebook: string;
+  name?: string;
+  surname?: string;
+  facebook?: string;
   instagram?: string;
   linkedin?: string;
 };
@@ -37,10 +37,10 @@ const Dentists = ({
     >
       <div className={styles.border}>
         {images.length > 0 && <img src={images[0]} alt="dentist-img" />}
-        <h2 className={styles.name}>
+        {/* <h2 className={styles.name}>
           Д-р {name} {surname}
-        </h2>
-        <div className={styles.icons}>
+        </h2> */}
+        {/* <div className={styles.icons}>
           {facebook && (
             <Link target="_blank" href={facebook}>
               <FontAwesomeIcon className={styles.icon} icon={faFacebookF} />{" "}
@@ -56,7 +56,7 @@ const Dentists = ({
               <FontAwesomeIcon className={styles.icon} icon={faLinkedinIn} />
             </Link>
           )}
-        </div>
+        </div> */}
       </div>
     </div>
   );
