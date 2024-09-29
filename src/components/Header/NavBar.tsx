@@ -9,16 +9,25 @@ import ButtonComp from "../Button/ButtonComp";
 import { useRouter } from "next/router";
 import dynamic from "next/dynamic";
 import ToothAnimation from "../../../public/assets/animation/Tooth-Animation.json";
+import { Url } from "next/dist/shared/lib/router/router";
 const LottieAnimation = dynamic(() => import("../LottieAnimation/Animation"), {
   ssr: false,
 });
 const NavBar = () => {
-  const [popUp, setPopUp] = useState<boolean>(false);
-  const [showMenu, setShowMenu] = useState<boolean>(false);
-
-  const openMenu = () => setShowMenu(!showMenu);
+  const [popUp, setPopUp] = useState(false);
+  const [showMenu, setShowMenu] = useState(false);
+  const router = useRouter();
+  const [animationDirection, setAnimationDirection] = useState("right");
+  const toggleMenu = () => {
+    setShowMenu(!showMenu);
+    setAnimationDirection(showMenu ? "right" : "left");
+  };
   const togglePopUp = () => setPopUp(!popUp);
 
+  const handleRoute = (path: Url) => {
+    router.push(path);
+    setShowMenu(false);
+  };
   return (
     <>
       <div className={styles.Navbar}>
@@ -50,7 +59,7 @@ const NavBar = () => {
 
         <div className={styles.hambMenu}>
           <input
-            onClick={openMenu}
+            onClick={toggleMenu}
             checked={showMenu}
             onChange={() => {}}
             type="checkbox"
@@ -60,9 +69,27 @@ const NavBar = () => {
           />
         </div>
         {showMenu && (
-          <div className={styles.hambList}>
+          <div
+            className={`${styles.hambList} ${
+              showMenu
+                ? animationDirection === "right"
+                  ? styles.animateRight
+                  : styles.animateLeft
+                : ""
+            }`}
+          >
             <ul>
               <Navitems list={NavList} routes={handleRoute} />
+              <div>
+                {" "}
+                <Image
+                  width={25}
+                  height={25}
+                  src={"/assets/images/Phone.png"}
+                  alt={"phone-img"}
+                />
+                <span>+389-78688551</span>
+              </div>
               <ButtonComp name={"Закажи термин"} handleClick={togglePopUp} />
             </ul>
           </div>
