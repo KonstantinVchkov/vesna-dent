@@ -75,7 +75,6 @@
   @include laptop-m-styles {
     .hambMenu {
       display: block;
-      right: 0;
       .menu {
         --s: 25px; /* control the size */
         --c: rgb(255, 255, 255); /* the color */
