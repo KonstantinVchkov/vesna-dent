@@ -1,6 +1,6 @@
 import FooterSection from "@/components/Footer/FooterSection";
 import NavBar from "@/components/Header/NavBar";
-// import LottieAnimation from "@/components/LottieAnimation/Animation";
+
 import "@/styles/globals.scss";
 import type { AppProps } from "next/app";
 import { useEffect, useState } from "react";
@@ -8,6 +8,7 @@ import ToothAnimation from "../../public/assets/animation/Tooth-Animation.json";
 import dynamic from "next/dynamic";
 import ContactUs from "../components/InfoSection/Contact/ContactUs";
 import ScrollButton from "../components/ScrollBtn/ScrollToTop";
+import React from "react";
 const LottieAnimation = dynamic(
   () => import("../components/LottieAnimation/Animation"),
   {
@@ -31,7 +32,7 @@ export default function App({ Component, pageProps }: AppProps) {
     }, 3000);
   }, []);
   return (
-    <>
+    <div>
       {spinner ? (
         <LottieAnimation animationData={ToothAnimation} />
       ) : (
@@ -43,6 +44,6 @@ export default function App({ Component, pageProps }: AppProps) {
           <ScrollButton handleScroll={handleScroll} />
         </>
       )}
-    </>
+    </div>
   );
 }
