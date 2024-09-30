@@ -11,10 +11,10 @@ import {
   Mousewheel,
 } from "swiper/modules";
 import { handleRoute } from "@/utils/routing";
-import Link from "next/link";
+
 interface Offer {
   id: number;
-  title: string;
+  title: string[];
 }
 
 export type TMainService = {
