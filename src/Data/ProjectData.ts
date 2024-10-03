@@ -6,10 +6,10 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 
 export const NavList = [
-  { title: "Дома", path: "" },
+  { title: "Почетна", path: "/" },
   { title: "За нас", path: "about" },
-  { title: "Услуги", path: "services" },
-  { title: "Наша Работа", path: "ourwork" },
+  { title: "Нашите Услуги", path: "services" },
+  { title: "Нашата Работа", path: "ourwork" },
   // { title: "Стоматолози", path: "dentists" },
 ];
 export const MainText = {
