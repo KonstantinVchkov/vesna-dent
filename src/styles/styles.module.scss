@@ -3,13 +3,13 @@
 .container {
   @include flex-center;
   height: 80vw;
-  @include respond-to("tablet") {
+  @include respond-to("laptop") {
     display: flex;
     justify-content: center;
   }
 }
 .MainImagesContainer {
-  @include respond-to("tablet") {
+  @include respond-to("laptop") {
     display: none;
   }
   @include respond-to("laptop") {
