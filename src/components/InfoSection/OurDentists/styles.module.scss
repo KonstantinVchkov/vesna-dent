@@ -45,7 +45,7 @@
   @include respond-to("desktop") {
     width: 301px;
   }
-  width: 531.84px;
+  width: 431.84px;
   border-radius: $button-radius;
   transition: background $transition-duration;
   position: relative;
@@ -60,7 +60,7 @@
     position: absolute;
     top: 100px;
     z-index: 1;
-    left: 430px;
+    left: 400px;
     @include respond-to("desktop") {
       left: 230px;
     }
