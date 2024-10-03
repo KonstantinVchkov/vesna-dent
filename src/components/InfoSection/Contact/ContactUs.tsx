@@ -1,4 +1,4 @@
-import ButtonComp from "../../Button/ButtonComp";
+import ButtonComp from "@/components/Button/ButtonComp";
 import React, { useState } from "react";
 import styles from "./styles.module.scss";
 import BookApointment from "@/components/BookApointment/Apointment";
@@ -25,8 +25,7 @@ const ContactUs = () => {
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex
             nesciunt, itaque ipsam in ratione necessitatibus? Quas sapiente
             delectus modi error.
-          </p>
-
+          </p>{" "}
           <ButtonComp name={"Закажи термин"} handleClick={togglePopUp} />
         </div>{" "}
       </div>{" "}

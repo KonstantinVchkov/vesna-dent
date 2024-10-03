@@ -20,11 +20,8 @@ interface Offer {
 export type TMainService = {
   Offers: Offer[];
 };
-console.log(Offers);
 
 const MainServiceComp = ({ id, title }: Offer) => {
-  console.log(Offers);
-
   return (
     <>
       <h1 className={styles.MainText}>Дознајте повеќе за нашите услуги</h1>

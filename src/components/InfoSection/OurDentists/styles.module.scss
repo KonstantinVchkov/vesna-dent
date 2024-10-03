@@ -42,7 +42,7 @@
   @include respond-to("tablet") {
     display: none;
   }
-  @include respond-to("laptop") {
+  @include respond-to("desktop") {
     width: 301px;
   }
   width: 431.84px;
@@ -61,7 +61,7 @@
     top: 100px;
     z-index: 1;
     left: 430px;
-    @include respond-to("laptop") {
+    @include respond-to("desktop") {
       left: 230px;
     }
   }
@@ -69,7 +69,7 @@
     position: absolute;
     z-index: 10000;
     bottom: 400px;
-    @include respond-to("laptop") {
+    @include respond-to("desktop") {
       bottom: 330px;
     }
   }

@@ -253,14 +253,15 @@ export const ourMilestones = [
     icon: faScrewdriverWrench,
   },
 ];
-export const infoVesnaDent = [
+export const info = [
   {
     id: 1,
     titles: "Vesna Dent",
     description: "Lorem ipsum",
-    Phone: "000/000-000",
-    WorkHours:
+    phone: "000/000-000",
+    workHours:
       "Mon - Thur - 8 AM to 4 PM Friday: 8am - 2pm (by appointment only) Saturday & Sundays: Closed",
+    email: "info@vesnadent.com",
   },
 ];
 export const Offers = [

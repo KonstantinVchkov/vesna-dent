@@ -5,6 +5,7 @@ import Link from "next/link";
 import Facebook from "../Svg-Icons/Facebook";
 import Instagram from "../Svg-Icons/Instagram";
 import Linkedin from "../Svg-Icons/Linkedin";
+
 const FooterSection = () => {
   return (
     <div className={styles.FooterMain}>

@@ -54,21 +54,6 @@
     }
   }
 
-  .button {
-    font-family: $font-family-base;
-    font-size: rem-calc(18);
-    color: $text-color-primary;
-    background: $background-color-rectangle;
-    border: 2px solid transparent;
-    border-radius: $button-radius;
-    padding: 10px;
-    transition: background $transition-duration ease,
-      color $transition-duration ease, border-color $transition-duration ease;
-
-    &:hover {
-      background-color: $background-color-hover;
-    }
-  }
   .hambMenu {
     display: none;
   }

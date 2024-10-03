@@ -12,7 +12,8 @@
   @include respond-to("laptop") {
     display: none;
   }
-  @include respond-to("laptop") {
+
+  @include respond-to("desktop") {
     width: 451px;
   }
   display: flex;
