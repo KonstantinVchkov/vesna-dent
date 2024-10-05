@@ -15,22 +15,33 @@
     }
   }
   .Address {
+    ul li {
+      display: flex;
+      align-items: center;
+      span {
+        margin: 0 20px;
+      }
+    }
     @include respond-to("tablet") {
       display: none !important;
     }
   }
+
   .InfoSection {
     display: flex;
     justify-content: space-around;
     align-items: center;
+
     @include respond-to("phone") {
       flex-direction: column;
     }
   }
+
   .InfoSection div {
     max-width: 33.333333%;
     max-height: 100%;
     text-align: left;
+    flex-direction: column;
     @include respond-to("tablet") {
       max-width: 50%;
     }
@@ -48,6 +59,7 @@
       max-width: 100%;
     }
   }
+
   .Navigation ul {
     @include respond-to("phone") {
       text-align: center;
@@ -82,5 +94,5 @@
   flex-direction: column;
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-start;
 }

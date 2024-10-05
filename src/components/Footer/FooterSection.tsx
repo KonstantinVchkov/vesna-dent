@@ -5,6 +5,7 @@ import Link from "next/link";
 import Facebook from "../Svg-Icons/Facebook";
 import Instagram from "../Svg-Icons/Instagram";
 import Linkedin from "../Svg-Icons/Linkedin";
+import Image from "next/image";
 
 const FooterSection = () => {
   return (
@@ -21,13 +22,49 @@ const FooterSection = () => {
             <hr className={`${styles.Underline} `} />
 
             <ul>
-              <li>lorem ipsum</li>
-              <li>000/000/000</li>
               <li>
-                Mon - Thur - 8 AM to 4 PMFriday: 8am - 2pm (by appointment
-                only)Saturday & Sundays: Closed
+                {" "}
+                <Image
+                  width={50}
+                  height={50}
+                  src={"/assets/SocialIcons/location.png"}
+                  alt={"location-img"}
+                />
+                <span>lorem ipsum</span>
               </li>
-              <li>loremipsum@dolor.sit</li>
+              <li>
+                {" "}
+                <Image
+                  width={50}
+                  height={50}
+                  src={"/assets/SocialIcons/phone.png"}
+                  alt={"phone-img"}
+                />
+                <span>000/000/000</span>
+              </li>
+              <li>
+                {" "}
+                <Image
+                  width={50}
+                  height={50}
+                  src={"/assets/SocialIcons/clock.png"}
+                  alt={"clock-img"}
+                />
+                <span>
+                  Mon - Thur - 8 AM to 4 PMFriday: 8am - 2pm (by appointment
+                  only)Saturday & Sundays: Closed
+                </span>
+              </li>
+              <li>
+                {" "}
+                <Image
+                  width={50}
+                  height={50}
+                  src={"/assets/SocialIcons/mail.png"}
+                  alt={"mail-img"}
+                />
+                <span>loremipsum@dolor.sit</span>
+              </li>
             </ul>
           </div>
 

@@ -23,7 +23,7 @@ const BookApointment = ({ handleModal }: TbookApointment) => {
                 <Image
                   width={25}
                   height={25}
-                  src={"/assets/images/Phone.png"}
+                  src={"/assets/SocialIcons/phone.png"}
                   alt={"phone-img"}
                 />
                 <span>+389-78688551</span>
@@ -36,8 +36,8 @@ const BookApointment = ({ handleModal }: TbookApointment) => {
                 <Image
                   width={25}
                   height={25}
-                  src={"/assets/images/Phone.png"}
-                  alt={"phone-img"}
+                  src={"/assets/SocialIcons/location.png"}
+                  alt={"location-img"}
                 />
                 <span>Lorem ipsum dolor</span>
               </div>
