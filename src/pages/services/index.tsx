@@ -72,9 +72,10 @@ const ServicesPage = ({ services, offers, about, workData }: TServicesPage) => {
                 ) : (
                   <p>{offer.icon}</p>
                 )}
-                <h2>{offer.title}</h2>
-                <p>{offer.paragraph}</p>
-              </div>
+                <h3>{offer.title}</h3>
+                <p>{offer.paragraph}</p>{" "}
+                <button className={styles.button}>Види Повеќе</button>
+              </div>{" "}
             </Link>
           </div>
         ))}
@@ -112,7 +113,8 @@ const ServicesPage = ({ services, offers, about, workData }: TServicesPage) => {
                     <p>{offer.icon}</p>
                   )}
                   <h2>{offer.title}</h2>
-                  <p>{offer.paragraph}</p>
+                  <p>{offer.paragraph}</p>{" "}
+                  <button className={styles.button}>Види Повеќе</button>
                 </div>
               </Link>
             </SwiperSlide>
