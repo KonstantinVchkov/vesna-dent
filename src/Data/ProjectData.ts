@@ -256,7 +256,7 @@ export const ourMilestones = [
 export const info = [
   {
     id: 1,
-    titles: "Vesna Dent",
+    title: "Весна Дент",
     description: "Lorem ipsum",
     phone: "000/000-000",
     workHours:

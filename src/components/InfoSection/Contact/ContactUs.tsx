@@ -2,23 +2,32 @@ import ButtonComp from "@/components/Button/ButtonComp";
 import React, { useState } from "react";
 import styles from "./styles.module.scss";
 import BookApointment from "@/components/BookApointment/Apointment";
+import { info } from "./../../../Data/ProjectData";
+interface InfoItem {
+  id: number;
+  title: string;
+  description: string;
+  phone: string;
+  workHours: string;
+  email: string;
+}
 
-const ContactUs = () => {
+const ContactUs: React.FC = () => {
   const [popUp, setPopUp] = useState<boolean>(false);
   const togglePopUp = () => setPopUp(!popUp);
 
   return (
     <>
       <div className={styles.center}>
-        <div className={styles.leftDiv}>
-          <h2>Vesna Dent</h2>
-          <p>Lorem ipsum dolor sit amet consectetur. </p>
-          <p>000/000-000</p>
-          <p>
-            Mon - Thur - 8 AM to 4 PM Friday: 8am - 2pm by appointment only
-            Saturday & Sundays: Closed
-          </p>
-        </div>
+        {info.map((item: InfoItem) => (
+          <div key={item.id} className={styles.leftDiv}>
+            <h2>{item.title}</h2>
+            <p>{item.description}</p>
+            <p>{item.phone}</p>
+            <p>{item.workHours}</p>
+            <p>{item.email}</p>
+          </div>
+        ))}
         <div className={styles.rightDiv}>
           <h2>Zakazi Termin</h2>
           <p>
