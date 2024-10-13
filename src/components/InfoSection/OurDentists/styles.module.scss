@@ -7,7 +7,7 @@
   flex-direction: column;
   max-width: 100%;
   width: 500px;
-  padding: 40px 20px;
+  padding: $padding-value-40 $padding-value-20;
   border-radius: 10px;
   font-family: $font-family-base;
   align-content: left;
@@ -23,11 +23,11 @@
     color: $text-color-primary;
     width: 216px;
     height: 67px;
-    padding: 20px;
+    padding: $padding-value-20;
     background-color: $background-color-rectangle;
     border-radius: $button-radius;
     cursor: pointer;
-    margin-top: 20px;
+    margin-top: $margin-value-20;
     text-align: center;
     @include respond-to("phone") {
       margin: auto;
@@ -42,7 +42,7 @@
   @include respond-to("tablet") {
     display: none;
   }
-  @include respond-to("laptop") {
+  @include respond-to("desktop") {
     width: 301px;
   }
   width: 431.84px;
@@ -60,8 +60,8 @@
     position: absolute;
     top: 100px;
     z-index: 1;
-    left: 430px;
-    @include respond-to("laptop") {
+    left: 400px;
+    @include respond-to("desktop") {
       left: 230px;
     }
   }
@@ -69,7 +69,7 @@
     position: absolute;
     z-index: 10000;
     bottom: 400px;
-    @include respond-to("laptop") {
+    @include respond-to("desktop") {
       bottom: 330px;
     }
   }
@@ -101,8 +101,8 @@
 
     .icons {
       position: absolute;
-      fill: #fff;
-      color: #fff;
+      fill: $text-color-primary;
+      color: $text-color-primary;
       height: 130px;
       top: 226px;
       width: 50px;
@@ -124,8 +124,8 @@
     }
   }
   .name {
-    color: white;
-    margin: 20px;
+    color: $text-color-primary;
+    margin: $margin-value-20;
     opacity: 0;
     transition: opacity 1s;
     z-index: 1000;

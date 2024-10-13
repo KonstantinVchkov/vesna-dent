@@ -18,8 +18,8 @@
   top: 0;
   //margin: 10px auto;
   background: transparent;
-  padding: 10px 0;
-  font-size: 25px;
+  padding: $padding-value-10 0;
+  font-size: $font-size-medium;
 
   .listMenu ul {
     @include flex-center;
@@ -36,14 +36,14 @@
     li,
     .button {
       cursor: pointer;
-      margin-right: 10px;
+      margin-right: $margin-value-10;
 
       &:last-child {
         margin-right: 0;
       }
     }
     &.buttons span {
-      margin-right: 10px;
+      margin-right: $margin-value-10;
       cursor: pointer;
       &:hover {
         color: $text-color-hover;
@@ -54,32 +54,17 @@
     }
   }
 
-  .button {
-    font-family: $font-family-base;
-    font-size: rem-calc(18);
-    color: $text-color-primary;
-    background: $background-color-rectangle;
-    border: 2px solid transparent;
-    border-radius: $button-radius;
-    padding: 10px;
-    transition: background $transition-duration ease,
-      color $transition-duration ease, border-color $transition-duration ease;
-
-    &:hover {
-      background-color: $background-color-hover;
-    }
-  }
   .hambMenu {
     display: none;
   }
   @include laptop-m-styles {
     .hambMenu {
       display: block;
+
       .menu {
         --s: 25px; /* control the size */
-        --c: rgb(255, 255, 255); /* the color */
+        --c: #00807a; /* the color */
         z-index: 1000000000;
-
         height: var(--s);
         aspect-ratio: 1;
         border: none;
@@ -154,13 +139,18 @@
       // @include flex-direction;
       text-align: center;
       font-size: 30px;
-      @include respond-to("tablet") {
+      @include respond-to("laptop") {
         text-align: left;
         line-height: 2;
-        font-size: $font-size-small;
+        font-size: $font-size-medium;
+        height: 80vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-content: space-around;
       }
       @include respond-to("phone") {
-        font-size: $font-size-small;
+        font-size: rem-calc(18);
       }
       li {
         // line-height: 2;
@@ -170,10 +160,10 @@
     // left: 50%;
     // right: 50%;
     // transform: translate(-50%,-50%);
-    @include respond-to("tablet") {
+    @include respond-to("laptop") {
       background: rgb(22, 22, 22) !important;
       width: 300px;
-      height: 100vh;
+      height: 90vh;
       top: 0;
       right: 0;
       border: 2px solid $background-color-rectangle;
@@ -181,7 +171,7 @@
     @include respond-to("phone") {
       background: rgb(22, 22, 22);
       width: 200px;
-      height: 100vh;
+      height: 90vh;
       top: 0;
       right: 0;
     }

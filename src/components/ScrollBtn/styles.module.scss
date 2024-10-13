@@ -1,14 +1,16 @@
+@import "../../styles/variables.module";
+@import "../../styles/mixins.module";
+
 .scrollbtn {
   position: fixed;
   bottom: 20px;
-  left: 50%;
+  left: 95%;
   transform: translateX(-50%);
   cursor: pointer;
-
+  color: $text-color-primary;
   width: 40px;
   height: 40px;
   border-radius: 20px;
-  background-color: #f0f0f0;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  background-color: #002629;
   z-index: 1000;
 }

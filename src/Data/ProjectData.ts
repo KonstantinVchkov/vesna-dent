@@ -6,10 +6,10 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 
 export const NavList = [
-  { title: "Дома", path: "" },
+  { title: "Почетна", path: "/" },
   { title: "За нас", path: "about" },
-  { title: "Услуги", path: "services" },
-  { title: "Наша Работа", path: "ourwork" },
+  { title: "Нашите Услуги", path: "services" },
+  { title: "Нашата Работа", path: "ourwork" },
   // { title: "Стоматолози", path: "dentists" },
 ];
 export const MainText = {
@@ -253,14 +253,18 @@ export const ourMilestones = [
     icon: faScrewdriverWrench,
   },
 ];
-export const infoVesnaDent = [
+export const info = [
   {
     id: 1,
-    titles: "Vesna Dent",
+    title: "Весна Дент",
     description: "Lorem ipsum",
-    Phone: "000/000-000",
-    WorkHours:
+    phone: "000/000-000",
+    workHours:
       "Mon - Thur - 8 AM to 4 PM Friday: 8am - 2pm (by appointment only) Saturday & Sundays: Closed",
+    email: "info@vesnadent.com",
+    terminTitle: "Закажи Термин",
+    termin:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit.Ex nesciunt, itaque ipsam in ratione necessitatibus? Quas sapiente delectus modi error.",
   },
 ];
 export const Offers = [

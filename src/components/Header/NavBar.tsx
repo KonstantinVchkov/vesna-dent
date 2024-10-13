@@ -78,8 +78,11 @@ const NavBar = () => {
                 : ""
             }`}
           >
-            <ul>
-              <Navitems list={NavList} routes={handleRoute} />
+            <ul className={styles.between}>
+              <div>
+                {" "}
+                <Navitems list={NavList} routes={handleRoute} />
+              </div>
               <div>
                 {" "}
                 <Image
@@ -88,9 +91,9 @@ const NavBar = () => {
                   src={"/assets/images/Phone.png"}
                   alt={"phone-img"}
                 />
-                <span>+389-78688551</span>
+                <span>+389-78688551</span>{" "}
+                <ButtonComp name={"Закажи термин"} handleClick={togglePopUp} />
               </div>
-              <ButtonComp name={"Закажи термин"} handleClick={togglePopUp} />
             </ul>
           </div>
         )}
