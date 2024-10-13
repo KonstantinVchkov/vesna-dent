@@ -35,7 +35,7 @@
   margin: auto;
   width: 600px;
   text-align: left;
-  padding: 40px 0;
+  padding: $padding-value-40 0;
 
   h1 {
     text-align: center;
@@ -54,16 +54,16 @@
   display: flex;
   align-items: center;
   width: 100%;
-  margin: 20px auto;
+  margin: $margin-value-20 auto;
   height: 250px;
-  padding: 20px;
+  padding: $padding-value-20;
   background-color: $background-color-irblue;
   text-align: center;
   overflow: hidden;
   color: $text-color-base;
 
   h2 {
-    margin: 0 0 18px 0;
+    margin: 0 0 $margin-value-20 0;
     font-family: $font-family-base;
     letter-spacing: 0.06em;
     transition: color 0.3s ease-out;
@@ -134,9 +134,9 @@
   border: 1px solid $background-color-rectangle;
 
   .color {
-    color: black;
-    padding: 20px 0;
-    margin: 0 20px;
+    color: $text-color-base;
+    padding: $padding-value-20 0;
+    margin: 0 $margin-value-20;
   }
 
   @include respond-to("tablet") {
@@ -156,7 +156,7 @@
   background: $background-color-rectangle;
   border: 2px solid transparent;
   border-radius: $button-radius;
-  padding: 10px;
+  padding: $padding-value-10;
   position: absolute;
   bottom: 20px;
   left: 10px;

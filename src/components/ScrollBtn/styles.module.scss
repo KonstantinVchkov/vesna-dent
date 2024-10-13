@@ -1,10 +1,13 @@
+@import "../../styles/variables.module";
+@import "../../styles/mixins.module";
+
 .scrollbtn {
   position: fixed;
   bottom: 20px;
   left: 95%;
   transform: translateX(-50%);
   cursor: pointer;
-  color: bisque;
+  color: $text-color-primary;
   width: 40px;
   height: 40px;
   border-radius: 20px;

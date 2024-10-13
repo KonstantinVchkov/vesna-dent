@@ -57,7 +57,7 @@ $breakpoints: (
 }
 @mixin wrap {
   width: 80%;
-  margin: 10px auto;
+  margin: $margin-value-20 auto;
 }
 
 @mixin laptop-m-styles {

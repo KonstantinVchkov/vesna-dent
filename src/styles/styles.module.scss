@@ -22,7 +22,7 @@
   gap: 20px;
   width: 801px;
   height: 648px;
-  padding: 20px;
+  padding: $padding-value-20;
   background-color: $background-color-rectangle;
   border-top-right-radius: 10px;
   border-bottom-right-radius: 10px;
@@ -32,7 +32,7 @@
   background-color: $background-color-irblue;
 
   @include flex-center;
-  padding: 10px;
+  padding: $padding-value-10;
   color: $text-color-primary;
   font-weight: $font-weight-bold;
   text-align: center;

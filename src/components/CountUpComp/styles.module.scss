@@ -2,7 +2,7 @@
 @import "../../styles/mixins.module";
 
 .MilestoneItem {
-  margin: 15px 10px;
+  margin: $margin-value-15 $margin-value-10;
   color: $text-color-base;
   background-color: $background-color-irblue;
   max-width: 100%;

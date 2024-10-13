@@ -2,8 +2,8 @@
 @import "../../styles/variables.module";
 .FooterMain {
   // @include flex-direction();
-  padding: 10px 0;
-  font-size: 20px;
+  padding: $padding-value-10 0;
+  font-size: $font-size-small;
   color: $text-color-primary;
   background: $background-color-rectangle;
   .imgParagraph {
@@ -19,7 +19,7 @@
       display: flex;
       align-items: center;
       span {
-        margin: 0 20px;
+        margin: 0 $margin-value-20;
       }
     }
     @include respond-to("tablet") {
@@ -70,10 +70,10 @@
   .SocialMedia {
     ul {
       display: flex;
-      padding: 5px;
+      padding: $padding-value-5;
     }
     li {
-      margin: 0 20px;
+      margin: 0 $margin-value-20;
     }
   }
 }

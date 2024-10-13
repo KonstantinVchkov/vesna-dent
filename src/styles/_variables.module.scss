@@ -8,6 +8,7 @@
 $font-family-base: "EB Garamond", serif;
 $line-height-base: 1.5;
 $font-size-big: 2.9rem;
+$font-size-medium: 1.5rem;
 $font-size-small: 1.3rem;
 
 $font-weight-normal: 400;
@@ -28,7 +29,7 @@ $line-color: #003634;
 // background color settings
 $background-color-fill: #e5f7f7;
 $background-color-rectangle: #00807a;
-$background-color-rectangle: #00807A;
+$background-color-rectangle: #00807a;
 $background-color-rectangle-rgba: rgba(0, 128, 122, 0.03);
 
 $background-color-irblue: #7fdbd7;
@@ -40,3 +41,16 @@ $card-icon-green3: #0f4d4b;
 // hover settings
 $text-color-hover: #fabf00;
 $background-color-hover: #00a49d;
+
+// padding value
+$padding-value-5: 5px;
+$padding-value-10: 10px;
+$padding-value-20: 20px;
+$padding-value-40: 40px;
+$padding-value-50: 50px;
+
+// marging value
+$margin-value-20: 20px;
+$margin-value-15: 15px;
+$margin-value-10: 10px;
+$margin-value-50: 50px;

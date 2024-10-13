@@ -8,7 +8,7 @@
   background: $background-color-rectangle;
   border: 2px solid transparent;
   border-radius: $button-radius;
-  padding: 10px;
+  padding: $padding-value-10;
   transition: background $transition-duration ease,
     color $transition-duration ease, border-color $transition-duration ease;
 

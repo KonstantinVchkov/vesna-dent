@@ -18,8 +18,8 @@
   top: 0;
   //margin: 10px auto;
   background: transparent;
-  padding: 10px 0;
-  font-size: 25px;
+  padding: $padding-value-10 0;
+  font-size: $font-size-medium;
 
   .listMenu ul {
     @include flex-center;
@@ -36,14 +36,14 @@
     li,
     .button {
       cursor: pointer;
-      margin-right: 10px;
+      margin-right: $margin-value-10;
 
       &:last-child {
         margin-right: 0;
       }
     }
     &.buttons span {
-      margin-right: 10px;
+      margin-right: $margin-value-10;
       cursor: pointer;
       &:hover {
         color: $text-color-hover;
