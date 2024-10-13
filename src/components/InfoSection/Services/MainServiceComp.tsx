@@ -28,7 +28,7 @@ const MainServiceComp = ({ id, title }: Offer) => {
       <Swiper
         modules={[Navigation, Pagination, Scrollbar, A11y, Mousewheel]}
         spaceBetween={50}
-        slidesPerView={3}
+        slidesPerView={1}
         navigation
         pagination={{ clickable: true }}
         scrollbar={{ draggable: true }}

@@ -2,13 +2,17 @@
 @import "../../../styles/mixins.module";
 .ReviewContainer {
   height: auto;
-
+  h1 {
+    text-align: center;
+  }
   color: $text-color-base;
   font-family: $font-family-base;
   @include respond-to("tablet") {
-    font-size: 15px;
+    font-size: 10px;
   }
-
+  @include respond-to("phone") {
+    margin: 0 10px;
+  }
   .ReviewCards {
     background-color: $background-color-undercards;
     @include flex-wrap;
@@ -20,8 +24,7 @@
     }
     .ClientCardContainer {
       flex-basis: 50%;
-      @include respond-to("phone") {
-      }
+
       @include flex-center;
       .line {
         width: 10px;

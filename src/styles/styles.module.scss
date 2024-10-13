@@ -1,11 +1,18 @@
 @import "./variables.module";
 @import "./mixins.module";
 .container {
-  @include flex-center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   height: 80vw;
   @include respond-to("laptop") {
     display: flex;
     justify-content: center;
+  }
+}
+.device {
+  @include respond-to("4K Device") {
+    display: none;
   }
 }
 .MainImagesContainer {
