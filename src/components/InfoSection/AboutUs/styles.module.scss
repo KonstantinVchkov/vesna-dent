@@ -1,6 +1,8 @@
 @import "../../../styles/variables.module";
 @import "../../../styles/mixins.module";
-
+.container {
+  width: 100%;
+}
 .AboutComp {
   @include flex-direction;
   text-align: center;
@@ -82,11 +84,9 @@
   width: 400px;
   height: 350px;
   @include respond-to("tablet") {
-    background-color: transparent;
     padding: 0;
-    margin: auto;
-    width: 350px;
-    height: 350px;
+    width: 250px;
+    height: 300px;
     flex-direction: column;
   }
 }
@@ -94,28 +94,24 @@
   display: flex;
   text-align: left;
   padding: $padding-value-20 0;
-  @include respond-to("tablet") {
-    flex-direction: column;
-  }
+
   img {
     position: absolute;
     width: 350px;
     height: 300px;
     z-index: 1111;
+    margin: 10px 0;
+
+    @include respond-to("tablet") {
+      width: 250px;
+      height: 250px;
+    }
   }
 
   .bio,
   h2 {
     padding: $padding-value-20 0;
     margin: 0 150px;
-    @include respond-to("tablet") {
-      margin: 0;
-      width: 400px;
-    }
-
-    @include respond-to("phone") {
-      width: 300px;
-    }
   }
 }
 .dentists:nth-child(3) {
@@ -123,23 +119,19 @@
   img {
     right: 0;
   }
-  @include respond-to("tablet") {
-    flex-direction: column;
-  }
 }
 .dent {
   margin: auto;
   width: 100%;
-  @include respond-to("tablet") {
-    text-align: center;
-    flex-direction: column;
-  }
 }
 
 .bio p.collapsed {
   overflow: hidden;
   @include respond-to("phone") {
     max-height: 45px;
+  }
+  @include respond-to("desktop") {
+    font-size: small;
   }
 }
 

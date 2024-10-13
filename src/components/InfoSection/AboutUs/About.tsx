@@ -56,7 +56,7 @@ const About = ({ smallParagraph, secondTitle }: TAbout) => {
           <h3>Весна Дент</h3>
           <p>{smallParagraph}</p>
         </div>
-        <div>
+        <div className={styles.container}>
           <h1>Нашиот тим</h1>{" "}
           {ourDentists.map((dentist) => {
             const paragraphClass = expanded[dentist.id]
