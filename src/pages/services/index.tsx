@@ -58,7 +58,7 @@ const ServicesPage = ({ services, offers, about, workData }: TServicesPage) => {
       <div className={styles.center}>
         {offers.map((offer) => (
           <div key={offer.id} className={styles.offers}>
-            <Link href={`/services/${offer.id}`} passHref>
+            <Link href={`/services/${offer.id}`}>
               <div className={styles.color}>
                 {offer.icon.includes(".png") ? (
                   <div>

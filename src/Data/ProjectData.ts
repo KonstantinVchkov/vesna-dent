@@ -269,7 +269,7 @@ export const info = [
 ];
 export const Offers = [
   {
-    id: 1,
+    id: 0,
     icon: "/assets/icons/img-1.png",
     title: "БЕЛЕЕЊЕ НА ЗАБИТЕ",
     images: [
@@ -309,7 +309,7 @@ export const Offers = [
     ],
   },
   {
-    id: 2,
+    id: 1,
     icon: "/assets/icons/image-2.png",
     title: "МОСТОВИ И КОРОНКИ",
     paragraph:
@@ -353,7 +353,7 @@ export const Offers = [
     ],
   },
   {
-    id: 3,
+    id: 2,
     icon: "/assets/icons/image-4.png",
     title: "ВИНИРИ",
     paragraph:
@@ -397,7 +397,7 @@ export const Offers = [
     ],
   },
   {
-    id: 4,
+    id: 3,
     icon: "/assets/icons/image-5.png",
     title: "ТОТАЛНИ И ПАРЦИЈАЛНИ ПРОТЕЗИ",
     paragraph:
@@ -441,7 +441,7 @@ export const Offers = [
     ],
   },
   {
-    id: 5,
+    id: 4,
     icon: "/assets/icons/image-7.png",
     title: "МАШИНСКА ЕНДОДОНЦИЈА",
     paragraph:
