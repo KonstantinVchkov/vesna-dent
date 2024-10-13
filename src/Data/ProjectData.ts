@@ -262,6 +262,9 @@ export const info = [
     workHours:
       "Mon - Thur - 8 AM to 4 PM Friday: 8am - 2pm (by appointment only) Saturday & Sundays: Closed",
     email: "info@vesnadent.com",
+    terminTitle: "Закажи Термин",
+    termin:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit.Ex nesciunt, itaque ipsam in ratione necessitatibus? Quas sapiente delectus modi error.",
   },
 ];
 export const Offers = [
