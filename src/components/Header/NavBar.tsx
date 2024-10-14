@@ -25,9 +25,18 @@ const NavBar = () => {
   const togglePopUp = () => setPopUp(!popUp);
 
   const handleRoute = (path: Url) => {
-    router.push(path);
+    if (typeof path === "string") {
+      path = path.startsWith("/") ? path : "/" + path;
+    } else if (typeof path === "object" && path.pathname) {
+      path.pathname = path.pathname.startsWith("/")
+        ? path.pathname
+        : "/" + path.pathname;
+    }
+
+    router.replace(path);
     setShowMenu(false);
   };
+
   return (
     <>
       <div className={styles.Navbar}>
