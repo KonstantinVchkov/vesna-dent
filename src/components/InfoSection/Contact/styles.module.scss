@@ -22,5 +22,8 @@
 }
 .leftDiv p,
 .rightDiv p {
-  width: 100%;
+  width: 50%;
+  @include respond-to("phone") {
+    width: 100%;
+  }
 }
