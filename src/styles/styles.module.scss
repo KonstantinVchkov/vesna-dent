@@ -4,8 +4,8 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 100%;
-
+  padding: 100px 0;
+  //  height: 100vh;
   @include respond-to("laptop") {
     display: flex;
     justify-content: center;
