@@ -83,7 +83,9 @@ const DetailPage = ({ offer, workData }: Props) => {
                   className={`${styles.button} ${styles.hidden}`}
                   onClick={() => toggleExpand(p.id)}
                 >
-                  {expanded[p.id] ? "Прочитај помалку " : "Прочитај повеќе "}
+                  <span>
+                    {expanded[p.id] ? "Прочитај помалку " : "Прочитај повеќе "}
+                  </span>
                   <FontAwesomeIcon
                     icon={expanded[p.id] ? faChevronUp : faChevronDown}
                   />

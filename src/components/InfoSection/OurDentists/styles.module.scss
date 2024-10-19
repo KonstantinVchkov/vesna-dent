@@ -2,7 +2,7 @@
 @import "../../../styles/mixins.module";
 .MainText {
   // max-width: 400px;
-  // margin: 0px auto;
+  margin: 0px auto;
   display: flex;
   flex-direction: column;
   max-width: 100%;
@@ -29,7 +29,8 @@
     cursor: pointer;
     margin-top: $margin-value-20;
     text-align: center;
-    @include respond-to("phone") {
+
+    @include respond-to("laptop") {
       margin: auto;
     }
     &:hover {

@@ -141,6 +141,6 @@
 .hidden {
   display: none;
   @include respond-to("phone") {
-    display: block;
+    display: flex;
   }
 }

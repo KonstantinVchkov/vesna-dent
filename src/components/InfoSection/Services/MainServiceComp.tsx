@@ -10,7 +10,7 @@ import {
   A11y,
   Mousewheel,
 } from "swiper/modules";
-import { handleRoute } from "@/utils/routing";
+import Link from "next/link";
 
 interface Offer {
   id: number;
@@ -28,7 +28,7 @@ const MainServiceComp = ({ id, title }: Offer) => {
       <Swiper
         modules={[Navigation, Pagination, Scrollbar, A11y, Mousewheel]}
         spaceBetween={50}
-        slidesPerView={3}
+        slidesPerView={1}
         navigation
         pagination={{ clickable: true }}
         scrollbar={{ draggable: true }}
@@ -52,11 +52,11 @@ const MainServiceComp = ({ id, title }: Offer) => {
         {Offers.map((offer) => {
           return (
             <SwiperSlide key={offer.id}>
-              <h2>{offer.title}</h2>
-              <span
+              <h2>{offer.title}</h2>{" "}
+              <Link
+                href={`/services/${offer.id}`}
                 className={styles.BtnService}
-                onClick={() => handleRoute(`/services/${id}`)}
-              ></span>
+              ></Link>
             </SwiperSlide>
           );
         })}
