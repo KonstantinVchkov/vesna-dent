@@ -56,7 +56,7 @@ const About = ({ smallParagraph, secondTitle }: TAbout) => {
           <h3>Весна Дент</h3>
           <p>{smallParagraph}</p>
         </div>
-        <div>
+        <div className={styles.container}>
           <h1>Нашиот тим</h1>{" "}
           {ourDentists.map((dentist) => {
             const paragraphClass = expanded[dentist.id]
@@ -78,38 +78,44 @@ const About = ({ smallParagraph, secondTitle }: TAbout) => {
                   </h2>
                   <div className={styles.bio}>
                     <p className={paragraphClass}>{dentist.bio}</p>
-                    <a
-                      href={dentist.facebook}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      <Facebook />
-                    </a>
-                    {dentist.instagram && (
+                    <div className={styles.row}>
+                      {" "}
                       <a
-                        href={dentist.instagram}
+                        href={dentist.facebook}
                         target="_blank"
                         rel="noopener noreferrer"
                       >
-                        <Instagram />
+                        <Facebook />
                       </a>
-                    )}
-                    {dentist.linkedin && (
-                      <a
-                        href={dentist.linkedin}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                      >
-                        <Linkedin />
-                      </a>
-                    )}{" "}
+                      {dentist.instagram && (
+                        <a
+                          href={dentist.instagram}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                        >
+                          <Instagram />
+                        </a>
+                      )}
+                      {dentist.linkedin && (
+                        <a
+                          href={dentist.linkedin}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                        >
+                          <Linkedin />
+                        </a>
+                      )}{" "}
+                    </div>
+
                     <button
                       className={`${styles.button} ${styles.hidden}`}
                       onClick={() => toggleExpand(dentist.id)}
                     >
-                      {expanded[dentist.id]
-                        ? "Прочитај помалку"
-                        : "Прочитај повеќе"}
+                      <span>
+                        {expanded[dentist.id]
+                          ? "Прочитај помалку"
+                          : "Прочитај повеќе"}
+                      </span>
                       <FontAwesomeIcon
                         icon={
                           expanded[dentist.id] ? faChevronUp : faChevronDown

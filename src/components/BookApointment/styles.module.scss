@@ -1,11 +1,12 @@
 @import "../../styles/variables.module";
+@import "../../styles/mixins.module";
 .MainSection {
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
-  background: rgba(120, 118, 118, 0.5);
+  background: #78767680;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -14,24 +15,42 @@
     background-color: $card-fill;
     color: $text-color-base;
     z-index: 11;
-    padding: 50px;
-    margin: 0 50px;
+    padding: $padding-value-10;
     border-radius: 20px;
     box-shadow: 0px 6px 11px 3px rgba(0, 0, 0, 0.6);
     button {
       cursor: pointer;
       font-family: $font-family-base;
       font-size: rem-calc(18);
-      color: $text-color-primary;
-      background: $background-color-rectangle;
+      background-color: transparent;
       border: 2px solid transparent;
       border-radius: $button-radius;
-      padding: 10px;
-      transition: background $transition-duration ease,
-        color $transition-duration ease, border-color $transition-duration ease;
-
-      &:hover {
-        background-color: $background-color-hover;
+      padding: $padding-value-10;
+    }
+    h1 {
+      text-align: center;
+    }
+    h3 {
+      font-size: rem-calc(18);
+    }
+    .right {
+      display: flex;
+      justify-content: flex-end;
+    }
+    .center {
+      display: flex;
+      flex-direction: column;
+      padding: $padding-value-10;
+      span {
+        margin: 10px;
+      }
+    }
+    .contain {
+      display: flex;
+      justify-content: space-between;
+      padding: $padding-value-20;
+      @include respond-to("tablet") {
+        flex-direction: column;
       }
     }
   }

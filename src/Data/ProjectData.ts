@@ -6,10 +6,10 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 
 export const NavList = [
-  { title: "Дома", path: "" },
+  { title: "Почетна", path: "/" },
   { title: "За нас", path: "about" },
-  { title: "Услуги", path: "services" },
-  { title: "Наша Работа", path: "ourwork" },
+  { title: "Нашите Услуги", path: "services" },
+  { title: "Нашата Работа", path: "ourwork" },
   // { title: "Стоматолози", path: "dentists" },
 ];
 export const MainText = {
@@ -149,7 +149,7 @@ export const ourDentists = [
     name: "Весна",
     surname: "Миленковска",
     facebook: "https://www.facebook.com/vesna.k.milenkovska",
-    bio: "   Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae cumque doloribus iusto et quia, commodi harum modi, optio voluptates libero, sint reiciendis exercitationem illo autem quo iste dolorum ab porro impedit incidunt natus explicabo architecto. ipsum dolor sit amet consectetur adipisicing elit. Repudiandae cumque doloribus iusto et quia, commodi harum modi, optio voluptates libero, sint reiciendis exercitationem illo autem quo iste dolorum ab porro impedit incidunt natus explicabo architecto.",
+    bio: "Весна Крстевска Миленковска, сопственик на ПЗУ Весна Дент, е дипломиран стоматолог на Стоматолошкиот факултет во Скопје. Во 2002 година ја отвора својата ординација, која успешно ја води веќе повеќе од две децении, посветувајќи се на врвна стоматолошка грижа и задоволството на пациентите.",
   },
   {
     id: 2,
@@ -163,7 +163,7 @@ export const ourDentists = [
     facebook: "https://www.facebook.com/dragan.milenkovski.5",
     instagram: "https://www.instagram.com/milenkovskidragan/",
     linkedin: "https://www.linkedin.com/in/dragan-milenkovski-273a142ab/",
-    bio: "   Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae cumque doloribus iusto et quia, commodi harum modi, optio voluptates libero, sint reiciendis exercitationem illo autem quo iste dolorum ab porro impedit incidunt natus explicabo architecto. ipsum dolor sit amet consectetur adipisicing elit. Repudiandae cumque doloribus iusto et quia, commodi harum modi, optio voluptates libero, sint reiciendis exercitationem illo autem quo iste dolorum ab porro impedit incidunt natus explicabo architecto.",
+    bio: "Драган Миленковски е дипломиран стоматолог на Стоматолошкиот факултет во Скопје, каде што исто така магистрирал на тема од катедрата за болести на уста и пародонтот. Неговото дополнително усовршување во пародонталната хирургија го заврши во Белград под менторство на доцент Миљан Бајич, каде што успешно лекува периодонтитис. Посветен е на микрохируршката ендодонција, учејќи во Белград од експертот Иван Мирович и применувајќи ги принципите на Style Italiano Endodontics. Драган е посветен на унапредување на стоматологијата во Македонија, следејќи леге артис процедури и работи на подобрување на оралното и севкупното здравје на своите пациенти.",
   },
   {
     id: 3,
@@ -176,7 +176,7 @@ export const ourDentists = [
     surname: "Миленковска",
     facebook: "https://www.facebook.com/bojana.milenkovska",
     instagram: "https://www.instagram.com/_bojanam13/",
-    bio: "   Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae cumque doloribus iusto et quia, commodi harum modi, optio voluptates libero, sint reiciendis exercitationem illo autem quo iste dolorum ab porro impedit incidunt natus explicabo architecto. ",
+    bio: " Бојана Миленковска е дипломиран стоматолог на Стоматолошкиот факултет во Скопје, специјализирана за естетска стоматологија. Со страст за подобрување на насмевките, активно учествува на обуки и семинари во земјата и странство, постигнувајќи највисоки стандарди во својата пракса. Нејзината посветеност на ендодонцијата и лекувањето на заби ја прави важен член на нашиот тим, посветена на здравјето и убавината на вашата насмевка. ",
   },
 ];
 
@@ -253,19 +253,23 @@ export const ourMilestones = [
     icon: faScrewdriverWrench,
   },
 ];
-export const infoVesnaDent = [
+export const info = [
   {
     id: 1,
-    titles: "Vesna Dent",
+    title: "Весна Дент",
     description: "Lorem ipsum",
-    Phone: "000/000-000",
-    WorkHours:
+    phone: "000/000-000",
+    workHours:
       "Mon - Thur - 8 AM to 4 PM Friday: 8am - 2pm (by appointment only) Saturday & Sundays: Closed",
+    email: "info@vesnadent.com",
+    terminTitle: "Закажи Термин",
+    termin:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit.Ex nesciunt, itaque ipsam in ratione necessitatibus? Quas sapiente delectus modi error.",
   },
 ];
 export const Offers = [
   {
-    id: 1,
+    id: 0,
     icon: "/assets/icons/img-1.png",
     title: "БЕЛЕЕЊЕ НА ЗАБИТЕ",
     images: [
@@ -275,12 +279,12 @@ export const Offers = [
       "/assets/teeth/woman-whitening-teeth-dentistry-with-special-equipment 1.png",
     ],
     paragraph:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "Белеењето на забите е козметички третман кој помага да се отстрани обојувањето и дамките од забите, враќајќи ја природната белина.",
     paragraphs: [
       {
         id: 1,
         title: "БЕЛЕЕЊЕ НА ЗАБИТЕ",
-        text: "Lorem ipsum dolor sit amet, consectetur adipiscing elitLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        text: "Белеењето на забите е козметички третман кој помага да се отстрани обојувањето и дамките од забите, враќајќи ја природната белина. Овој процес може да се изведе професионално во стоматолошка ординација или дома со помош на специјални производи(препорачани од стоматолог). Белеењето е безбедно кога се изведува правилно и дава брзи резултати, подобрувајќи го изгледот на насмевката и зголемувајќи ја самодовербата.",
       },
       {
         id: 2,
@@ -305,16 +309,16 @@ export const Offers = [
     ],
   },
   {
-    id: 2,
+    id: 1,
     icon: "/assets/icons/image-2.png",
-    title: "МОСТОВИ И КОРОНКИ",
+    title: "Ендодонција",
     paragraph:
-      "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequatLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "Ендодонцијата е специјализирана стоматолошка гранка која се фокусира на третман на внатрешноста на забот, односно на пулпата и коренските канали.",
     paragraphs: [
       {
         id: 8,
-        title: "МОСТОВИ И КОРОНКИ",
-        text: "Lorem ipsum dolor sit amet, consectetur adipiscing elitLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        title: "Ендодонција",
+        text: "Ендодонцијата е специјализирана стоматолошка гранка која се фокусира на третман на внатрешноста на забот, односно на пулпата и коренските канали. Оваа процедура е неопходна кога забот е зафатен од длабок кариес или инфекција, што може да предизвика болка и воспаление. Со помош на ендодонтскиот третман, заразеното ткиво се отстранува, каналите се чистат и запечатуваат, со што се спречува понатамошна инфекција и се зачувува природниот заб.Во нашата ординација оваа процедура се изведува под посебни протоколи,соодветна изолација на забот со кофердам и машинска обработка на каналите,како и 3Д оптурација на каналниот систем.",
       },
       {
         id: 9,
@@ -349,16 +353,16 @@ export const Offers = [
     ],
   },
   {
-    id: 3,
+    id: 2,
     icon: "/assets/icons/image-4.png",
-    title: "ВИНИРИ",
+    title: "Имплантологија",
     paragraph:
-      "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariaturLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "Имплантологијата е напредна стоматолошка дисциплина која се фокусира на замена на изгубени заби со вештачки импланти. ",
     paragraphs: [
       {
         id: 15,
-        title: "ВИНИРИ",
-        text: "Lorem ipsum dolor sit amet, consectetur adipiscing elitLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        title: "Имплантологија",
+        text: "Имплантологијата е напредна стоматолошка дисциплина која се фокусира на замена на изгубени заби со вештачки импланти. Овие импланти, изработени од биокомпатибилни материјали како титаниум, се вградуваат во вилицата и функционираат како природни корени на забите, обезбедувајќи стабилност и долготрајно решение. Со имплантите, пациентите добиваат не само естетски подобрен изглед, туку и зголемена функционалност при џвакање и говор. Имплантологијата нуди трајно решение за подобрување на оралното здравје и квалитетот на животот.",
       },
       {
         id: 16,
@@ -393,16 +397,16 @@ export const Offers = [
     ],
   },
   {
-    id: 4,
+    id: 3,
     icon: "/assets/icons/image-5.png",
-    title: "ТОТАЛНИ И ПАРЦИЈАЛНИ ПРОТЕЗИ",
+    title: "Орална Хирургија ",
     paragraph:
-      "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborumLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "Оралната хирургија е специјализирана гранка на стоматологијата која се занимава со дијагноза, хируршки третман и лекување на различни состојби на устата, забите, вилицата и меките ткива.",
     paragraphs: [
       {
         id: 22,
-        title: "ТОТАЛНИ И ПАРЦИЈАЛНИ ПРОТЕЗИ",
-        text: "Lorem ipsum dolor sit amet, consectetur adipiscing elitLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        title: "Орална Хирургија",
+        text: "Оралната хирургија е специјализирана гранка на стоматологијата која се занимава со дијагноза, хируршки третман и лекување на различни состојби на устата, забите, вилицата и меките ткива. Таа вклучува процедури како вадење заби, импланти, корекција на деформитети, како и третман на повреди и инфекции. Оралната хирургија игра клучна улога во подобрување на оралното здравје и функционалност, овозможувајќи пациентите да водат поквалитетен живот со здрави и правилно функционирачки заби.",
       },
       {
         id: 23,
@@ -437,16 +441,106 @@ export const Offers = [
     ],
   },
   {
-    id: 5,
+    id: 4,
     icon: "/assets/icons/image-7.png",
-    title: "МАШИНСКА ЕНДОДОНЦИЈА",
+    title: "Естетска стоматологија    ",
     paragraph:
-      "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiamLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "Естетската стоматологија е гранка на стоматологијата која се фокусира на подобрување на изгледот на вашите заби, непца и насмевка. ",
     paragraphs: [
       {
         id: 29,
-        title: "МАШИНСКА ЕНДОДОНЦИЈА ",
-        text: "Lorem ipsum dolor sit amet, consectetur adipiscing elitLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        title: "Естетска стоматологија  ",
+        text: "Естетската стоматологија е гранка на стоматологијата која се фокусира на подобрување на изгледот на вашите заби, непца и насмевка. Со користење на современи техники и материјали, таа нуди решенија како белење на заби, поставување на фасети, корекција на неправилности и замена на заби, кои придонесуваат за посамоуверен и природен изглед. Естетската стоматологија не само што го подобрува изгледот на насмевката, туку и ја подобрува оралната хигиена и здравје.Во нашата ординација употребуваме висококвалитетни материјали од најдобрите светски производители,со што добиваме врвни резултати при пломбирањето,композитните винири и сл.",
+      },
+      {
+        id: 30,
+        title: "Што е машинска ендодонција?",
+        text: "Sed do eiusmod tempor incididunt ut labore et dolore magna aliquaLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      },
+      {
+        id: 31,
+        title: "Како ќе знам дали забот е соодветно излечен?",
+        text: "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquipLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      },
+      {
+        id: 32,
+        title:
+          "Лекување на забот со машинска еднодонција или вадењето на тој заб?",
+        text: "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariaturLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      },
+      {
+        id: 33,
+        title: "Како најдобро да се заштити ендодонтски третиран заб понатаму?",
+        text: "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborumLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      },
+      {
+        id: 34,
+        title: "Pediatric Emergency Care",
+        text: "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantiumLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      },
+      {
+        id: 35,
+        title: "Future Trends in Pediatrics",
+        text: "Totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicaboLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      },
+    ],
+  },
+  {
+    id: 5,
+    icon: "/assets/icons/image-7.png",
+    title: "Протетска стоматологија   ",
+    paragraph:
+      "Протетската стоматологија е гранка на стоматологијата која се занимава со враќање на функцијата и естетиката на забите преку изработка на протетски надоместоци.",
+    paragraphs: [
+      {
+        id: 29,
+        title: "Протетска стоматологија(коронки,мостови,протези...        ",
+        text: "Протетската стоматологија е гранка на стоматологијата која се занимава со враќање на функцијата и естетиката на забите преку изработка на протетски надоместоци. Овие решенија ги заменуваат изгубените или оштетените заби со цел да го подобрат квалитетот на живот на пациентите, овозможувајќи им нормално џвакање, говор и самодоверба. Модерната протетска стоматологија користи напредни техники и материјали за да обезбеди долготрајни и природни резултати, вклучувајќи коронки, мостови, протези и импланти.",
+      },
+      {
+        id: 30,
+        title: "Што е машинска ендодонција?",
+        text: "Sed do eiusmod tempor incididunt ut labore et dolore magna aliquaLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      },
+      {
+        id: 31,
+        title: "Како ќе знам дали забот е соодветно излечен?",
+        text: "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquipLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      },
+      {
+        id: 32,
+        title:
+          "Лекување на забот со машинска еднодонција или вадењето на тој заб?",
+        text: "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariaturLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      },
+      {
+        id: 33,
+        title: "Како најдобро да се заштити ендодонтски третиран заб понатаму?",
+        text: "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborumLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      },
+      {
+        id: 34,
+        title: "Pediatric Emergency Care",
+        text: "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantiumLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      },
+      {
+        id: 35,
+        title: "Future Trends in Pediatrics",
+        text: "Totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicaboLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      },
+    ],
+  },
+  {
+    id: 6,
+    icon: "/assets/icons/image-7.png",
+    title: "Пародонтологија и пародонтална хирургија    ",
+    paragraph:
+      "Пародонтологијата е специјалност во стоматологијата која се фокусира на превенција, дијагностика и третман на болести што ги зафаќаат непцата и другите структури што го поддржуваат забот. ",
+    paragraphs: [
+      {
+        id: 29,
+        title: "Пародонтологија и пародонтална хирургија  ",
+        text: "Пародонтологијата е специјалност во стоматологијата која се фокусира на превенција, дијагностика и третман на болести што ги зафаќаат непцата и другите структури што го поддржуваат забот. Ова вклучува третмани за воспаленија на непцата (гингивитис), како и понапредни состојби како пародонтитис, кои можат да доведат до губење на забите.  Пародонталната хирургија, од друга страна, се користи за напредни случаи каде што е потребна хируршка интервенција за зачувување на здравјето на непцата и забите. Ова вклучува процедури како хируршко отстранување на заболени ткива, длабинско чистење на корените на забите и регенерација на коскеното ткиво околу забите.",
       },
       {
         id: 30,

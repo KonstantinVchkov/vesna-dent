@@ -1,6 +1,8 @@
 @import "../../../styles/variables.module";
 @import "../../../styles/mixins.module";
-
+.container {
+  width: 100vw;
+}
 .AboutComp {
   @include flex-direction;
   text-align: center;
@@ -16,7 +18,7 @@
   .FirstPart {
     width: 600px;
     text-align: left;
-    padding: 40px 0;
+    padding: $padding-value-40 0;
     h1 {
       text-align: center;
     }
@@ -25,19 +27,20 @@
     }
     @include respond-to("phone") {
       width: 300px;
+      font-size: small;
     }
   }
   .SecondSection {
     @include flex-wrap;
     gap: $gutter-base;
-    margin: 15px 0px;
+    margin: $margin-value-15 0px;
 
     .AboutUsText {
       position: relative;
       .AboutText {
         display: flex;
         width: 80%;
-        margin: 10px auto;
+        margin: $margin-value-10 auto;
         .RightSec {
           text-align: left;
           width: 50%;
@@ -47,9 +50,9 @@
           margin-left: auto;
         }
         .RightSec {
-          padding: 10px;
+          padding: $padding-value-10;
           h2 {
-            margin-bottom: 15px;
+            margin-bottom: $margin-value-15;
           }
           p {
             line-height: 30px;
@@ -69,53 +72,63 @@
         animation-name: slideUp;
         animation-timing-function: ease-in-out;
         animation-iteration-count: infinite;
-
       }
     }
   }
 }
 .background {
-  padding: 40px;
+  padding: $padding-value-40;
   background-color: $background-color-rectangle;
   border-top-right-radius: 10px;
   border-bottom-right-radius: 10px;
   position: relative;
+  //margin: auto 0;
   width: 400px;
   height: 350px;
   @include respond-to("tablet") {
-    background-color: transparent;
     padding: 0;
-    margin: auto;
-    width: 350px;
-    height: 350px;
+    width: 250px;
+    height: 220px;
     flex-direction: column;
+  }
+  @include respond-to("phone") {
+    width: 150px;
+    height: 160px;
   }
 }
 .dentists {
   display: flex;
   text-align: left;
-  padding: 20px 0;
-  @include respond-to("tablet") {
-    flex-direction: column;
-  }
+  padding: $padding-value-10 0;
+
   img {
     position: absolute;
     width: 350px;
     height: 300px;
     z-index: 1111;
+
+    @include respond-to("tablet") {
+      width: 200px;
+      height: 200px;
+    }
+    @include respond-to("phone") {
+      width: 150px;
+      height: 150px;
+      margin: 0 10px;
+    }
   }
 
   .bio,
   h2 {
-    padding: 20px 0;
-    margin: 0 150px;
     @include respond-to("tablet") {
-      margin: 0;
-      width: 400px;
+      font-size: small;
     }
-
+    padding: $padding-value-10 0;
+    width: 50%;
+    margin: auto;
     @include respond-to("phone") {
-      width: 300px;
+      margin: 0;
+      width: 100%;
     }
   }
 }
@@ -124,29 +137,48 @@
   img {
     right: 0;
   }
-  @include respond-to("tablet") {
-    flex-direction: column;
-  }
 }
 .dent {
   margin: auto;
   width: 100%;
-  @include respond-to("tablet") {
-    text-align: center;
-    flex-direction: column;
+  @include respond-to("phone") {
+    font-size: small;
+    width: 50%;
   }
 }
 
 .bio p.collapsed {
   overflow: hidden;
+
   @include respond-to("phone") {
     max-height: 45px;
   }
+  @include respond-to("desktop") {
+    font-size: small;
+  }
+  @include respond-to("tablet") {
+    font-size: x-small;
+  }
 }
-
+.bio a {
+  @include respond-to("phone") {
+    display: flex;
+    width: 25px !important;
+    height: 25px !important;
+  }
+}
+.row {
+  display: flex;
+  @include respond-to("phone") {
+    display: none;
+  }
+}
 .bio p.expanded {
   max-height: none;
   overflow: visible;
+  @include respond-to("tablet") {
+    font-size: x-small;
+  }
 }
 .button {
   background-color: $background-color-fill;
@@ -159,6 +191,6 @@
 .hidden {
   display: none;
   @include respond-to("phone") {
-    display: block;
+    display: flex;
   }
 }

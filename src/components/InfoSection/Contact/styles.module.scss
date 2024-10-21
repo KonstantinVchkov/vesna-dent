@@ -5,22 +5,41 @@
   display: flex;
   width: 100%;
   justify-content: center;
-  padding: 50px 0;
-  margin: 0 50px;
+  padding: $padding-value-50 0;
+  // margin: 0 $margin-value-20;
   @include respond-to("phone") {
     flex-direction: column-reverse;
+    margin: 0;
+    align-items: center;
   }
 }
-.rightDiv h2,
-.rightDiv p {
+.rightDiv {
   @include respond-to("phone") {
     display: none;
   }
 }
 .center div {
+  //margin: 0 $margin-value-20 0 0;
+  padding: 20px;
   width: 50%;
+  @include respond-to("phone") {
+    width: 100%;
+    margin: auto;
+  }
 }
-.leftDiv p,
-.rightDiv p {
-  width: 100%;
+.leftDiv p h2,
+.rightDiv p h2 {
+  @include respond-to("phone") {
+    width: 100%;
+  }
+}
+.hidden {
+  display: none;
+  @include respond-to("phone") {
+    display: block;
+  }
+}
+.flex {
+  display: flex;
+  justify-content: space-between;
 }

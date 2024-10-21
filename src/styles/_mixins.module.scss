@@ -10,6 +10,7 @@ $breakpoints: (
   "laptop": 1024px,
   "desktop": 1280px,
   "desktop-large": 1440px,
+  "above-desktop": 2000px,
 );
 
 @mixin respond-to($breakpoint) {
@@ -37,6 +38,17 @@ $breakpoints: (
     @content;
   }
 }
+@mixin respond-to($breakpoint) {
+  @if $breakpoint == "above-desktop" {
+    @media (min-width: map-get($breakpoints, $breakpoint)) {
+      @content;
+    }
+  } @else {
+    @media (max-width: map-get($breakpoints, $breakpoint)) {
+      @content;
+    }
+  }
+}
 @mixin flex-center {
   display: flex;
   justify-content: space-between;
@@ -57,7 +69,7 @@ $breakpoints: (
 }
 @mixin wrap {
   width: 80%;
-  margin: 10px auto;
+  margin: $margin-value-20 auto;
 }
 
 @mixin laptop-m-styles {
@@ -65,4 +77,3 @@ $breakpoints: (
     @content;
   }
 }
-

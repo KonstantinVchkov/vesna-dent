@@ -1,34 +1,77 @@
-import ButtonComp from "../../Button/ButtonComp";
+import ButtonComp from "@/components/Button/ButtonComp";
 import React, { useState } from "react";
 import styles from "./styles.module.scss";
-import BookApointment from "@/components/BookApointment/Apointment";
+import Image from "next/image";
 
-const ContactUs = () => {
+import BookApointment from "@/components/BookApointment/Apointment";
+import { info } from "./../../../Data/ProjectData";
+interface InfoItem {
+  id: number;
+  title: string;
+  description: string;
+  phone: string;
+  workHours: string;
+  email: string;
+  terminTitle: string;
+  termin: string;
+}
+
+const ContactUs: React.FC = () => {
   const [popUp, setPopUp] = useState<boolean>(false);
   const togglePopUp = () => setPopUp(!popUp);
-
   return (
     <>
       <div className={styles.center}>
-        <div className={styles.leftDiv}>
-          <h2>Vesna Dent</h2>
-          <p>Lorem ipsum dolor sit amet consectetur. </p>
-          <p>000/000-000</p>
-          <p>
-            Mon - Thur - 8 AM to 4 PM Friday: 8am - 2pm by appointment only
-            Saturday & Sundays: Closed
-          </p>
-        </div>
-        <div className={styles.rightDiv}>
-          <h2>Zakazi Termin</h2>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex
-            nesciunt, itaque ipsam in ratione necessitatibus? Quas sapiente
-            delectus modi error.
-          </p>
-
-          <ButtonComp name={"Закажи термин"} handleClick={togglePopUp} />
-        </div>{" "}
+        {info.map((item: InfoItem) => (
+          <>
+            <div key={item.id} className={styles.leftDiv}>
+              <div className={styles.flex}>
+                <h2>{item.title}</h2>{" "}
+                <span className={styles.hidden}>
+                  <ButtonComp
+                    name={"Закажи термин"}
+                    handleClick={togglePopUp}
+                  />
+                </span>
+              </div>
+              <p>
+                {" "}
+                <Image
+                  width={30}
+                  height={30}
+                  src={"/assets/SocialIcons/location.png"}
+                  alt={"location-img"}
+                />{" "}
+                <span>{item.description}</span>
+              </p>
+              <p>
+                {" "}
+                <Image
+                  width={30}
+                  height={30}
+                  src={"/assets/SocialIcons/phone.png"}
+                  alt={"phone-img"}
+                />{" "}
+                <span>{item.phone}</span>
+              </p>
+              <p>
+                {" "}
+                <Image
+                  width={30}
+                  height={30}
+                  src={"/assets/SocialIcons/clock.png"}
+                  alt={"clock-img"}
+                />{" "}
+                <span>{item.workHours}</span>{" "}
+              </p>
+            </div>
+            <div className={styles.rightDiv}>
+              <h2>{item.terminTitle}</h2>
+              <p>{item.termin}</p>{" "}
+              <ButtonComp name={"Закажи термин"} handleClick={togglePopUp} />
+            </div>{" "}
+          </>
+        ))}
       </div>{" "}
       {popUp && <BookApointment handleModal={togglePopUp} />}
     </>

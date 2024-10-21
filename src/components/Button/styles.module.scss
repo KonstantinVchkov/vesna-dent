@@ -1,0 +1,18 @@
+@import "../../styles/variables.module";
+@import "../../styles/mixins.module";
+
+.button {
+  font-family: $font-family-base;
+  font-size: rem-calc(18);
+  color: $text-color-primary;
+  background: $background-color-rectangle;
+  border: 2px solid transparent;
+  border-radius: $button-radius;
+  padding: $padding-value-10;
+  transition: background $transition-duration ease,
+    color $transition-duration ease, border-color $transition-duration ease;
+
+  &:hover {
+    background-color: $background-color-hover;
+  }
+}

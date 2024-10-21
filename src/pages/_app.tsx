@@ -1,5 +1,6 @@
 import FooterSection from "@/components/Footer/FooterSection";
 import NavBar from "@/components/Header/NavBar";
+import styles from "../styles/styles.module.scss";
 
 import "@/styles/globals.scss";
 import type { AppProps } from "next/app";
@@ -32,7 +33,7 @@ export default function App({ Component, pageProps }: AppProps) {
     }, 3000);
   }, []);
   return (
-    <div>
+    <div className={styles.device}>
       {spinner ? (
         <LottieAnimation animationData={ToothAnimation} />
       ) : (
