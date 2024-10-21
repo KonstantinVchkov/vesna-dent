@@ -10,7 +10,7 @@ $breakpoints: (
   "laptop": 1024px,
   "desktop": 1280px,
   "desktop-large": 1440px,
-  "above-desktop": 1700px,
+  "above-desktop": 2000px,
 );
 
 @mixin respond-to($breakpoint) {

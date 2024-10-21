@@ -22,8 +22,8 @@
   .btn {
     color: $text-color-primary;
     width: 216px;
-    height: 67px;
-    padding: $padding-value-20;
+    height: auto;
+    padding: $padding-value-10;
     background-color: $background-color-rectangle;
     border-radius: $button-radius;
     cursor: pointer;
