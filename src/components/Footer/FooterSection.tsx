@@ -33,8 +33,8 @@ const FooterSection: React.FC = () => {
                 <li>
                   {" "}
                   <Image
-                    width={50}
-                    height={50}
+                    width={40}
+                    height={40}
                     src={"/assets/SocialIcons/location.png"}
                     alt={"location-img"}
                   />
@@ -43,8 +43,8 @@ const FooterSection: React.FC = () => {
                 <li>
                   {" "}
                   <Image
-                    width={50}
-                    height={50}
+                    width={40}
+                    height={40}
                     src={"/assets/SocialIcons/phone.png"}
                     alt={"phone-img"}
                   />
@@ -53,8 +53,8 @@ const FooterSection: React.FC = () => {
                 <li>
                   {" "}
                   <Image
-                    width={50}
-                    height={50}
+                    width={40}
+                    height={40}
                     src={"/assets/SocialIcons/clock.png"}
                     alt={"clock-img"}
                   />
@@ -63,8 +63,8 @@ const FooterSection: React.FC = () => {
                 <li>
                   {" "}
                   <Image
-                    width={50}
-                    height={50}
+                    width={40}
+                    height={40}
                     src={"/assets/SocialIcons/mail.png"}
                     alt={"mail-img"}
                   />
@@ -96,13 +96,35 @@ const FooterSection: React.FC = () => {
             <ul>
               <li>
                 {" "}
-                <Facebook />
+                <a href="">
+                  <Image
+                    width={50}
+                    height={50}
+                    src={"/assets/SocialIcons/logos_facebook.png"}
+                    alt={"location-img"}
+                  />{" "}
+                </a>
               </li>
               <li>
-                <Instagram />
+                <a href="">
+                  <Image
+                    width={50}
+                    height={50}
+                    src={"/assets/SocialIcons/teenyicons_instagram-solid.png"}
+                    alt={"location-img"}
+                  />{" "}
+                </a>
               </li>
               <li>
-                <Linkedin />
+                <a href="">
+                  {" "}
+                  <Image
+                    width={50}
+                    height={50}
+                    src={"/assets/SocialIcons/skill-icons_linkedin.png"}
+                    alt={"location-img"}
+                  />{" "}
+                </a>
               </li>
             </ul>
           </div>

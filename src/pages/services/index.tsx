@@ -25,7 +25,7 @@ export type TServicesPage = {
 
 const ServicesPage = ({ services, offers, about, workData }: TServicesPage) => {
   const generateRandomWidth = () => {
-    return Math.floor(Math.random() * (20 - 100 + 1) + 100);
+    return Math.floor(Math.random() * (100 - 100 + 1) + 50);
   };
 
   const leftRectangles = Array.from({ length: 2 }, (_, i) => (
