@@ -4,7 +4,9 @@ import {
   faScrewdriverWrench,
   faUsers,
 } from "@fortawesome/free-solid-svg-icons";
-
+export const images = {
+  img: [],
+};
 export const NavList = [
   { title: "Почетна", path: "/" },
   { title: "За нас", path: "about" },
