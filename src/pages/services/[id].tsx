@@ -7,7 +7,14 @@ import CarouselSection from "@/components/Banner/Carousel";
 import Image from "next/image";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faChevronDown, faChevronUp } from "@fortawesome/free-solid-svg-icons";
-
+export const Pictures = {
+  img: [
+    "/assets/teeth/img-1.png",
+    "/assets/teeth/img-2.png",
+    "/assets/teeth/img-3.png",
+    "/assets/teeth/img-4.png",
+  ],
+};
 interface Offer {
   id: number;
   icon: string;
@@ -16,15 +23,19 @@ interface Offer {
   paragraph: string;
   paragraphs: { id: number; title: string; text: string }[];
 }
-
+interface Pictures {
+  img: string[];
+}
 interface Props {
   offer: Offer;
   workData: typeof OurWork;
+  pictures: Pictures[];
 }
 interface ExpandedState {
   [key: number]: boolean;
 }
-const DetailPage = ({ offer, workData }: Props) => {
+
+const DetailPage = ({ offer, workData, pictures }: Props) => {
   const [expanded, setExpanded] = useState<ExpandedState>({});
   const toggleExpand = (id: number) => {
     setExpanded((prev) => ({
@@ -50,9 +61,36 @@ const DetailPage = ({ offer, workData }: Props) => {
       style={{ width: `${generateRandomWidth()}px` }}
     ></div>
   ));
+  const leftImages = Pictures.img
+    .slice(0, 3)
+    .map((src, index) => (
+      <Image
+        key={index}
+        src={src}
+        alt={`Side image ${index + 1}`}
+        width={100}
+        height={100}
+        className={styles.images}
+      />
+    ));
+
+  const rightImages = Pictures.img
+    .slice(0, 3)
+    .map((src, index) => (
+      <Image
+        key={index}
+        src={src}
+        alt={`Side image ${index + 3}`}
+        className={styles.images}
+        width={100}
+        height={100}
+      />
+    ));
 
   return (
     <div>
+      {" "}
+      <div className={styles.images}>{leftImages}</div>
       <div className={styles.side + " " + styles.left}>{leftRectangles} </div>
       <CarouselSection Slide={workData.slides} />{" "}
       <div className={styles.icon}>
@@ -93,7 +131,8 @@ const DetailPage = ({ offer, workData }: Props) => {
               </div>
             );
           })}{" "}
-      </div>
+      </div>{" "}
+      <div className={styles.images}>{rightImages}</div>
       <div className={styles.side + " " + styles.right}>{rightRectangles}</div>
     </div>
   );
@@ -117,6 +156,7 @@ export const getStaticProps: GetStaticProps<Props, { id: string }> = async (
       props: {
         offer: null,
         workData: OurWork,
+        pictures: Pictures,
       },
     };
   }
@@ -125,6 +165,7 @@ export const getStaticProps: GetStaticProps<Props, { id: string }> = async (
     props: {
       offer,
       workData: OurWork,
+      pictures: Pictures,
     },
   };
 };
