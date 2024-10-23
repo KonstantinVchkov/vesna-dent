@@ -21,21 +21,18 @@ interface Offer {
   title: string;
   images?: string[];
   paragraph: string;
-  paragraphs: { id: number; title: string; text: string }[];
+  paragraphs: { id: number; title: string; text: string; img?: string }[];
 }
-interface Pictures {
-  img: string[];
-}
+
 interface Props {
   offer: Offer;
   workData: typeof OurWork;
-  pictures: Pictures[];
 }
 interface ExpandedState {
   [key: number]: boolean;
 }
 
-const DetailPage = ({ offer, workData, pictures }: Props) => {
+const DetailPage = ({ offer, workData }: Props) => {
   const [expanded, setExpanded] = useState<ExpandedState>({});
   const toggleExpand = (id: number) => {
     setExpanded((prev) => ({
@@ -61,36 +58,10 @@ const DetailPage = ({ offer, workData, pictures }: Props) => {
       style={{ width: `${generateRandomWidth()}px` }}
     ></div>
   ));
-  const leftImages = Pictures.img
-    .slice(0, 3)
-    .map((src, index) => (
-      <Image
-        key={index}
-        src={src}
-        alt={`Side image ${index + 1}`}
-        width={100}
-        height={100}
-        className={styles.images}
-      />
-    ));
-
-  const rightImages = Pictures.img
-    .slice(0, 3)
-    .map((src, index) => (
-      <Image
-        key={index}
-        src={src}
-        alt={`Side image ${index + 3}`}
-        className={styles.images}
-        width={100}
-        height={100}
-      />
-    ));
 
   return (
     <div>
       {" "}
-      <div className={styles.images}>{leftImages}</div>
       <div className={styles.side + " " + styles.left}>{leftRectangles} </div>
       <CarouselSection Slide={workData.slides} />{" "}
       <div className={styles.icon}>
@@ -114,25 +85,30 @@ const DetailPage = ({ offer, workData, pictures }: Props) => {
               ? styles.expanded
               : styles.collapsed;
             return (
-              <div key={p.id} className={styles.section}>
-                <h1>{p.title}</h1>
-                <p className={paragraphClass}>{p.text}</p>
-                <button
-                  className={`${styles.button} ${styles.hidden}`}
-                  onClick={() => toggleExpand(p.id)}
-                >
-                  <span>
-                    {expanded[p.id] ? "Прочитај помалку " : "Прочитај повеќе "}
-                  </span>
-                  <FontAwesomeIcon
-                    icon={expanded[p.id] ? faChevronUp : faChevronDown}
-                  />
-                </button>
-              </div>
+              <>
+                {" "}
+                <div key={p.id} className={styles.section}>
+                  {" "}
+                  <h1>{p.title}</h1>
+                  <p className={paragraphClass}>{p.text}</p>
+                  <button
+                    className={`${styles.button} ${styles.hidden}`}
+                    onClick={() => toggleExpand(p.id)}
+                  >
+                    <span>
+                      {expanded[p.id]
+                        ? "Прочитај помалку "
+                        : "Прочитај повеќе "}
+                    </span>
+                    <FontAwesomeIcon
+                      icon={expanded[p.id] ? faChevronUp : faChevronDown}
+                    />
+                  </button>
+                </div>
+              </>
             );
           })}{" "}
       </div>{" "}
-      <div className={styles.images}>{rightImages}</div>
       <div className={styles.side + " " + styles.right}>{rightRectangles}</div>
     </div>
   );
