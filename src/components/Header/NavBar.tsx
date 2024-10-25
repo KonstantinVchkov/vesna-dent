@@ -1,18 +1,13 @@
 import React, { useEffect, useState } from "react";
 import styles from "./styles.module.scss";
 import { NavList } from "@/Data/ProjectData";
-import { handleRoute } from "@/utils/routing";
 import BookApointment from "../BookApointment/Apointment";
 import Image from "next/image";
 import Navitems from "./Navlist";
 import ButtonComp from "../Button/ButtonComp";
 import { useRouter } from "next/router";
-import dynamic from "next/dynamic";
-import ToothAnimation from "../../../public/assets/animation/Tooth-Animation.json";
 import { Url } from "next/dist/shared/lib/router/router";
-const LottieAnimation = dynamic(() => import("../LottieAnimation/Animation"), {
-  ssr: false,
-});
+
 const NavBar = () => {
   const [popUp, setPopUp] = useState(false);
   const [showMenu, setShowMenu] = useState(false);
