@@ -15,7 +15,7 @@
     background-color: $card-fill;
     color: $text-color-base;
     z-index: 11;
-    padding: $padding-value-10;
+    padding: 10px;
     border-radius: 20px;
     box-shadow: 0px 6px 11px 3px rgba(0, 0, 0, 0.6);
     button {
@@ -25,7 +25,7 @@
       background-color: transparent;
       border: 2px solid transparent;
       border-radius: $button-radius;
-      padding: $padding-value-10;
+      padding: 10px;
     }
     h1 {
       text-align: center;
@@ -40,7 +40,7 @@
     .center {
       display: flex;
       flex-direction: column;
-      padding: $padding-value-10;
+      padding: 10px;
       span {
         margin: 10px;
       }
@@ -48,7 +48,7 @@
     .contain {
       display: flex;
       justify-content: space-between;
-      padding: $padding-value-20;
+      padding: 20px;
       @include respond-to("tablet") {
         flex-direction: column;
       }
