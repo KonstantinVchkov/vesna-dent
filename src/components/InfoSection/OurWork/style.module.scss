@@ -43,7 +43,7 @@
   right: 0;
 }
 .FirstPart {
-  padding: $padding-value-40 0;
+  padding: 40px 0;
   background-color: $background-color-fill;
   width: 100%;
   display: flex;
@@ -63,7 +63,7 @@
     }
   }
   .section {
-    padding: $padding-value-40 0;
+    padding: 40px 0;
     width: 500px;
     @include respond-to("tablet") {
       width: 400px;
@@ -104,7 +104,7 @@
   }
 }
 .icon {
-  padding: $padding-value-40 0 0 0;
+  padding: 40px 0 0 0;
   display: flex;
   justify-content: center;
 

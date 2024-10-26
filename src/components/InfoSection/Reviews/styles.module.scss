@@ -17,7 +17,7 @@
     background-color: $background-color-undercards;
     @include flex-wrap;
     margin: 20px 0px;
-    padding: $padding-value-20;
+    padding: 20px;
 
     .ClientCardContainer {
       flex-basis: 50%;

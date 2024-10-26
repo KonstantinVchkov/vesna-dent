@@ -7,7 +7,7 @@
   flex-direction: column;
   max-width: 100%;
   width: 500px;
-  padding: $padding-value-40 $padding-value-20;
+  padding: 40px 20px;
   border-radius: 10px;
   font-family: $font-family-base;
   align-content: left;
@@ -23,7 +23,7 @@
     color: $text-color-primary;
     width: 216px;
     height: auto;
-    padding: $padding-value-10;
+    padding: 10px;
     background-color: $background-color-rectangle;
     border-radius: $button-radius;
     cursor: pointer;

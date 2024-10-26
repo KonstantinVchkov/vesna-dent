@@ -4,6 +4,7 @@ import React, { useState } from "react";
 import styles from "../../components/InfoSection/OurWork/style.module.scss";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faChevronDown, faChevronUp } from "@fortawesome/free-solid-svg-icons";
+import FAQComponent from "@/components/InfoSection/FAQ/FAQ";
 
 export type WorkItem = {
   id: number;
@@ -21,7 +22,7 @@ const OurWorkPage = ({ workData, Work }: TworkPage) => {
   const [expanded, setExpanded] = useState<ExpandedState>({});
 
   const generateRandomWidth = () => {
-    return Math.floor(Math.random() * (100 - 100 + 1) + 50);
+    return Math.floor(Math.random() * (50 - 100 + 1) + 50);
   };
 
   const leftRectangles = Array.from({ length: 4 }, (_, i) => (
@@ -74,6 +75,7 @@ const OurWorkPage = ({ workData, Work }: TworkPage) => {
           );
         })}
       </div>
+      <FAQComponent />
       <div className={styles.side + " " + styles.right}>{rightRectangles}</div>
     </div>
   );
