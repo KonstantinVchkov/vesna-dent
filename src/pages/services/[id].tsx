@@ -7,14 +7,21 @@ import CarouselSection from "@/components/Banner/Carousel";
 import Image from "next/image";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faChevronDown, faChevronUp } from "@fortawesome/free-solid-svg-icons";
-
+export const Pictures = {
+  img: [
+    "/assets/teeth/img-1.png",
+    "/assets/teeth/img-2.png",
+    "/assets/teeth/img-3.png",
+    "/assets/teeth/img-4.png",
+  ],
+};
 interface Offer {
   id: number;
   icon: string;
   title: string;
   images?: string[];
   paragraph: string;
-  paragraphs: { id: number; title: string; text: string }[];
+  paragraphs: { id: number; title: string; text: string; img?: string }[];
 }
 
 interface Props {
@@ -24,6 +31,7 @@ interface Props {
 interface ExpandedState {
   [key: number]: boolean;
 }
+
 const DetailPage = ({ offer, workData }: Props) => {
   const [expanded, setExpanded] = useState<ExpandedState>({});
   const toggleExpand = (id: number) => {
@@ -53,6 +61,7 @@ const DetailPage = ({ offer, workData }: Props) => {
 
   return (
     <div>
+      {" "}
       <div className={styles.side + " " + styles.left}>{leftRectangles} </div>
       <CarouselSection Slide={workData.slides} />{" "}
       <div className={styles.icon}>
@@ -76,24 +85,30 @@ const DetailPage = ({ offer, workData }: Props) => {
               ? styles.expanded
               : styles.collapsed;
             return (
-              <div key={p.id} className={styles.section}>
-                <h1>{p.title}</h1>
-                <p className={paragraphClass}>{p.text}</p>
-                <button
-                  className={`${styles.button} ${styles.hidden}`}
-                  onClick={() => toggleExpand(p.id)}
-                >
-                  <span>
-                    {expanded[p.id] ? "Прочитај помалку " : "Прочитај повеќе "}
-                  </span>
-                  <FontAwesomeIcon
-                    icon={expanded[p.id] ? faChevronUp : faChevronDown}
-                  />
-                </button>
-              </div>
+              <>
+                {" "}
+                <div key={p.id} className={styles.section}>
+                  {" "}
+                  <h1>{p.title}</h1>
+                  <p className={paragraphClass}>{p.text}</p>
+                  <button
+                    className={`${styles.button} ${styles.hidden}`}
+                    onClick={() => toggleExpand(p.id)}
+                  >
+                    <span>
+                      {expanded[p.id]
+                        ? "Прочитај помалку "
+                        : "Прочитај повеќе "}
+                    </span>
+                    <FontAwesomeIcon
+                      icon={expanded[p.id] ? faChevronUp : faChevronDown}
+                    />
+                  </button>
+                </div>
+              </>
             );
           })}{" "}
-      </div>
+      </div>{" "}
       <div className={styles.side + " " + styles.right}>{rightRectangles}</div>
     </div>
   );
@@ -117,6 +132,7 @@ export const getStaticProps: GetStaticProps<Props, { id: string }> = async (
       props: {
         offer: null,
         workData: OurWork,
+        pictures: Pictures,
       },
     };
   }
@@ -125,6 +141,7 @@ export const getStaticProps: GetStaticProps<Props, { id: string }> = async (
     props: {
       offer,
       workData: OurWork,
+      pictures: Pictures,
     },
   };
 };
