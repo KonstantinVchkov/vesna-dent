@@ -10,7 +10,7 @@ import { info } from "../../Data/ProjectData";
 interface InfoItem {
   id: number;
   title: string;
-  description: string;
+  location: string;
   phone: string;
   workHours: string;
   email: string;
@@ -38,7 +38,7 @@ const FooterSection: React.FC = () => {
                     src={"/assets/SocialIcons/location.png"}
                     alt={"location-img"}
                   />
-                  <span>{item.description}</span>
+                  <span>{item.location}</span>
                 </li>
                 <li>
                   {" "}

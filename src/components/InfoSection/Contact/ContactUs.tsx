@@ -8,7 +8,7 @@ import { info } from "./../../../Data/ProjectData";
 interface InfoItem {
   id: number;
   title: string;
-  description: string;
+  location: string;
   phone: string;
   workHours: string;
   email: string;
@@ -66,14 +66,7 @@ const ContactUs: React.FC = () => {
                   <span>{item.workHours}</span>{" "}
                 </p>
               </div>
-              <div className={styles.rightDiv}>
-                <h2>{item.terminTitle}</h2>
-                <p>{item.termin}</p>{" "}
-                <ButtonComp name={"Закажи термин"} handleClick={togglePopUp} />
-              </div>{" "}
-            </>
-          );
-        })}
+
       </div>{" "}
       {popUp && <BookApointment handleModal={togglePopUp} />}
     </>
