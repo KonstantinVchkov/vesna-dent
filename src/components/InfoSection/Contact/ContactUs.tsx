@@ -22,56 +22,58 @@ const ContactUs: React.FC = () => {
   return (
     <>
       <div className={styles.center}>
-        {info.map((item: InfoItem) => (
-          <>
-            <div key={item.id} className={styles.leftDiv}>
-              <div className={styles.flex}>
-                <h2>{item.title}</h2>{" "}
-                <span className={styles.hidden}>
-                  <ButtonComp
-                    name={"Закажи термин"}
-                    handleClick={togglePopUp}
-                  />
-                </span>
+        {info.map((item: InfoItem) => {
+          return (
+            <>
+              <div key={item.id} className={styles.leftDiv}>
+                <div className={styles.flex}>
+                  <h2>{item.title}</h2>{" "}
+                  <span className={styles.hidden}>
+                    <ButtonComp
+                      name={"Закажи термин"}
+                      handleClick={togglePopUp}
+                    />
+                  </span>
+                </div>
+                <p>
+                  {" "}
+                  <Image
+                    width={30}
+                    height={30}
+                    src={"/assets/SocialIcons/location.png"}
+                    alt={"location-img"}
+                  />{" "}
+                  <span>{item.description}</span>
+                </p>
+                <p>
+                  {" "}
+                  <Image
+                    width={30}
+                    height={30}
+                    src={"/assets/SocialIcons/phone.png"}
+                    alt={"phone-img"}
+                  />{" "}
+                  <span>{item.phone}</span>
+                </p>
+                <p>
+                  {" "}
+                  <Image
+                    width={30}
+                    height={30}
+                    src={"/assets/SocialIcons/clock.png"}
+                    alt={"clock-img"}
+                  />{" "}
+                  <span>{item.workHours}</span>{" "}
+                </p>
               </div>
-              <p>
-                {" "}
-                <Image
-                  width={30}
-                  height={30}
-                  src={"/assets/SocialIcons/location.png"}
-                  alt={"location-img"}
-                />{" "}
-                <span>{item.description}</span>
-              </p>
-              <p>
-                {" "}
-                <Image
-                  width={30}
-                  height={30}
-                  src={"/assets/SocialIcons/phone.png"}
-                  alt={"phone-img"}
-                />{" "}
-                <span>{item.phone}</span>
-              </p>
-              <p>
-                {" "}
-                <Image
-                  width={30}
-                  height={30}
-                  src={"/assets/SocialIcons/clock.png"}
-                  alt={"clock-img"}
-                />{" "}
-                <span>{item.workHours}</span>{" "}
-              </p>
-            </div>
-            <div className={styles.rightDiv}>
-              <h2>{item.terminTitle}</h2>
-              <p>{item.termin}</p>{" "}
-              <ButtonComp name={"Закажи термин"} handleClick={togglePopUp} />
-            </div>{" "}
-          </>
-        ))}
+              <div className={styles.rightDiv}>
+                <h2>{item.terminTitle}</h2>
+                <p>{item.termin}</p>{" "}
+                <ButtonComp name={"Закажи термин"} handleClick={togglePopUp} />
+              </div>{" "}
+            </>
+          );
+        })}
       </div>{" "}
       {popUp && <BookApointment handleModal={togglePopUp} />}
     </>
