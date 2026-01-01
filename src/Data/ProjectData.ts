@@ -50,27 +50,63 @@ export const AboutUs = {
   QuestionsAndAnswers: [
     {
       id: 1,
-      question: "Дали боли чистење на забен камен?",
+      question: "Колку често треба да одам на стоматолошка контрола?",
       answer:
-        "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veritatis numquam beatae autem quaerat explicabo sapiente sed repudiandae officiis fugiat, nostrum amet exercitationem facilis reiciendis provident eaque minus magnam ",
+        "Се препорачува стоматолошка контрола најмалку два пати годишно. Редовните прегледи помагаат навремено да се откријат проблеми и да се избегнат посериозни интервенции.",
     },
     {
       id: 2,
-      question: "Дали боли чистење на забен камен?",
+      question: "Дали стоматолошките интервенции болат?",
       answer:
-        "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veritatis numquam beatae autem quaerat explicabo sapiente sed repudiandae officiis fugiat, nostrum amet exercitationem facilis reiciendis provident eaque minus magnam ",
+        "Современата стоматологија овозможува безболни интервенции. По потреба се користи локална анестезија, така што пациентите чувствуваат минимална или никаква болка.",
     },
     {
       id: 3,
-      question: "Дали боли чистење на забен камен?",
+      question: "Кога е потребно вадење на заб?",
       answer:
-        "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veritatis numquam beatae autem quaerat explicabo sapiente sed repudiandae officiis fugiat, nostrum amet exercitationem facilis reiciendis provident eaque minus magnam ",
+        "Вадење на заб се препорачува кога забот е сериозно оштетен, инфициран или не може да се спаси со други третмани. Секогаш се настојува прво да се зачува природниот заб.",
     },
     {
       id: 4,
-      question: "Дали боли чистење на забен камен?",
+      question: "Што да направам ако ме заболи заб?",
       answer:
-        "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veritatis numquam beatae autem quaerat explicabo sapiente sed repudiandae officiis fugiat, nostrum amet exercitationem facilis reiciendis provident eaque minus magnam ",
+        "Доколку почувствувате забоболка, најдобро е што побрзо да закажете преглед. Болката е знак дека постои проблем кој не треба да се игнорира.",
+    },
+    {
+      id: 5,
+      question: "Дали белењето на заби е безбедно?",
+      answer:
+        "Да, професионалното белење на заби е безбедно кога се изведува под надзор на стоматолог. Се користат контролирани и квалитетни материјали кои не го оштетуваат забот.",
+    },
+    {
+      id: 6,
+      question: "Како да ги одржувам забите здрави?",
+      answer:
+        "Редовно четкање два пати дневно, користење забен конец, здрава исхрана и редовни стоматолошки прегледи се основа за здрави заби и непца.",
+    },
+    {
+      id: 7,
+      question: "Дали децата треба да одат на стоматолог?",
+      answer:
+        "Да, првиот стоматолошки преглед се препорачува уште од најрана возраст. Раните посети помагаат децата да се навикнат и да развијат позитивен однос кон стоматологот.",
+    },
+    {
+      id: 8,
+      question: "Дали имплантите се трајно решение?",
+      answer:
+        "Забните импланти се долготрајно и стабилно решение за надоместување на изгубени заби. Со соодветна нега, тие можат да траат многу години.",
+    },
+    {
+      id: 9,
+      question: "Дали пушењето влијае на здравјето на забите?",
+      answer:
+        "Да, пушењето значително го зголемува ризикот од заболувања на непцата, пожолтување на забите и губење на забите.",
+    },
+    {
+      id: 10,
+      question: "Колку време трае еден стоматолошки преглед?",
+      answer:
+        "Рутински стоматолошки преглед обично трае од 15 до 30 минути, во зависност од состојбата на забите и потребните процедури.",
     },
   ],
 };
@@ -84,63 +120,64 @@ export const OurWork = {
   id: 1,
   slides: [
     {
-      title: "Сигурно сакате да блескате од убавина кога ќе се насмевнете?",
+      title: "Сакате вашата насмевка да зрачи со самодоверба?",
       image:
         "https://images.unsplash.com/photo-1642953702322-a5da05d2e36b?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       description:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti mollitia nulla, tempore odit natus maxime.",
-      technics: ["Orthodontics"],
+        "Здравата и убава насмевка е резултат на правилна нега и современи стоматолошки третмани. Со соодветна терапија, можете да постигнете природен изглед и долготрајни резултати.",
+      technics: ["Естетска стоматологија"],
     },
     {
-      title: "Зошто чистењето на забен камен е убаво?",
+      title: "Зошто чистењето на забен камен е важно?",
       image:
         "https://images.unsplash.com/photo-1499951360447-b19be8fe80f5?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       description:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti mollitia nulla, tempore odit natus maxime.",
-      technics: ["Cleaning"],
+        "Редовното чистење на забен камен ги штити забите и непцата од воспаленија, лош здив и пародонтални заболувања, придонесувајќи за долгорочно орално здравје.",
+      technics: ["Професионално чистење"],
     },
     {
-      title: "Сигурно сте свесни колку е битно да ги четкате забите?",
+      title: "Колку е важна секојдневната орална хигиена?",
       image:
         "https://images.unsplash.com/photo-1497366811353-6870744d04b2?q=80&w=2069&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90oy1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       description:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti mollitia nulla, tempore odit natus maxime.",
-      technics: ["Brushing"],
+        "Редовното и правилно четкање на забите, заедно со користење забен конец, е основа за здрави заби и непца и превенција од кариес и други стоматолошки проблеми.",
+      technics: ["Орална хигиена"],
     },
   ],
 
-  workTechnic: "Употребени Техники",
-  description: "Објаснување",
+  workTechnic: "Употребени техники",
+  description:
+    "Кратко едукативно објаснување за важноста на правилната нега и современите стоматолошки третмани.",
 };
 
 export const ServicesOffer = [
   {
     id: 1,
     img: "https://images.unsplash.com/photo-1600170311833-c2cf5280ce49?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    title: "Prosthodontics Dental Implants",
+    title: "Протетика и забни импланти",
     paragraph:
-      "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deleniti mollitia nulla, tempore odit natus maxime.",
+      "Забните импланти и протетските решенија овозможуваат трајна и природна замена на изгубените заби. Со овие третмани се враќаат функцијата и естетиката на насмевката.",
   },
   {
     id: 2,
     img: "https://images.unsplash.com/photo-1600170311833-c2cf5280ce49?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    title: "Oral & Maxillofacial Surgery",
+    title: "Орална и максилофацијална хирургија",
     paragraph:
-      "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deleniti mollitia nulla, tempore odit natus maxime.",
+      "Оваа гранка опфаќа вадење на заби, хируршко вадење на умници и третман на заболувања на вилиците. Интервенциите се изведуваат со максимална прецизност и грижа за удобноста на пациентот.",
   },
   {
     id: 3,
     img: "https://images.unsplash.com/photo-1600170311833-c2cf5280ce49?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    title: "Orthodontics and The Braces",
+    title: "Ортодонција и протези",
     paragraph:
-      "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deleniti mollitia nulla, tempore odit natus maxime.",
+      "Ортодонтските третмани помагаат во исправување на забите и корекција на загризот кај деца и возрасни. Нудиме современи протези и проѕирни алајнери за ефикасни и естетски резултати.",
   },
   {
     id: 4,
     img: "https://images.unsplash.com/photo-1600170311833-c2cf5280ce49?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    title: "Orthodontics and The Braces",
+    title: "Естетска и превентивна стоматологија",
     paragraph:
-      "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deleniti mollitia nulla, tempore odit natus maxime.",
+      "Естетската и превентивната стоматологија е насочена кон зачувување на здрави заби и убава насмевка. Вклучува професионално чистење, белење на заби и редовна превентивна нега.",
   },
 ];
 
@@ -215,32 +252,33 @@ export const ourClients = [
 export const Work = [
   {
     id: 1,
-    title: "Learn More About Our Work",
+    title: "Дознајте повеќе за нашата работа",
     paragraph:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "Во нашата стоматолошка ординација се водиме од принципите на квалитет, прецизност и индивидуален пристап кон секој пациент. Користиме современи техники и висококвалитетни материјали за да обезбедиме долготрајни и сигурни резултати.",
   },
   {
     id: 2,
-    title: "Teeth Whitening",
+    title: "Белеење на заби",
     paragraph:
-      "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "Професионалното белеење на заби овозможува отстранување на дамки и пигментации, враќајќи ја природната белина на забите. Третманот е безбеден, ефикасен и дава видливи резултати за краток временски период.",
   },
   {
     id: 3,
-    title: "Crowns",
+    title: "Коронки",
     paragraph:
-      "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "Забните коронки се користат за заштита и зајакнување на оштетени заби, како и за подобрување на нивниот изглед. Тие обезбедуваат цврстина, функционалност и природен естетски резултат.",
   },
   {
     id: 4,
-    title: "Fillings",
+    title: "Пломби",
     paragraph:
-      "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "Современите пломби овозможуваат санација на кариесот со минимално отстранување на здравото забно ткиво. Користиме естетски материјали кои совршено се вклопуваат со природната боја на забите.",
   },
   {
-    title: "Partial Dentures",
+    id: 5,
+    title: "Парцијални протези",
     paragraph:
-      "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "Парцијалните протези се решение за надоместување на повеќе изгубени заби, при што се зачувуваат преостанатите природни заби. Тие овозможуваат подобрена функција при џвакање и подобар квалитет на живот.",
   },
 ];
 
@@ -268,8 +306,7 @@ export const info = [
     workHours: "Понеделник - Петок 09:30 - 19:30",
     email: "dragan.mil1509@gmail.com",
     terminTitle: "Закажи Термин",
-    termin:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit.Ex nesciunt, itaque ipsam in ratione necessitatibus? Quas sapiente delectus modi error.",
+    termin: "+38978688551",
   },
 ];
 export const Offers = [
@@ -284,32 +321,32 @@ export const Offers = [
       "/assets/teeth/woman-whitening-teeth-dentistry-with-special-equipment 1.png",
     ],
     paragraph:
-      "Белеењето на забите е козметички третман кој помага да се отстрани обојувањето и дамките од забите, враќајќи ја природната белина.",
+      "Белеењето на забите е козметички третман кој помага да се отстрани обојувањето и дамките од забите, враќајќи ја природната белина и свежината на насмевката.",
     paragraphs: [
       {
         id: 1,
         title: "БЕЛЕЕЊЕ НА ЗАБИТЕ",
-        text: "Белеењето на забите е козметички третман кој помага да се отстрани обојувањето и дамките од забите, враќајќи ја природната белина. Овој процес може да се изведе професионално во стоматолошка ординација или дома со помош на специјални производи(препорачани од стоматолог). Белеењето е безбедно кога се изведува правилно и дава брзи резултати, подобрувајќи го изгледот на насмевката и зголемувајќи ја самодовербата.",
+        text: "Белеењето на забите е еден од најбараните естетски стоматолошки третмани. Со текот на времето, забите ја губат природната белина поради кафе, чај, цигари, храна и стареење. Професионалното белеење во стоматолошка ординација е безбедно, контролирано и дава видливи резултати за краток временски период, значително подобрувајќи го изгледот на насмевката.",
       },
       {
         id: 2,
-        title: "Што  претставува белеењето на забите?",
-        text: "Sed do eiusmod tempor incididunt ut labore et dolore magna aliquaLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        title: "Што претставува белеењето на забите?",
+        text: "Белеењето на забите претставува постапка при која се користат специјални гелови за отстранување на пигментациите од глеѓта. Третманот делува само на природните заби и ја осветлува нивната боја без да ја оштети забната структура.",
       },
       {
         id: 3,
         title: "Дали сите заби се подложни на избелување?",
-        text: "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquipLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        text: "Не сите заби реагираат исто на белеење. Најдобри резултати се постигнуваат кај природни заби без пломби или коронки на предните површини. Пломбите, коронките и винирите не ја менуваат бојата, па по потреба се заменуваат за естетски усогласен резултат.",
       },
       {
         id: 4,
-        title: "Дали белењето на забите е штетно?",
-        text: "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariaturLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        title: "Дали белеењето на забите е штетно?",
+        text: "Кога се изведува под надзор на стоматолог, белеењето на забите не е штетно. Се користат контролирани концентрации на активни супстанции кои не ја оштетуваат глеѓта. Можно е да се појави краткотрајна чувствителност, која брзо поминува.",
       },
       {
         id: 5,
         title: "Колку долго траат резултатите од избелувањето на забите?",
-        text: "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborumLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        text: "Резултатите од белеењето можат да траат од неколку месеци до неколку години, во зависност од навиките на пациентот. Одржувањето на добра орална хигиена и избегнување на кафе, цигари и обоена храна придонесуваат за подолготраен ефект.",
       },
     ],
   },
@@ -318,42 +355,42 @@ export const Offers = [
     icon: "/assets/icons/image-2.png",
     title: "Ендодонција",
     paragraph:
-      "Ендодонцијата е специјализирана стоматолошка гранка која се фокусира на третман на внатрешноста на забот, односно на пулпата и коренските канали.",
+      "Ендодонцијата е стоматолошка гранка која се занимава со лекување на внатрешноста на забот – пулпата и коренските канали, со цел да се отстрани инфекцијата и да се зачува природниот заб.",
     paragraphs: [
       {
         id: 8,
         title: "Ендодонција",
-        text: "Ендодонцијата е специјализирана стоматолошка гранка која се фокусира на третман на внатрешноста на забот, односно на пулпата и коренските канали. Оваа процедура е неопходна кога забот е зафатен од длабок кариес или инфекција, што може да предизвика болка и воспаление. Со помош на ендодонтскиот третман, заразеното ткиво се отстранува, каналите се чистат и запечатуваат, со што се спречува понатамошна инфекција и се зачувува природниот заб.Во нашата ординација оваа процедура се изведува под посебни протоколи,соодветна изолација на забот со кофердам и машинска обработка на каналите,како и 3Д оптурација на каналниот систем.",
+        text: "Ендодонцијата, позната и како лекување на коренски канали, се применува кога пулпата на забот е зафатена од длабок кариес, воспаление или инфекција. При овој третман, заразеното ткиво се отстранува, каналите темелно се чистат, дезинфицираат и херметички се запечатуваат. Во нашата ординација, ендодонтскиот третман се изведува со современи протоколи, машинска обработка на каналите, изолација со кофердам и 3Д оптурација, со што се обезбедува висок степен на успех.",
       },
       {
         id: 9,
-        title: "Што е мост?",
-        text: "Sed do eiusmod tempor incididunt ut labore et dolore magna aliquaLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        title: "Кога е потребна ендодонтска терапија?",
+        text: "Ендодонтска терапија е потребна кога забот предизвикува спонтана болка, чувствителност на топло и ладно, оток или кога на рендгенска снимка се забележува инфекција околу коренот. Навремената интервенција овозможува спасување на забот.",
       },
       {
         id: 10,
-        title: "Што се коронки?",
-        text: "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquipLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        title: "Дали лекувањето на коренските канали боли?",
+        text: "Современата ендодонција се изведува под локална анестезија и во најголем дел од случаите е безболна. Пациентот може да почувствува лесна непријатност по интервенцијата, која обично поминува за кратко време.",
       },
       {
         id: 11,
-        title: "Кога се изработуваат мостови и коронки?",
-        text: "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariaturLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        title: "Колку трае ендодонтскиот третман?",
+        text: "Траењето на третманот зависи од сложеноста на случајот и бројот на коренски канали. Вообичаено, лекувањето може да се заврши во една до две посети кај стоматолог.",
       },
       {
         id: 12,
-        title: "Какви видови има?",
-        text: "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborumLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        title: "Колку е успешна ендодонтската терапија?",
+        text: "Со примена на современи техники и материјали, успехот на ендодонтската терапија е многу висок. Правилно излечен и заштитен заб може да функционира нормално со години.",
       },
       {
         id: 13,
-        title: "Колку време е потребно да се изработат?",
-        text: "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantiumLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        title: "Што следува по ендодонтскиот третман?",
+        text: "По завршување на лекувањето, забот најчесто се заштитува со пломба или коронка, со цел да се спречи негово пукање и да се продолжи неговиот животен век.",
       },
       {
         id: 14,
-        title: "Колку долго ќе траат?",
-        text: "Totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicaboLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        title: "Дали забот може повторно да се инфицира?",
+        text: "Во ретки случаи, може да дојде до повторна инфекција. Затоа се препорачуваат редовни стоматолошки контроли и добра орална хигиена за долгорочен успех на третманот.",
       },
     ],
   },
@@ -362,221 +399,193 @@ export const Offers = [
     icon: "/assets/icons/image-4.png",
     title: "Имплантологија",
     paragraph:
-      "Имплантологијата е напредна стоматолошка дисциплина која се фокусира на замена на изгубени заби со вештачки импланти. ",
+      "Имплантологијата е напредна стоматолошка дисциплина која овозможува замена на изгубени заби со забни импланти, со што се враќаат функцијата, естетиката и сигурноста при џвакање и говор.",
     paragraphs: [
       {
         id: 15,
         title: "Имплантологија",
-        text: "Имплантологијата е напредна стоматолошка дисциплина која се фокусира на замена на изгубени заби со вештачки импланти. Овие импланти, изработени од биокомпатибилни материјали како титаниум, се вградуваат во вилицата и функционираат како природни корени на забите, обезбедувајќи стабилност и долготрајно решение. Со имплантите, пациентите добиваат не само естетски подобрен изглед, туку и зголемена функционалност при џвакање и говор. Имплантологијата нуди трајно решение за подобрување на оралното здравје и квалитетот на животот.",
+        text: "Имплантологијата се занимава со вградување на забни импланти кои ја заменуваат функцијата на природниот корен на забот. Имплантите се изработени од биокомпатибилен титаниум и се вградуваат во коската на вилицата, каде што со текот на времето цврсто се интегрираат. Ова овозможува стабилна основа за поставување коронка, мост или протеза, со природен изглед и долготрајна функционалност.",
       },
       {
         id: 16,
-        title: "Што се винири?",
-        text: "Sed do eiusmod tempor incididunt ut labore et dolore magna aliquaLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        title: "Што е забен имплант?",
+        text: "Забниот имплант е вештачки корен на забот, најчесто изработен од титаниум, кој хируршки се вградува во виличната коска. На имплантот подоцна се поставува коронка, која по изглед и функција наликува на природен заб.",
       },
       {
         id: 17,
-        title: "Колку долго траат винирите?",
-        text: "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquipLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        title: "Дали вградувањето на имплант боли?",
+        text: "Постапката за вградување на имплант се изведува под локална анестезија и е безболна. По интервенцијата можно е да се појави лесна болка или оток, кои се контролираат со терапија и обично поминуваат за неколку дена.",
       },
       {
         id: 18,
-        title: "Какви видови винири постојат?",
-        text: "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariaturLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        title: "Колку време трае процесот со забни импланти?",
+        text: "Целиот процес може да трае неколку месеци, во зависност од индивидуалниот случај. По вградувањето на имплантот, потребен е период за негово сраснување со коската, по што се поставува финалната коронка.",
       },
       {
         id: 19,
-        title: "Дали винирите ги оштетуваат забите?",
-        text: "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborumLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        title: "Колку долго траат забните импланти?",
+        text: "Со правилна орална хигиена и редовни стоматолошки контроли, забните импланти можат да траат многу години, а често и доживотно. Тие претставуваат едно од најдолготрајните решенија во стоматологијата.",
       },
       {
         id: 20,
-        title: "Која е разликата помеѓу винири, коронки и импланти?",
-        text: "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantiumLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        title: "Која е разликата помеѓу импланти, мостови и коронки?",
+        text: "Имплантот го заменува коренот на забот и не бара брусење на соседните заби. Мостовите се потпираат на соседните заби, кои мора да се избричат, додека коронките се поставуваат врз постоечки заб или имплант. Имплантите нудат најприродно и независно решение.",
       },
       {
         id: 21,
-        title: "Кои се бенефитите од винири?",
-        text: "Totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicaboLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        title: "Кој може да биде кандидат за забен имплант?",
+        text: "Најчесто, секое лице со добро општо и орално здравје може да биде кандидат за забен имплант. Потребно е да постои доволно коскено ткиво, а конечната одлука се носи по детална клиничка и радиолошка проценка.",
       },
     ],
   },
   {
     id: 3,
     icon: "/assets/icons/image-5.png",
-    title: "Орална Хирургија ",
+    title: "Орална хирургија",
     paragraph:
-      "Оралната хирургија е специјализирана гранка на стоматологијата која се занимава со дијагноза, хируршки третман и лекување на различни состојби на устата, забите, вилицата и меките ткива.",
+      "Оралната хирургија е специјализирана гранка на стоматологијата која се занимава со хируршки третман на заболувања и состојби на забите, вилиците и меките ткива, со цел зачувување на оралното здравје и функцијата.",
     paragraphs: [
       {
         id: 22,
-        title: "Орална Хирургија",
-        text: "Оралната хирургија е специјализирана гранка на стоматологијата која се занимава со дијагноза, хируршки третман и лекување на различни состојби на устата, забите, вилицата и меките ткива. Таа вклучува процедури како вадење заби, импланти, корекција на деформитети, како и третман на повреди и инфекции. Оралната хирургија игра клучна улога во подобрување на оралното здравје и функционалност, овозможувајќи пациентите да водат поквалитетен живот со здрави и правилно функционирачки заби.",
+        title: "Орална хирургија",
+        text: "Оралната хирургија опфаќа различни хируршки интервенции во усната празнина, вклучувајќи вадење на заби, хируршко вадење на умници, подготовка за импланти и третман на инфекции и повреди. Сите интервенции се изведуваат со современи техники, под локална анестезија и со посебно внимание на безбедноста и удобноста на пациентот.",
       },
       {
         id: 23,
-        title: "Што се тотални протези?",
-        text: "Sed do eiusmod tempor incididunt ut labore et dolore magna aliquaLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        title: "Кога е потребна орална хирургија?",
+        text: "Орална хирургија е потребна кога забот не може да се спаси со конзервативен третман, при неправилно изникнати или задржани умници, инфекции, цисти, како и при подготовка на вилицата за вградување на забни импланти.",
       },
       {
         id: 24,
-        title: "Што се парцијални протези?",
-        text: "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquipLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        title: "Дали хируршките интервенции болат?",
+        text: "Сите хируршки интервенции се изведуваат под локална анестезија, што ги прави безболни за време на постапката. По интервенцијата може да се појави лесна болка или оток, кои се нормални и се контролираат со соодветна терапија.",
       },
       {
         id: 25,
-        title: "Како се изработуваат протезите?",
-        text: "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariaturLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        title: "Колку трае заздравувањето по интервенција?",
+        text: "Времето на заздравување зависи од видот на интервенцијата и индивидуалната состојба на пациентот. Вообичаено, заздравувањето трае од неколку дена до две недели, со почитување на дадените постоперативни упатства.",
       },
       {
         id: 26,
-        title: "Кои се бенефитите од протези?",
-        text: "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborumLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        title: "Кои се најчестите орално-хируршки интервенции?",
+        text: "Најчести интервенции се вадење на заби и корени, хируршко вадење на умници, апикотомија, третман на инфекции и подготовка на коската за имплантологија.",
       },
       {
         id: 27,
-        title: "Preventive Skin Care",
-        text: "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantiumLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        title: "Што треба да се избегнува по орално-хируршка интервенција?",
+        text: "По интервенцијата се препорачува избегнување на топла храна и пијалаци, физички напор и пушење во првите денови, со цел побрзо и правилно заздравување.",
       },
       {
         id: 28,
-        title: "Future of Dermatology",
-        text: "Totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicaboLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        title: "Дали е потребна контрола по интервенцијата?",
+        text: "Да, контролниот преглед е важен за следење на процесот на заздравување и навремено откривање на евентуални компликации.",
       },
     ],
   },
   {
     id: 4,
     icon: "/assets/icons/image-7.png",
-    title: "Естетска стоматологија    ",
+    title: "Естетска стоматологија",
     paragraph:
-      "Естетската стоматологија е гранка на стоматологијата која се фокусира на подобрување на изгледот на вашите заби, непца и насмевка. ",
+      "Естетската стоматологија е гранка на стоматологијата која се фокусира на подобрување на изгледот на забите, непцата и целокупната насмевка, со примена на современи техники и висококвалитетни материјали.",
     paragraphs: [
       {
         id: 29,
-        title: "Естетска стоматологија  ",
-        text: "Естетската стоматологија е гранка на стоматологијата која се фокусира на подобрување на изгледот на вашите заби, непца и насмевка. Со користење на современи техники и материјали, таа нуди решенија како белење на заби, поставување на фасети, корекција на неправилности и замена на заби, кои придонесуваат за посамоуверен и природен изглед. Естетската стоматологија не само што го подобрува изгледот на насмевката, туку и ја подобрува оралната хигиена и здравје.Во нашата ординација употребуваме висококвалитетни материјали од најдобрите светски производители,со што добиваме врвни резултати при пломбирањето,композитните винири и сл.",
+        title: "Естетска стоматологија",
+        text: "Естетската стоматологија овозможува подобрување на бојата, формата и положбата на забите, со цел постигнување природна и хармонична насмевка. Во нашата ординација користиме современи материјали и техники за постигнување врвни естетски и функционални резултати.",
       },
       {
         id: 30,
-        title: "Што е машинска ендодонција?",
-        text: "Sed do eiusmod tempor incididunt ut labore et dolore magna aliquaLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        title: "Кои третмани спаѓаат во естетската стоматологија?",
+        text: "Естетската стоматологија вклучува белење на заби, композитни и керамички винири, естетски пломби, корекција на неправилности и подобрување на формата и бојата на забите.",
       },
       {
         id: 31,
-        title: "Како ќе знам дали забот е соодветно излечен?",
-        text: "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquipLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        title: "Што се винири?",
+        text: "Винирите се тенки фасети кои се поставуваат на предната површина на забот со цел подобрување на бојата, формата и изгледот. Тие овозможуваат природен изглед и долготрајни резултати.",
       },
       {
         id: 32,
-        title:
-          "Лекување на забот со машинска еднодонција или вадењето на тој заб?",
-        text: "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariaturLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        title: "Дали естетските третмани се безбедни?",
+        text: "Да, естетските стоматолошки третмани се безбедни кога се изведуваат од стручно лице. Се користат биокомпатибилни материјали кои не го оштетуваат забот и ја зачувуваат неговата структура.",
       },
       {
         id: 33,
-        title: "Како најдобро да се заштити ендодонтски третиран заб понатаму?",
-        text: "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborumLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-      },
-      {
-        id: 34,
-        title: "Pediatric Emergency Care",
-        text: "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantiumLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-      },
-      {
-        id: 35,
-        title: "Future Trends in Pediatrics",
-        text: "Totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicaboLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        title: "Колку долго траат резултатите?",
+        text: "Трајноста на естетските третмани зависи од типот на интервенцијата и од навиките на пациентот. Со правилна орална хигиена и редовни контроли, резултатите можат да траат со години.",
       },
     ],
   },
   {
     id: 5,
     icon: "/assets/icons/image-7.png",
-    title: "Протетска стоматологија   ",
+    title: "Протетска стоматологија",
     paragraph:
-      "Протетската стоматологија е гранка на стоматологијата која се занимава со враќање на функцијата и естетиката на забите преку изработка на протетски надоместоци.",
+      "Протетската стоматологија се занимава со надоместување на изгубени или оштетени заби преку изработка на протетски надоместоци, со цел враќање на функцијата и естетиката на насмевката.",
     paragraphs: [
       {
-        id: 29,
-        title: "Протетска стоматологија(коронки,мостови,протези...        ",
-        text: "Протетската стоматологија е гранка на стоматологијата која се занимава со враќање на функцијата и естетиката на забите преку изработка на протетски надоместоци. Овие решенија ги заменуваат изгубените или оштетените заби со цел да го подобрат квалитетот на живот на пациентите, овозможувајќи им нормално џвакање, говор и самодоверба. Модерната протетска стоматологија користи напредни техники и материјали за да обезбеди долготрајни и природни резултати, вклучувајќи коронки, мостови, протези и импланти.",
+        id: 36,
+        title: "Протетска стоматологија",
+        text: "Протетската стоматологија овозможува замена на изгубени или оштетени заби со коронки, мостови и протези. Со овие решенија се подобрува џвакањето, говорот и самодовербата, а истовремено се зачувува здравјето на останатите заби.",
       },
       {
-        id: 30,
-        title: "Што е машинска ендодонција?",
-        text: "Sed do eiusmod tempor incididunt ut labore et dolore magna aliquaLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        id: 37,
+        title: "Што се коронки?",
+        text: "Коронките се фиксни протетски надоместоци кои целосно го покриваат забот, враќајќи ја неговата форма, цврстина и функција. Тие се изработуваат од современи и издржливи материјали со природен изглед.",
       },
       {
-        id: 31,
-        title: "Како ќе знам дали забот е соодветно излечен?",
-        text: "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquipLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        id: 38,
+        title: "Што се мостови?",
+        text: "Мостовите служат за замена на еден или повеќе изгубени заби, при што се потпираат на соседните заби или импланти. Тие овозможуваат стабилно и естетско решение.",
       },
       {
-        id: 32,
-        title:
-          "Лекување на забот со машинска еднодонција или вадењето на тој заб?",
-        text: "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariaturLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        id: 39,
+        title: "Што се протези?",
+        text: "Протезите се мобилни или фиксни протетски надоместоци кои заменуваат повеќе или сите заби. Тие се индивидуално изработени за секој пациент и овозможуваат функционалност и удобност.",
       },
       {
-        id: 33,
-        title: "Како најдобро да се заштити ендодонтски третиран заб понатаму?",
-        text: "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborumLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-      },
-      {
-        id: 34,
-        title: "Pediatric Emergency Care",
-        text: "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantiumLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-      },
-      {
-        id: 35,
-        title: "Future Trends in Pediatrics",
-        text: "Totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicaboLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        id: 40,
+        title: "Колку долго траат протетските надоместоци?",
+        text: "Со правилна нега и редовни стоматолошки контроли, протетските надоместоци можат да траат многу години. Стоматологот ќе даде препораки за нивно одржување.",
       },
     ],
   },
   {
     id: 6,
     icon: "/assets/icons/image-7.png",
-    title: "Пародонтологија и пародонтална хирургија    ",
+    title: "Пародонтологија и пародонтална хирургија",
     paragraph:
-      "Пародонтологијата е специјалност во стоматологијата која се фокусира на превенција, дијагностика и третман на болести што ги зафаќаат непцата и другите структури што го поддржуваат забот. ",
+      "Пародонтологијата е стоматолошка специјалност која се занимава со превенција, дијагностика и третман на заболувања на непцата и потпорните структури на забите, со цел нивно долгорочно зачувување.",
     paragraphs: [
       {
-        id: 29,
-        title: "Пародонтологија и пародонтална хирургија  ",
-        text: "Пародонтологијата е специјалност во стоматологијата која се фокусира на превенција, дијагностика и третман на болести што ги зафаќаат непцата и другите структури што го поддржуваат забот. Ова вклучува третмани за воспаленија на непцата (гингивитис), како и понапредни состојби како пародонтитис, кои можат да доведат до губење на забите.  Пародонталната хирургија, од друга страна, се користи за напредни случаи каде што е потребна хируршка интервенција за зачувување на здравјето на непцата и забите. Ова вклучува процедури како хируршко отстранување на заболени ткива, длабинско чистење на корените на забите и регенерација на коскеното ткиво околу забите.",
+        id: 41,
+        title: "Пародонтологија и пародонтална хирургија",
+        text: "Пародонтологијата се фокусира на здравјето на непцата и коската што ги поддржуваат забите. Најчести заболувања се гингивитисот и пародонтитисот, кои доколку не се третираат навремено можат да доведат до губење на забите. Пародонталната хирургија се применува кај понапредни случаи со цел стабилизација и регенерација на ткивата.",
       },
       {
-        id: 30,
-        title: "Што е машинска ендодонција?",
-        text: "Sed do eiusmod tempor incididunt ut labore et dolore magna aliquaLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        id: 42,
+        title: "Што е гингивитис и пародонтитис?",
+        text: "Гингивитисот е почетно воспаление на непцата кое се манифестира со крварење, црвенило и оток. Доколку не се лекува, може да премине во пародонтитис – посериозна состојба при која доаѓа до повлекување на непцата и губење на коската околу забите.",
       },
       {
-        id: 31,
-        title: "Како ќе знам дали забот е соодветно излечен?",
-        text: "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquipLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        id: 43,
+        title: "Кои се симптомите на пародонталните заболувања?",
+        text: "Најчести симптоми се крварење на непцата при четкање, лош здив, чувствителност, повлекување на непцата и разлабавување на забите. Навремената посета кај стоматолог е клучна за спречување на компликации.",
       },
       {
-        id: 32,
-        title:
-          "Лекување на забот со машинска еднодонција или вадењето на тој заб?",
-        text: "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariaturLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        id: 44,
+        title: "Како се лекуваат пародонталните заболувања?",
+        text: "Третманот зависи од стадиумот на заболувањето и може да вклучува професионално чистење, длабинско чистење на корените на забите, медикаментозна терапија или хируршка интервенција кај потешки случаи.",
       },
       {
-        id: 33,
-        title: "Како најдобро да се заштити ендодонтски третиран заб понатаму?",
-        text: "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborumLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        id: 45,
+        title: "Што претставува пародонтална хирургија?",
+        text: "Пародонталната хирургија се применува кога конзервативниот третман не е доволен. Таа вклучува хируршко чистење на длабоки џебови, отстранување на заболено ткиво и регенерација на коската и меките ткива околу забите.",
       },
       {
-        id: 34,
-        title: "Pediatric Emergency Care",
-        text: "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantiumLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-      },
-      {
-        id: 35,
-        title: "Future Trends in Pediatrics",
-        text: "Totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicaboLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        id: 46,
+        title: "Како да се превенираат пародонталните заболувања?",
+        text: "Редовната орална хигиена, правилно четкање, користење забен конец, професионално чистење и редовни стоматолошки контроли се клучни за превенција и одржување на здрави непца.",
       },
     ],
   },
