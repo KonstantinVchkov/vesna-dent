@@ -59,7 +59,10 @@ export default function Home({
         />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://vesna-dent.mk/" />
-        <meta property="og:image" content="/assets/images/og-image.jpg" />
+        <meta
+          property="og:image"
+          content="/assets/images/some-dental-logo.png"
+        />
         <meta property="og:locale" content="mk_MK" />
 
         {/* Twitter */}
@@ -72,7 +75,10 @@ export default function Home({
           name="twitter:description"
           content="Современи стоматолошки третмани и индивидуален пристап кон секој пациент."
         />
-        <meta name="twitter:image" content="/assets/images/og-image.jpg" />
+        <meta
+          name="twitter:image"
+          content="/assets/images/some-dental-logo.png"
+        />
 
         {/* Favicon */}
         <link rel="icon" href="/assets/images/some-dental-logo.png" />
