@@ -46,7 +46,7 @@ export default function Home({
         <meta name="viewport" content="width=device-width, initial-scale=1" />
 
         {/* Canonical */}
-        <link rel="canonical" href="https://vesna-dent.mk/" />
+        <link rel="canonical" href="https://vesna-dent.vercel.app/" />
 
         {/* Open Graph (Facebook / LinkedIn) */}
         <meta
@@ -58,11 +58,8 @@ export default function Home({
           content="Професионална стоматолошка нега и современи третмани за здрава и убава насмевка."
         />
         <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://vesna-dent.mk/" />
-        <meta
-          property="og:image"
-          content="/assets/images/some-dental-logo.png"
-        />
+        <meta property="og:url" content="https://vesna-dent.vercel.app/" />
+        <meta property="og:image" content="/assets/images/some-dental-logo.png" />
         <meta property="og:locale" content="mk_MK" />
 
         {/* Twitter */}
@@ -75,10 +72,7 @@ export default function Home({
           name="twitter:description"
           content="Современи стоматолошки третмани и индивидуален пристап кон секој пациент."
         />
-        <meta
-          name="twitter:image"
-          content="/assets/images/some-dental-logo.png"
-        />
+        <meta name="twitter:image" content="/assets/images/some-dental-logo.png" />
 
         {/* Favicon */}
         <link rel="icon" href="/assets/images/some-dental-logo.png" />
