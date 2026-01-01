@@ -48,7 +48,7 @@ export default function Home({
 
         <meta
           property="og:title"
-          content="Vesna Dent | Стоматолошка ординација"
+          content="Vesna Dent"
         />
         <meta
           property="og:description"
@@ -58,7 +58,7 @@ export default function Home({
         <meta property="og:url" content="https://vesna-dent.vercel.app/" />
         <meta
           property="og:image"
-          content="https://vesna-dent.vercel.app/assets/images/og-image.jpg"
+          content="/assets/images/og-image.jpg"
         />
         <meta property="og:image:width" content="1200" />
         <meta property="og:image:height" content="630" />
@@ -67,7 +67,7 @@ export default function Home({
         <meta name="twitter:card" content="summary_large_image" />
         <meta
           name="twitter:title"
-          content="Vesna Dent | Стоматолошка ординација"
+          content="Vesna Dent"
         />
         <meta
           name="twitter:description"
@@ -75,7 +75,7 @@ export default function Home({
         />
         <meta
           name="twitter:image"
-          content="https://vesna-dent.vercel.app/assets/images/og-image.jpg"
+          content="/assets/images/og-image.jpg"
         />
 
         <link rel="icon" href="/assets/images/some-dental-logo.png" />
