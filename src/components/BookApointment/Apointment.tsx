@@ -30,7 +30,7 @@ const BookApointment = ({ handleModal }: TbookApointment) => {
               </div>
             </div>
             <div className={styles.center}>
-              <h3>Посететене во нашата ординација</h3>
+              <h3>Повелете во нашата ординација</h3>
               <div>
                 {" "}
                 <Image
@@ -39,7 +39,7 @@ const BookApointment = ({ handleModal }: TbookApointment) => {
                   src={"/assets/SocialIcons/location.png"}
                   alt={"location-img"}
                 />
-                <span>Lorem ipsum dolor</span>
+                <span>Тодор Паница 12/2, Скопје 1000</span>
               </div>
             </div>
           </div>
