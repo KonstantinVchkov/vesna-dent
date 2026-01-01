@@ -122,7 +122,7 @@ export const OurWork = {
     {
       title: "Сакате вашата насмевка да зрачи со самодоверба?",
       image:
-        "https://images.unsplash.com/photo-1642953702322-a5da05d2e36b?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        "https://asset1.toothsi.in/may_5_8ff0f28a22.jpg?q=75&w=1920",
       description:
         "Здравата и убава насмевка е резултат на правилна нега и современи стоматолошки третмани. Со соодветна терапија, можете да постигнете природен изглед и долготрајни резултати.",
       technics: ["Естетска стоматологија"],
@@ -130,7 +130,7 @@ export const OurWork = {
     {
       title: "Зошто чистењето на забен камен е важно?",
       image:
-        "https://images.unsplash.com/photo-1499951360447-b19be8fe80f5?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        "https://www.dentevim.com/upload/dis-lerinizi-sag-likli-tutmanin-10-yolu.jpg",
       description:
         "Редовното чистење на забен камен ги штити забите и непцата од воспаленија, лош здив и пародонтални заболувања, придонесувајќи за долгорочно орално здравје.",
       technics: ["Професионално чистење"],
@@ -138,7 +138,7 @@ export const OurWork = {
     {
       title: "Колку е важна секојдневната орална хигиена?",
       image:
-        "https://images.unsplash.com/photo-1497366811353-6870744d04b2?q=80&w=2069&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90oy1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        "https://images.ctfassets.net/xxv4b9mbhlgd/73PKv8BmWGnsABEP3Ld9Xh/484e94225257c541225f69a876ebdb7a/oral-dental-care.jpg",
       description:
         "Редовното и правилно четкање на забите, заедно со користење забен конец, е основа за здрави заби и непца и превенција од кариес и други стоматолошки проблеми.",
       technics: ["Орална хигиена"],
@@ -227,28 +227,29 @@ export const ourClients = [
   {
     id: 1,
     img: "https://images.unsplash.com/photo-1544005313-94ddf0286df2?q=80&w=1976&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    name: "Софија Брзикова",
-    text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae cumque doloribus iusto et quia, commodi harum modi, optio voluptates libero, sint reiciendis exercitationem illo autem quo iste dolorum ab porro impedit incidunt natus explicabo architecto.",
+    name: "Софија",
+    text: "Многу сум задоволна од услугата и пристапот. Персоналот е љубезен и професионален, а резултатите ги надминаа моите очекувања.",
   },
   {
     id: 2,
     img: "https://images.unsplash.com/photo-1552058544-f2b08422138a?q=80&w=1998&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    name: "Васил Шуткарев",
-    text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae cumque doloribus iusto et quia, commodi harum modi, optio voluptates libero, sint reiciendis exercitationem illo autem quo iste dolorum ab porro impedit incidunt natus explicabo architecto.",
+    name: "Васил",
+    text: "Одлично искуство од почеток до крај. Сè беше јасно објаснето и третманот помина без болка. Топло ја препорачувам ординацијата.",
   },
   {
     id: 3,
     img: "https://images.unsplash.com/photo-1599566150163-29194dcaad36?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    name: "Адријан Лубеков",
-    text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae cumque doloribus iusto et quia, commodi harum modi, optio voluptates libero, sint reiciendis exercitationem illo autem quo iste dolorum ab porro impedit incidunt natus explicabo architecto.",
+    name: "Адријан",
+    text: "Професионален тим и современа опрема. Се чувствував безбедно и згрижено во текот на целиот третман. Поздрав голем за Докторот.",
   },
   {
     id: 4,
     img: "https://images.unsplash.com/photo-1499952127939-9bbf5af6c51c?q=80&w=2076&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    name: "Елена Зузелова",
-    text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae cumque doloribus iusto et quia, commodi harum modi, optio voluptates libero, sint reiciendis exercitationem illo autem quo iste dolorum ab porro impedit incidunt natus explicabo architecto.",
+    name: "Елена",
+    text: "Одлична услуга и пријатна атмосфера. Конечно најдов стоматолошка ординација во која се чувствувам опуштено и сигурно.",
   },
 ];
+
 export const Work = [
   {
     id: 1,
