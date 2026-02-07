@@ -96,7 +96,7 @@ const FooterSection: React.FC = () => {
             <ul>
               <li>
                 {" "}
-                <a href="">
+                <a href="https://www.facebook.com/vesnadent.skopje">
                   <Image
                     width={50}
                     height={50}
@@ -106,7 +106,7 @@ const FooterSection: React.FC = () => {
                 </a>
               </li>
               <li>
-                <a href="">
+                <a href="https://www.instagram.com/vesna.dent.2002?igsh=aXBxZWplNnN6d3U1">
                   <Image
                     width={50}
                     height={50}
@@ -116,7 +116,7 @@ const FooterSection: React.FC = () => {
                 </a>
               </li>
               <li>
-                <a href="">
+                <a href="https://www.linkedin.com/in/dragan-milenkovski-273a142ab/">
                   {" "}
                   <Image
                     width={50}
