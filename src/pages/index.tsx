@@ -45,7 +45,7 @@ export default function Home({
         <meta name="robots" content="index, follow" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-        <link rel="canonical" href={`${SITE_URL}/assets/images/og-image.jpg`} />
+        <link rel="canonical" href={`${SITE_URL}`} />
 
         <meta property="og:title" content="Vesna Dent" />
         <meta
@@ -55,7 +55,7 @@ export default function Home({
         <meta property="og:type" content="website" />
         <meta
           property="og:url"
-          content={`${SITE_URL}/assets/images/og-image.jpg`}
+          content={`${SITE_URL}`}
         />
         <meta
           property="og:image"
