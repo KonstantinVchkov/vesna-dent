@@ -48,8 +48,8 @@ export default function Home({
         <meta name="viewport" content="width=device-width, initial-scale=1" />
 
         <link rel="canonical" href={SITE_URL} />
-
-        <meta property="og:title" content="Vesna Dent" />
+        <meta property="og:image:type" content="image/jpg" />
+        <meta property="og:title" content="vesna-dent.vercel.app" />
         <meta
           property="og:description"
           content="Професионална стоматолошка нега и современи третмани за здрава и убава насмевка."
