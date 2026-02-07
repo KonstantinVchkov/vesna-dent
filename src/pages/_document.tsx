@@ -21,8 +21,9 @@ export default function Document() {
         <meta property="og:title" content="Vesna Dent" />
         <meta
           property="og:description"
-          content="Професионална стоматолошка нега и современи третмани за здрава и убава насмевка."
+          content="Современа стоматолошка ординација во Скопје со имплантологија, естетска стоматологија и комплетна грижа за вашата насмевка."
         />
+
         <meta property="og:type" content="website" />
         <meta property="og:url" content={SITE_URL} />
 
