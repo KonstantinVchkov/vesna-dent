@@ -38,32 +38,32 @@ export default function Home({
     <>
       <Head>
         <title>Vesna Dent</title>
+
         <meta
           name="description"
           content="Vesna-Dent е современа стоматолошка ординација која нуди белеење на заби, имплантологија, ендодонција, протетика, пародонтологија и орална хирургија. Закажете термин денес."
         />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <meta name="robots" content="index, follow" />
-        <link rel="canonical" href="https://vesna-dent.vercel.app" />
 
-        {/* Open Graph */}
-        <meta property="og:type" content="website" />
-        <meta property="og:locale" content="mk_MK" />
-        <meta property="og:url" content="https://vesna-dent.vercel.app" />
+        <meta name="robots" content="index, follow" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+        <link rel="canonical" href={SITE_URL} />
+        <meta property="og:image:type" content="image/jpeg" />
         <meta property="og:title" content="Vesna Dent" />
         <meta
           property="og:description"
           content="Професионална стоматолошка нега и современи третмани за здрава и убава насмевка."
         />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content={SITE_URL} />
         <meta
           property="og:image"
-          content="https://vesna-dent.vercel.app/public/og-image.jpg"
+          content={`${SITE_URL}/assets/images/og-image.jpg`}
         />
         <meta property="og:image:width" content="1200" />
         <meta property="og:image:height" content="630" />
-        <meta property="og:image:type" content="image/jpeg" />
+        <meta property="og:locale" content="mk_MK" />
 
-        {/* Twitter */}
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="Vesna Dent" />
         <meta
@@ -72,12 +72,11 @@ export default function Home({
         />
         <meta
           name="twitter:image"
-          content="https://vesna-dent.vercel.app/public/og-image.jpg"
+          content={`${SITE_URL}/assets/images/og-image.jpg`}
         />
 
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/assets/images/some-dental-logo.png" />
       </Head>
-
       <CarouselSection {...textScroll} />
       <div className={styles.container}>
         <div className={styles.MainImagesContainer}>
