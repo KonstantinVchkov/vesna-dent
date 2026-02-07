@@ -57,7 +57,7 @@ export default function Home({
         />
         <meta
           property="og:image"
-          content="https://vesna-dent.vercel.app/og-image.jpg"
+          content="https://vesna-dent.vercel.app/public/og-image.jpg"
         />
         <meta property="og:image:width" content="1200" />
         <meta property="og:image:height" content="630" />
@@ -72,7 +72,7 @@ export default function Home({
         />
         <meta
           name="twitter:image"
-          content="https://vesna-dent.vercel.app/og-image.jpg"
+          content="https://vesna-dent.vercel.app/public/og-image.jpg"
         />
 
         <link rel="icon" href="/favicon.ico" />
