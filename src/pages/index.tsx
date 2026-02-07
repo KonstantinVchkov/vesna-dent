@@ -38,14 +38,16 @@ export default function Home({
     <>
       <Head>
         <title>Vesna Dent</title>
+
         <meta
           name="description"
           content="Vesna-Dent е современа стоматолошка ординација која нуди белеење на заби, имплантологија, ендодонција, протетика, пародонтологија и орална хирургија. Закажете термин денес."
         />
+
         <meta name="robots" content="index, follow" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-        <link rel="canonical" href={`${SITE_URL}`} />
+        <link rel="canonical" href={SITE_URL} />
 
         <meta property="og:title" content="Vesna Dent" />
         <meta
@@ -53,10 +55,7 @@ export default function Home({
           content="Професионална стоматолошка нега и современи третмани за здрава и убава насмевка."
         />
         <meta property="og:type" content="website" />
-        <meta
-          property="og:url"
-          content={`${SITE_URL}`}
-        />
+        <meta property="og:url" content={SITE_URL} />
         <meta
           property="og:image"
           content={`${SITE_URL}/assets/images/og-image.jpg`}
