@@ -44,38 +44,38 @@ export default function Home({
         <meta name="robots" content="index, follow" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-        <link rel="canonical" href="https://vesna-dent.vercel.app/" />
-
-        <meta
-          property="og:title"
-          content="Vesna Dent"
+        <link
+          rel="canonical"
+          href="https://vesna-dent.vercel.app/assets/images/og-image.jpg"
         />
+
+        <meta property="og:title" content="Vesna Dent" />
         <meta
           property="og:description"
           content="Професионална стоматолошка нега и современи третмани за здрава и убава насмевка."
         />
         <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://vesna-dent.vercel.app/" />
+        <meta
+          property="og:url"
+          content="https://vesna-dent.vercel.app/assets/images/og-image.jpg"
+        />
         <meta
           property="og:image"
-          content="/assets/images/og-image.jpg"
+          content="https://vesna-dent.vercel.app/assets/images/og-image.jpg"
         />
         <meta property="og:image:width" content="1200" />
         <meta property="og:image:height" content="630" />
         <meta property="og:locale" content="mk_MK" />
 
         <meta name="twitter:card" content="summary_large_image" />
-        <meta
-          name="twitter:title"
-          content="Vesna Dent"
-        />
+        <meta name="twitter:title" content="Vesna Dent" />
         <meta
           name="twitter:description"
           content="Современи стоматолошки третмани и индивидуален пристап кон секој пациент."
         />
         <meta
           name="twitter:image"
-          content="/assets/images/og-image.jpg"
+          content="https://vesna-dent.vercel.app/assets/images/og-image.jpg"
         />
 
         <link rel="icon" href="/assets/images/some-dental-logo.png" />
